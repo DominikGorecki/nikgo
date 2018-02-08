@@ -31,20 +31,29 @@
 
   @include large {
     padding: 0 6rem 5rem 6rem;
+    h1 {
+      margin: 6rem 0;
+    }
   }
 
   @include medium {
     padding: 0 4rem 3rem 4rem;
+    h1 {
+      margin: 4rem 0;
+    }
   }
 
   @include small {
     padding: 0 1rem 2rem 1rem;
+    h1 {
+      margin: 1rem 0;
+    }
   }
 }
 
 // Variables to adjust to see different design 
 $buttonTextColor: #FFF; 
-$buttonWidth: 300px;
+$buttonWidth: 270px;
 $buttonFontSize: 17px;
 $buttonPadding: 23px;
 $buttonBorderRadius: 7px;
@@ -130,5 +139,6 @@ $animationSpeed: 0.2s;
 .menu-wrap {
   .button {
     display:inline-block;
+    margin: 10px;
   }
 }

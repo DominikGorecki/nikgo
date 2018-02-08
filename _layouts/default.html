@@ -13,9 +13,9 @@
     <section class="page-header">
       <h1 class="project-name">nikGo</h1>
       <div class="menu-wrap">
-        <a href="/" class="button gradient-animated-button on-focus"><span class="gradient"></span>Home</a>
-        <a href="http://google.com" class="button gradient-animated-button on-focus"><span class="gradient"></span>Google</a>
-        <a href="http://google.com" class="button gradient-animated-button on-focus"><span class="gradient"></span>Google</a>
+        <a href="/" class="button gradient-animated-button on-click"><span class="gradient"></span>Home</a>
+        <a href="http://google.com" class="button gradient-animated-button on-click"><span class="gradient"></span>Google</a>
+        <a href="http://google.com" class="button gradient-animated-button on-click"><span class="gradient"></span>Google</a>
       </div>
    </section>
 
@@ -42,5 +42,8 @@
         ga('send', 'pageview');
       </script>
     {% endif %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href=>
+    <script src="{{ '/assets/js/main.js?v=' | append: site.github.build_revision | relative_url }}"></script>
   </body>
 </html>
