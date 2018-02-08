@@ -4,6 +4,7 @@
 @import 'jekyll-theme-cayman';
 @import 'mixins';
 @import url(https://fonts.googleapis.com/css?family=Satisfy);
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
 
 
 .page-header {
@@ -29,14 +30,105 @@
   }
 
   @include large {
-    padding: 5rem 6rem;
+    padding: 0 6rem 5rem 6rem;
   }
 
   @include medium {
-    padding: 3rem 4rem;
+    padding: 0 4rem 3rem 4rem;
   }
 
   @include small {
-    padding: 2rem 1rem;
+    padding: 0 1rem 2rem 1rem;
+  }
+}
+
+// Variables to adjust to see different design 
+$buttonTextColor: #FFF; 
+$buttonWidth: 300px;
+$buttonFontSize: 17px;
+$buttonPadding: 23px;
+$buttonBorderRadius: 7px;
+
+$gradientMidPos: 63%;
+$gradientDegrees: 53deg;
+$gradientColor1: #87e0fd;
+$gradientColor2: #54f264;
+$gradientColor3: #f744c3;
+
+$animationSpeed: 0.2s;
+
+
+
+
+// Required Mixins ------------------------------------------------------------
+// Transform mixin
+@mixin transform($property){	
+	-webkit-transform: $property;
+  -moz-transform: $property;
+  transform: $property; 
+}
+
+// Transition mixin
+@mixin single-transition($property:all, $speed:150ms, $ease:ease, $delay: 0s){	
+    -webkit-transition: $property $speed $ease $delay;	transition: $property $speed $ease $delay;
+}
+
+@mixin three-color-gradient($degree: 45deg,
+                            $midPos: 50%,
+                            $color1: #87e0fd,
+                            $color2: #54f264,
+                            $color3: #f9072b) {
+    background: $color1; /* Old browsers */
+    background: -moz-linear-gradient($degree, $color1 0%,$color2 $midPos, $color3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient($degree, $color1 0%,$color2 $midPos, $color3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient($degree, $color1 0%,$color2 $midPos, $color3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                              /* TO DO adjust
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#f9072b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+// Button Specific CSS. Items that can be adjusted are variables at the top of this file
+.button {
+  display: block; // Required
+  box-sizing: border-box; // Required
+  width: $buttonWidth; // Required, but can be adjusted
+  color: $buttonTextColor; // Required but can be adjusted
+  text-decoration: none; // Required but can be ajusted
+  font-size: $buttonFontSize; // Can be adjusted. Can be inherited. 
+  padding: $buttonPadding; // Can be adjusted.
+  border-radius: $buttonBorderRadius; // Can be adjusted.
+  z-index: 10;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.gradient-animated-button {
+  position: relative; // Required
+  overflow: hidden; // Required
+  
+  .gradient {
+    @include three-color-gradient($gradientDegrees, $gradientMidPos, $gradientColor1, $gradientColor2, $gradientColor3); // Can be adjusted. Recommended a 3 color gradient at least
+    @include single-transition(all, $animationSpeed, ease-in-out, 0s); // Animation speed can be adjusted.
+    position: absolute; // Required
+    top: 0; // Required
+    width: 100%; // Required
+    left: 0; // Required.
+    height: 800%; // Required.
+		bottom: auto; // Required.
+		margin: auto; // Required.
+		z-index: -1;  // Required.
+  }
+  
+  // Translation for animation
+  &.on-hover:hover, &.clicked, &.on-focus:focus {
+    .gradient{
+       @include transform(translateY(-85%));
+    }
+  }
+}
+
+.menu-wrap {
+  .button {
+    display:inline-block;
   }
 }
