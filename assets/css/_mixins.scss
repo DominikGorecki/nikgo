@@ -1,0 +1,72 @@
+// _mixins.scss
+
+@mixin animateBack() {
+    -webkit-animation: treatment-3 23s ease infinite;
+    -moz-animation: treatment-3 23s ease infinite;
+    -o-animation: treatment-3 23s ease infinite;
+    animation: treatment-3 23s ease infinite;
+
+    @-webkit-keyframes treatment-3 {
+      0% {
+        background-position: 0% 47%;
+      }
+      50% {
+        background-position: 100% 54%;
+      }
+      100% {
+        background-position: 0% 47%;
+      }
+    }
+    @-moz-keyframes treatment-3 {
+      0% {
+        background-position: 0% 47%;
+      }
+      50% {
+        background-position: 100% 54%;
+      }
+      100% {
+        background-position: 0% 47%;
+      }
+    }
+    @-o-keyframes treatment-3 {
+      0% {
+        background-position: 0% 47%;
+      }
+      50% {
+        background-position: 100% 54%;
+      }
+      100% {
+        background-position: 0% 47%;
+      }
+    }
+    @keyframes treatment-3 {
+      0% {
+        background-position: 0% 47%;
+      }
+      50% {
+        background-position: 100% 54%;
+      }
+      100% {
+        background-position: 0% 47%;
+      }
+    }
+}
+
+@mixin threeColorGradient($degree: 45deg,
+                            $midPos: 50%,
+                            $color1: #87e0fd,
+                            $color2: #54f264,
+                            $color3: #f9072b) {
+    background: $color1; /* Old browsers */
+    background: -moz-linear-gradient($degree, $color1 0%,$color2 $midPos, $color3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient($degree, $color1 0%,$color2 $midPos, $color3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient($degree, $color1 0%,$color2 $midPos, $color3 100%); 
+}
+
+
+@mixin gradientBackgroundAnimate() {
+  @include threeColorGradient( 45deg, 60%, #87e0fd,#54f264, #f9072b);
+  background-size: 600% 600%;
+  @include animateBack();
+
+}
