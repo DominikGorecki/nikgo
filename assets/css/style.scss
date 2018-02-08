@@ -3,7 +3,7 @@
 
 @import "{{ site.theme }}";
 @import url(https://fonts.googleapis.com/css?family=Satisfy);
-@import '_mixins.scss';
+//@import './_mixins.scss';
 
 .page-header {
   color: $header-heading-color;
