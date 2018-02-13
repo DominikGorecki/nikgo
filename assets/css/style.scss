@@ -54,17 +54,17 @@
 // Variables to adjust to see different design 
 $buttonTextColor: #FFF; 
 $buttonWidth: 270px;
-$buttonFontSize: 17px;
+$buttonFontSize: 20px;
 $buttonPadding: 23px;
 $buttonBorderRadius: 7px;
 
-$gradientMidPos: 63%;
+$gradientMidPos: 43%;
 $gradientDegrees: 53deg;
-$gradientColor1: #87e0fd;
+$gradientColor1: #f744c3;
 $gradientColor2: #54f264;
-$gradientColor3: #f744c3;
+$gradientColor3: #87e0fd;
 
-$animationSpeed: 0.2s;
+$animationSpeed: 0.1s;
 
 
 
@@ -105,6 +105,8 @@ $animationSpeed: 0.2s;
   font-size: $buttonFontSize; // Can be adjusted. Can be inherited. 
   padding: $buttonPadding; // Can be adjusted.
   border-radius: $buttonBorderRadius; // Can be adjusted.
+  text-shadow: 1px 1px #969696f2;
+  font-weight: 600;
   z-index: 10;
   &:hover {
     text-decoration: none;
