@@ -336,6 +336,7 @@ Future work should extend these findings across domains, question types, and ret
 1. **Gorecki (2025).** RAG Pipeline: How VulcanLab Finds and Delivers Relevant Information. [[VulcLab]](https://vulclab.com/rag-pipeline/)
 
 2. **Gorecki (2025)** RAG Settings Guide. [[VulcLab]](https://vulclab.com/rag-settings-guide/)
+
 ---
 
 ## Appendix: Statistical Summary Tables
