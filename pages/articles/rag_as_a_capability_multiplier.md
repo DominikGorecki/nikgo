@@ -3,7 +3,8 @@
 **Controlled evidence: same-model gains, and small-model-with-RAG beating large-model-without-RAG**
 
 **Date:** January 26, 2026
-**Author(s):** (Dominik / Org)
+
+**Author:** Dominik Gorecki
 
 ## Executive summary
 
