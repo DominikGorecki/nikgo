@@ -2,9 +2,8 @@
 
 **Controlled evidence: same-model gains, and small-model-with-RAG beating large-model-without-RAG**
 
-**Date:** January 26, 2026
-
-**Author:** Dominik Gorecki
+* **Date:** January 26, 2026
+* **Author:** Dominik Gorecki
 
 ## Executive summary
 
@@ -23,7 +22,7 @@ NLP analysis of outputs shows RAG responses are **significantly longer and more 
 
 ## Abstract
 
-We evaluate Retrieval-Augmented Generation (RAG) as a system-level intervention for research-style synthesis tasks. In Experiment 1, we compare Gemini 3 Flash with RAG to Gemini 3 Flash without RAG. In Experiment 2, we compare Gemini 3 Flash with RAG against Gemini 3 Pro without RAG. Outputs are assessed via blinded pairwise evaluation by an LLM judge (ChatGPT 5.2 Thinking) across five dimensions: factual correctness, completeness, coherence, hallucination risk (lower risk scores higher), and academic response. Using Wilcoxon signed-rank tests on paired differences, we find statistically significant improvements from RAG in 4/5 dimensions in both experiments; coherence does not show statistically significant differences. Readability analyses indicate RAG outputs are significantly longer and more academically styled (worse readability scores). The results support the conclusion that RAG can act as a capability multiplier: improving research performance on the same model and enabling smaller models to outperform larger ones when retrieval is absent.
+I evaluate Retrieval-Augmented Generation (RAG) as a system-level intervention for research-style synthesis tasks. In Experiment 1, I compare Gemini 3 Flash with RAG to Gemini 3 Flash without RAG. In Experiment 2, I compare Gemini 3 Flash with RAG against Gemini 3 Pro without RAG. Outputs are assessed via blinded pairwise evaluation by an LLM judge (ChatGPT 5.2 Thinking) across five dimensions: factual correctness, completeness, coherence, hallucination risk (lower risk scores higher), and academic response. Using Wilcoxon signed-rank tests on paired differences, I find statistically significant improvements from RAG in 4/5 dimensions in both experiments; coherence does not show statistically significant differences. Readability analyses indicate RAG outputs are significantly longer and more academically styled (worse readability scores). The results support the conclusion that RAG can act as a capability multiplier: improving research performance on the same model and enabling smaller models to outperform larger ones when retrieval is absent.
 
 ---
 
@@ -201,7 +200,7 @@ These findings match and extend recent literature showing that retrieval groundi
 
 ---
 
-# References (bibliographic)
+# References 
 
 * Jin, J., Zhu, Y., Zhou, Y., & Dou, Z. (2024). **BIDER: Bridging Knowledge Inconsistency for Efficient Retrieval-Augmented LLMs via Key Supporting Evidence**. *Findings of the Association for Computational Linguistics: ACL 2024*, 750–761. DOI: 10.18653/v1/2024.findings-acl.42. ([ACL Anthology][3])
 
@@ -217,11 +216,11 @@ These findings match and extend recent literature showing that retrieval groundi
 
 * Xu, S., Yan, Z., Dai, C., & Wu, F. (2025). **MEGA-RAG: A Retrieval-Augmented Generation Framework with Multi-Evidence Guided Answer Refinement for Mitigating Hallucinations of LLMs in Public Health**. *Frontiers in Public Health, 13*, 1635381. DOI: 10.3389/fpubh.2025.1635381. ([Frontiers][8])
 
-[1]: https://arxiv.org/abs/2403.10446?utm_source=chatgpt.com "Enhancing LLM Factual Accuracy with RAG to Counter Hallucinations: A Case Study on Domain-Specific Queries in Private Knowledge-Bases"
-[2]: https://aclanthology.org/2024.naacl-long.308/?utm_source=chatgpt.com "Retrieval Helps or Hurts? A Deeper Dive into the Efficacy of ..."
-[3]: https://aclanthology.org/2024.findings-acl.42/?utm_source=chatgpt.com "BIDER: Bridging Knowledge Inconsistency for Efficient ..."
-[4]: https://aclanthology.org/2025.coling-main.449.pdf?utm_source=chatgpt.com "Enhancing Retrieval-Augmented Generation: A Study of ..."
-[5]: https://www.jmir.org/2025/1/e66098/?utm_source=chatgpt.com "Use of Retrieval-Augmented Large Language Model for ..."
-[6]: https://www.mdpi.com/2078-2489/16/9/766?utm_source=chatgpt.com "Retrieval-Augmented Generation vs. Baseline LLMs"
-[7]: https://aclanthology.org/2025.coling-main.449/?utm_source=chatgpt.com "Enhancing Retrieval-Augmented Generation: A Study of ..."
-[8]: https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2025.1635381/full?utm_source=chatgpt.com "MEGA-RAG: a retrieval-augmented generation framework ..."
+[1]: https://arxiv.org/abs/2403.10446 "Enhancing LLM Factual Accuracy with RAG to Counter Hallucinations: A Case Study on Domain-Specific Queries in Private Knowledge-Bases"
+[2]: https://aclanthology.org/2024.naacl-long.308/ "Retrieval Helps or Hurts? A Deeper Dive into the Efficacy of ..."
+[3]: https://aclanthology.org/2024.findings-acl.42/ "BIDER: Bridging Knowledge Inconsistency for Efficient ..."
+[4]: https://aclanthology.org/2025.coling-main.449.pdf "Enhancing Retrieval-Augmented Generation: A Study of ..."
+[5]: https://www.jmir.org/2025/1/e66098/ "Use of Retrieval-Augmented Large Language Model for ..."
+[6]: https://www.mdpi.com/2078-2489/16/9/766 "Retrieval-Augmented Generation vs. Baseline LLMs"
+[7]: https://aclanthology.org/2025.coling-main.449/ "Enhancing Retrieval-Augmented Generation: A Study of ..."
+[8]: https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2025.1635381/full "MEGA-RAG: a retrieval-augmented generation framework ..."
