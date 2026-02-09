@@ -3,144 +3,466 @@
 
 @import 'jekyll-theme-cayman';
 @import 'mixins';
-@import url(https://fonts.googleapis.com/css?family=Satisfy);
-@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Satisfy&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
 
 
-.page-header {
-  color: $header-heading-color;
-  background: #FFF;
-
-  //@include gradientBackgroundAnimate();
-  h1 {
-    font-weight: 900;
-    color: transparent;
-    //background: url("http://verdewall.com/wp-content/uploads/2016/08/Galaxy-Background-4CG.jpg") repeat;
-    background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
-      //repeat;
-    //background-position: 15% 40%;
-    background-size: 100% 100%;
-    background-attachment: fixed; 
-    //@include animateBack();
-    -webkit-background-clip: text;
-    position: relative;
-    text-align: center;
-    font-family: "Satisfy", cursive;
-    font-size: 6em;
-  }
-
-  @include large {
-    padding: 0 6rem 5rem 6rem;
-    h1 {
-      margin: 6rem 0;
-    }
-  }
-
-  @include medium {
-    padding: 0 4rem 3rem 4rem;
-    h1 {
-      margin: 4rem 0;
-    }
-  }
-
-  @include small {
-    padding: 0 1rem 2rem 1rem;
-    h1 {
-      margin: 1rem 0;
-    }
-  }
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1a202c;
+  --text-muted: #718096;
+  --accent-color: #3182ce;
+  --nav-bg: rgba(255, 255, 255, 0.8);
+  --border-color: #e2e8f0;
+  --card-bg: #ffffff;
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --header-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --hero-text: #ffffff;
+  --code-bg: #f7fafc;
+  --blockquote-border: #e2e8f0;
 }
 
-// Variables to adjust to see different design 
-$buttonTextColor: #FFF; 
-$buttonWidth: 270px;
-$buttonFontSize: 20px;
-$buttonPadding: 23px;
-$buttonBorderRadius: 7px;
-
-$gradientMidPos: 43%;
-$gradientDegrees: 53deg;
-$gradientColor1: #f744c3;
-$gradientColor2: #54f264;
-$gradientColor3: #87e0fd;
-
-$animationSpeed: 0.1s;
-
-
-
-
-// Required Mixins ------------------------------------------------------------
-// Transform mixin
-@mixin transform($property){	
-	-webkit-transform: $property;
-  -moz-transform: $property;
-  transform: $property; 
+.dark {
+  --bg-color: #0f172a;
+  --text-color: #f1f5f9;
+  --text-muted: #94a3b8;
+  --accent-color: #38bdf8;
+  --nav-bg: rgba(15, 23, 42, 0.8);
+  --border-color: #1e293b;
+  --card-bg: #1e293b;
+  --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --header-gradient: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  --hero-text: #f1f5f9;
+  --code-bg: #1e293b;
+  --blockquote-border: #334155;
 }
 
-// Transition mixin
-@mixin single-transition($property:all, $speed:150ms, $ease:ease, $delay: 0s){	
-    -webkit-transition: $property $speed $ease $delay;	transition: $property $speed $ease $delay;
+// Global Reset & Base
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
-@mixin three-color-gradient($degree: 45deg,
-                            $midPos: 50%,
-                            $color1: #87e0fd,
-                            $color2: #54f264,
-                            $color3: #f9072b) {
-    background: $color1; /* Old browsers */
-    background: -moz-linear-gradient($degree, $color1 0%,$color2 $midPos, $color3 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient($degree, $color1 0%,$color2 $midPos, $color3 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient($degree, $color1 0%,$color2 $midPos, $color3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                              /* TO DO adjust
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#f9072b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+// Sticky Nav
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--nav-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-color);
+  transition: all 0.3s ease;
 }
 
-// Button Specific CSS. Items that can be adjusted are variables at the top of this file
-.button {
-  display: block; // Required
-  box-sizing: border-box; // Required
-  width: $buttonWidth; // Required, but can be adjusted
-  color: $buttonTextColor; // Required but can be adjusted
-  text-decoration: none; // Required but can be ajusted
-  font-size: $buttonFontSize; // Can be adjusted. Can be inherited. 
-  padding: $buttonPadding; // Can be adjusted.
-  border-radius: $buttonBorderRadius; // Can be adjusted.
-  text-shadow: 1px 1px #969696f2;
+.nav-container {
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-family: 'Satisfy', cursive;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-color) !important;
+  text-decoration: none !important;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-item {
   font-weight: 600;
-  z-index: 10;
+  font-size: 0.95rem;
+  color: var(--text-muted) !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease;
+  
   &:hover {
-    text-decoration: none;
+    color: var(--accent-color) !important;
   }
 }
 
+// Theme Toggle
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--border-color);
+  padding: 0.5rem;
+  cursor: pointer;
+  color: var(--text-muted);
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: var(--border-color);
+    color: var(--text-color);
+  }
+}
+
+.hidden { display: none; }
+
+// Progress Bar
+#scroll-progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  z-index: 1001;
+}
+
+#scroll-progress-bar {
+  height: 100%;
+  background: var(--accent-color);
+  width: 0%;
+  transition: width 0.1s ease;
+}
+
+// Hero Header
+.page-header-v2 {
+  padding: 10rem 1.5rem 6rem;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/images/rainbow-nebula.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  color: #ffffff;
+  margin-bottom: 0;
+  will-change: background-position;
+}
+
+.intro-section {
+  margin-bottom: 3rem;
+  .pronunciation {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+  }
+  .lead-text {
+    font-size: 1.5rem !important;
+    font-weight: 600;
+    line-height: 1.4 !important;
+    margin-bottom: 2rem !important;
+  }
+}
+
+.hero-title {
+  font-family: 'Satisfy', cursive;
+  font-size: 5.5rem;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  font-weight: 400;
+  opacity: 0.9;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Main Content Layout
+.main-content-v2 {
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+
+  // Offset for anchor links/scrollIntoView due to sticky header
+  [id] {
+    scroll-margin-top: 80px;
+  }
+}
+
+.content-wrapper {
+  background-color: var(--card-bg);
+  border-radius: 1.5rem;
+  margin-top: -3rem;
+  position: relative;
+  z-index: 10;
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--border-color);
+  
+  @include large { padding: 4rem; }
+  @include medium { padding: 3rem; }
+  @include small { padding: 2rem; margin-top: -2rem; }
+}
+
+// Typography Enhancements
+.main-content-v2 {
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color) !important;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; }
+  h3 { font-size: 1.5rem; }
+
+  p, li {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    opacity: 0.95;
+    margin-bottom: 1.5rem;
+  }
+
+  blockquote {
+    border-left: 4px solid var(--accent-color);
+    background-color: var(--code-bg);
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    border-radius: 0 0.75rem 0.75rem 0;
+    font-style: italic;
+    color: var(--text-muted);
+    
+    p { margin-bottom: 0; }
+  }
+
+  code {
+    background-color: var(--code-bg);
+    color: var(--accent-color);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.4rem;
+    font-size: 0.9em;
+  }
+
+  pre {
+    background-color: var(--code-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    overflow-x: auto;
+    
+    code {
+      background: transparent;
+      padding: 0;
+      color: var(--text-color);
+    }
+  }
+  
+  hr {
+    border: 0;
+    height: 1px;
+    background: var(--border-color);
+    margin: 3rem 0;
+  }
+
+  img {
+    border-radius: 1rem;
+    box-shadow: var(--card-shadow);
+    margin: 2rem auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+
+    &:active {
+      transform: scale(1.02);
+    }
+  }
+}
+
+// Image Zoom Overlay
+.img-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+  }
+}
+
+// Card Layouts (Will be used in articles and projects)
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.card-item {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 1.25rem;
+  padding: 2rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none !important;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  cursor: pointer;
+  
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--card-shadow);
+    border-color: var(--accent-color);
+    
+    .card-title { color: var(--accent-color); }
+    .card-arrow { transform: translateX(5px); }
+  }
+  
+  .card-title { 
+    margin: 0 0 1rem 0 !important; 
+    font-size: 1.5rem !important;
+    transition: color 0.2s ease;
+  }
+  
+  .card-description { 
+    font-size: 1rem !important; 
+    color: var(--text-muted) !important; 
+    margin-bottom: 2rem !important; 
+    flex-grow: 1; 
+  }
+  
+  .card-footer { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem; 
+    font-weight: 700; 
+    color: var(--accent-color);
+  }
+}
+
+// Footer
+.site-footer-v2 {
+  margin-top: 6rem;
+  padding: 4rem 0;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-muted);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  
+  @include small {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.footer-left p { margin: 0.25rem 0; }
+
+.footer-right {
+  display: flex;
+  gap: 2rem;
+}
+
+.social-link {
+  color: var(--text-muted) !important;
+  font-weight: 600;
+  transition: color 0.2s;
+  text-decoration: none !important;
+  
+  &:hover { color: var(--accent-color) !important; }
+}
+
+// Animation for fade-in
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+// Preserve original animated buttons but integrate
 .gradient-animated-button {
-  position: relative; // Required
-  overflow: hidden; // Required
+  border-radius: 0.75rem !important;
+  padding: 1rem 2rem !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   
   .gradient {
-    @include three-color-gradient($gradientDegrees, $gradientMidPos, $gradientColor1, $gradientColor2, $gradientColor3); // Can be adjusted. Recommended a 3 color gradient at least
-    @include single-transition(all, $animationSpeed, ease-in-out, 0s); // Animation speed can be adjusted.
-    position: absolute; // Required
-    top: 0; // Required
-    width: 100%; // Required
-    left: 0; // Required.
-    height: 800%; // Required.
-		bottom: auto; // Required.
-		margin: auto; // Required.
-		z-index: -1;  // Required.
-  }
-  
-  // Translation for animation
-  &.on-hover:hover, &.clicked, &.on-focus:focus {
-    .gradient{
-       @include transform(translateY(-85%));
-    }
+    opacity: 0.8;
   }
 }
 
-.menu-wrap {
-  .button {
-    display:inline-block;
-    margin: 10px;
+// Back to Top Button
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: var(--accent-color);
+  color: white;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
   }
+  
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  svg { width: 1.5rem; height: 1.5rem; }
 }

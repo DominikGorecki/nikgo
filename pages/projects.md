@@ -1,25 +1,40 @@
 ---
-title: My page
+title: Projects
 permalink: projects.html
+layout: default
 ---
 
 # Projects 
 
-**[VulcLab.com](https://vulclab.com)** - RAG Academic/Business (deep) Research over your documents.
+<div class="card-grid">
+  <a href="https://vulclab.com" class="card-item">
+    <h3 class="card-title">VulcLab.com</h3>
+    <p class="card-description">RAG Academic/Business (deep) Research over your documents. A research and knowledge assistant that lets you query your own library—papers, textbooks, notes, and internal docs—through a normal chat workflow.</p>
+    <div class="card-footer">Visit Site <span class="card-arrow">→</span></div>
+  </a>
 
-> *VulcanLab is a research and knowledge assistant that lets you query your own library—papers, textbooks, notes, internal docs, and curated resources—through a normal chat workflow. Instead of producing “generic chatbot” answers, VulcanLab retrieves the most relevant passages from your materials and uses them to generate structured, high-signal responses that stay anchored to what you trust.*
+  <a href="https://chromewebstore.google.com/detail/fuzzy-faves/afdjpalpgemjpaipfihjpnnonneapljc" class="card-item">
+    <h3 class="card-title">Fuzzy Faves</h3>
+    <p class="card-description">A Chrome plugin to save links and search for them quickly using fuzzy matching. Increase productivity by having a single place where you can search added links and notes.</p>
+    <div class="card-footer">Chrome Store <span class="card-arrow">→</span></div>
+  </a>
 
----
+  <a href="https://www.nuget.org/packages/AiKismet.SearchableStream" class="card-item">
+    <h3 class="card-title">Searchable Stream</h3>
+    <p class="card-description">A System.IO.Stream wrapper for .NET that adds powerful search and read abilities, useful for parsing binary files like PDFs or custom formats.</p>
+    <div class="card-footer">NuGet Package <span class="card-arrow">→</span></div>
+  </a>
 
-## Old Projects
+  <a href="https://www.nuget.org/packages/IoRecipes.SlugGenerator" class="card-item">
+    <h3 class="card-title">Slug Generator</h3>
+    <p class="card-description">A .NET library for generating unique, URL-friendly slugs from strings. Simple, fast, and customizable for various use cases.</p>
+    <div class="card-footer">NuGet Package <span class="card-arrow">→</span></div>
+  </a>
+</div>
 
-**[Fuzzy Faves - Chrome Plugin](https://chromewebstore.google.com/detail/fuzzy-faves/afdjpalpgemjpaipfihjpnnonneapljc)** - A chrome plugin to save links and search for them quickly. 
+<hr>
 
-> *Save page links, make notes, and search them. It increases your productivity by having a single place where you can search added links. For example, if you're working on a project, you can add all the links related to that project and ad a note, "MyProject." Then when you want to see all the links related to that project, you just search, "MyProject." Fuzzy Faves will search the title, url, and notes, which are all customizable in the "Manage Links" page.*
+## Project Details
 
-**[Searchable Stream Nuget Package](https://www.nuget.org/packages/AiKismet.SearchableStream)** - A System.IO.Stream wrapper that adds some useful search and read abilities.
-
-> *Default encoding for SearchableStringStream is ASCII. You can set a different encoding type in the constructor ``new SearchableStringStream(Stream stream, Encoding encoding)```. As an example, if you have a pdf (strings are usually ASCII encoded) you might want to first find the "trailer" of the file that's indicated by that as a string in the Byte data. The code below finds the last position of "trailer" and then renders three lines of that trailer.*
-
-**[Slug Generator Nuget Package](https://www.nuget.org/packages/IoRecipes.SlugGenerator)** - Useful for generating unique slugs to use in a URL.
-
+### VulcLab.com
+> VulcanLab is a research and knowledge assistant that lets you query your own library—papers, textbooks, notes, internal docs, and curated resources—through a normal chat workflow. Instead of producing “generic chatbot” answers, VulcanLab retrieves the most relevant passages from your materials and uses them to generate structured, high-signal responses that stay anchored to what you trust.
