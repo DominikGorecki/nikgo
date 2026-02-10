@@ -138,13 +138,29 @@ body {
 .page-header-v2 {
   padding: 10rem 1.5rem 6rem;
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/images/rainbow-nebula.jpg") no-repeat center center;
-  background-size: cover;
   position: relative;
   overflow: hidden;
   color: #ffffff;
   margin-bottom: 0;
-  will-change: background-position;
+  background-color: #000; // Fallback deep color
+}
+
+.animated-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/images/rainbow-nebula.jpg") no-repeat center center;
+  background-size: cover;
+  z-index: 1;
+  opacity: 1;
+  will-change: transform, opacity;
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
 }
 
 .intro-section {

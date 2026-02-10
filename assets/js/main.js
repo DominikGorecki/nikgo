@@ -34,12 +34,19 @@ document.addEventListener('DOMContentLoaded', () => {
       progressBar.style.width = scrolled + "%";
     }
 
-    // --- Header Parallax ---
+    // --- Header Parallax & Fade ---
     const header = document.querySelector('.page-header-v2');
-    if (header) {
-      // Adjust the background position based on scroll
-      // 0.4 is the speed factor - higher is faster/more movement
-      header.style.backgroundPositionY = (winScroll * 0.4) + 'px';
+    const animatedBg = document.querySelector('.animated-bg');
+    if (header && animatedBg) {
+      const headerHeight = header.offsetHeight;
+      const scrollFraction = Math.min(winScroll / headerHeight, 1);
+      
+      // Subtly move the background down as we scroll
+      animatedBg.style.transform = `translateY(${winScroll * 0.4}px)`;
+      
+      // Decrease opacity from 0.8 down to 0.1 as we scroll
+      const opacity = 0.8 - (scrollFraction * 0.7);
+      animatedBg.style.opacity = opacity;
     }
 
     // Back to top visibility
