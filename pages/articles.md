@@ -6,6 +6,16 @@ layout: default
 
 # Articles 
 
+## General
+
+<div class="card-grid">
+  <a href="pages/articles/2028_intelligence_explosion.html" class="card-item">
+    <h3 class="card-title">The 2028 Intelligence Explosion</h3>
+    <p class="card-description">BYOAI, the end of the “central brain” company, and the return of the human production unit. This memo explores how individual ownership of intelligence saved the economy from a demand spiral.</p>
+    <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
+  </a>
+</div>
+
 ## White Papers
 
 <div class="card-grid">
@@ -31,6 +41,11 @@ layout: default
 <hr>
 
 ## All Articles
+
+### [The 2028 Intelligence Explosion: BYOAI and the Return of the Human Production Unit](articles/2028_intelligence_explosion.md) (2028)
+*By Dominik Gorecki*
+
+A macro memo on the resolution of the Global Intelligence Crisis through the shift to "Bring Your Own AI"—where individuals own their compounding cognitive assets rather than firms centralizing cognition.
 
 ### [Domain-Specific RAG with Gemini 3 Flash Beats PRO with Web Search Grounding](articles/small_RAG_beats_large_large_search.md)
 *By Dominik Gorecki*
