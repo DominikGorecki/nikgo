@@ -3,9 +3,11 @@ layout: default
 ---
 
 <div class="intro-section">
-  <p class="pronunciation"><strong>nikGo</strong> <em>/nēkō/</em> — derived from Domi<strong>nik Go</strong>recki</p>
+  <img src="{{ '/assets/images/profile_pic.png' | relative_url }}" class="profile-avatar" alt="Dominik Gorecki">
   
   <h1>Dominik Gorecki</h1>
+  
+  <p class="pronunciation"><strong>nikGo</strong> <em>/nēkō/</em> — derived from Domi<strong>nik Go</strong>recki</p>
   
   <p class="lead-text">
     I’m a Director of Engineering focused on building reliable systems, strong teams, and products that ship. 
