@@ -6,6 +6,8 @@ layout: default
 
 # Articles 
 
+[Jump to All Articles](#all-articles)
+
 ## General
 
 <div class="card-grid">
@@ -14,7 +16,14 @@ layout: default
     <p class="card-description">BYOAI, the end of the “central brain” company, and the return of the human production unit. This memo explores how individual ownership of intelligence saved the economy from a demand spiral.</p>
     <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
   </a>
+
+  <a href="pages/articles/great-ai-pink-slip-panic.html" class="card-item">
+    <h3 class="card-title">The Great AI Pink-Slip Panic</h3>
+    <p class="card-description">Why the "Jobpocalypse" narrative misses the economy's most basic trick. An exploration of labor data and historical patterns explaining why AI-driven disruption is more about reallocation than total deletion.</p>
+    <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
+  </a>
 </div>
+
 
 ## White Papers
 
@@ -41,6 +50,11 @@ layout: default
 <hr>
 
 ## All Articles
+
+### [The Great AI Pink-Slip Panic (and Why the Commute Still Wins)](articles/great-ai-pink-slip-panic.md) (2026)
+*By Dominik Gorecki*
+
+A look at the AI "Jobpocalypse" narrative, arguing that while AI will disrupt specific roles, the broader economy's ability to reallocate labor and spending will likely prevent an overall economic collapse.
 
 ### [The 2028 Intelligence Explosion: BYOAI and the Return of the Human Production Unit](articles/2028_intelligence_explosion.md) (2028)
 *By Dominik Gorecki*
