@@ -12,8 +12,16 @@ layout: default
 
 <div class="card-grid">
   <a href="pages/articles/2028_intelligence_explosion.html" class="card-item">
+    <img src="pages/articles/images/2028_intelligence_explosion__current.png" class="card-image" alt="Intelligence Explosion Banner" />
     <h3 class="card-title">The 2028 Intelligence Explosion</h3>
     <p class="card-description">BYOAI, the end of the “central brain” company, and the return of the human production unit. This memo explores how individual ownership of intelligence saved the economy from a demand spiral.</p>
+    <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
+  </a>
+
+  <a href="pages/articles/vibe-v-agentic-swe.html" class="card-item">
+    <img src="pages/articles/images/vibe_v_agentic-swe_01.png" class="card-image" alt="The Vibe Trap Banner" />
+    <h3 class="card-title">The Vibe Trap</h3>
+    <p class="card-description">How "vibe coding" became the ultimate scaling trap and why "agentic engineering" is replacing it. An exploration of the shift from casual prompting to disciplined AI orchestration.</p>
     <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
   </a>
 
@@ -29,6 +37,7 @@ layout: default
 
 <div class="card-grid">
   <a href="pages/articles/small_RAG_beats_large_large_search.html" class="card-item">
+    <img src="pages/articles/figures/rag_v_proSearch__overall.png" class="card-image" alt="Small RAG Beats Large Search Results" />
     <h3 class="card-title">Small RAG Beats Large Search</h3>
     <p class="card-description">Domain-specific RAG with Gemini 3 Flash beats Pro with web search grounding. This paper demonstrates how specialized corpus quality outperforms generic search grounding.</p>
     <div class="card-footer">Read Paper <span class="card-arrow">→</span></div>
@@ -50,6 +59,11 @@ layout: default
 <hr>
 
 ## All Articles
+
+### [The Vibe Trap: From Vibe Coding to Agentic Engineering](articles/vibe-v-agentic-swe.md) (2026)
+*By Dominik Gorecki*
+
+An analysis of the transition from "vibe coding"—casual, outcome-oriented AI prompting—to "agentic engineering"—a disciplined, process-oriented approach to software development using AI agents.
 
 ### [The Great AI Pink-Slip Panic (and Why the Commute Still Wins)](articles/great-ai-pink-slip-panic.md) (2026)
 *By Dominik Gorecki*

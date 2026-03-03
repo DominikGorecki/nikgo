@@ -15,6 +15,7 @@
   --border-color: #e2e8f0;
   --card-bg: #ffffff;
   --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --card-shadow-subtle: 0 2px 4px rgba(0, 0, 0, 0.05);
   --header-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   --hero-text: #ffffff;
   --code-bg: #f7fafc;
@@ -30,6 +31,7 @@
   --border-color: #1e293b;
   --card-bg: #1e293b;
   --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --card-shadow-subtle: 0 4px 6px rgba(0, 0, 0, 0.2);
   --header-gradient: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
   --hero-text: #f1f5f9;
   --code-bg: #1e293b;
@@ -384,12 +386,15 @@ body {
   border: 1px solid var(--border-color);
   border-radius: 1.25rem;
   padding: 2rem;
+  box-shadow: var(--card-shadow-subtle);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none !important;
   display: flex;
   flex-direction: column;
   height: 100%;
   cursor: pointer;
+  box-sizing: border-box;
+  overflow: hidden;
   
   &:hover {
     transform: translateY(-8px);
@@ -398,6 +403,18 @@ body {
     
     .card-title { color: var(--accent-color); }
     .card-arrow { transform: translateX(5px); }
+  }
+
+  .card-image {
+    width: calc(100% + 4rem) !important;
+    max-width: none !important;
+    height: 180px;
+    margin: -2rem -2rem 1.5rem -2rem !important;
+    object-fit: cover;
+    border-radius: 1.25rem 1.25rem 0 0;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: none !important;
+    cursor: inherit !important;
   }
   
   .card-title { 
