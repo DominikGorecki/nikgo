@@ -11,17 +11,17 @@ layout: default
 ## General
 
 <div class="card-grid">
-  <a href="pages/articles/2028_intelligence_explosion.html" class="card-item">
-    <img src="pages/articles/images/2028_intelligence_explosion__current.png" class="card-image" alt="Intelligence Explosion Banner" />
-    <h3 class="card-title">The 2028 Intelligence Explosion</h3>
-    <p class="card-description">BYOAI, the end of the “central brain” company, and the return of the human production unit. This memo explores how individual ownership of intelligence saved the economy from a demand spiral.</p>
-    <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
-  </a>
-
   <a href="pages/articles/vibe-v-agentic-swe.html" class="card-item">
     <img src="pages/articles/images/vibe_v_agentic-swe_01.png" class="card-image" alt="The Vibe Trap Banner" />
     <h3 class="card-title">The Vibe Trap</h3>
     <p class="card-description">How "vibe coding" became the ultimate scaling trap and why "agentic engineering" is replacing it. An exploration of the shift from casual prompting to disciplined AI orchestration.</p>
+    <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
+  </a>
+
+  <a href="pages/articles/2028_intelligence_explosion.html" class="card-item">
+    <img src="pages/articles/images/2028_intelligence_explosion__current.png" class="card-image" alt="Intelligence Explosion Banner" />
+    <h3 class="card-title">The 2028 Intelligence Explosion</h3>
+    <p class="card-description">BYOAI, the end of the “central brain” company, and the return of the human production unit. This memo explores how individual ownership of intelligence saved the economy from a demand spiral.</p>
     <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
   </a>
 
@@ -70,7 +70,7 @@ An analysis of the transition from "vibe coding"—casual, outcome-oriented AI p
 
 A look at the AI "Jobpocalypse" narrative, arguing that while AI will disrupt specific roles, the broader economy's ability to reallocate labor and spending will likely prevent an overall economic collapse.
 
-### [The 2028 Intelligence Explosion: BYOAI and the Return of the Human Production Unit](articles/2028_intelligence_explosion.md) (2028)
+### [The 2028 Intelligence Explosion: BYOAI and the Return of the Human Production Unit](articles/2028_intelligence_explosion.md) (2026)
 *By Dominik Gorecki*
 
 A macro memo on the resolution of the Global Intelligence Crisis through the shift to "Bring Your Own AI"—where individuals own their compounding cognitive assets rather than firms centralizing cognition.
