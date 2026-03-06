@@ -1,212 +1,162 @@
-# Own Your AI, Own Your Leverage
+![Bring Your Own AI, Bring Your Own Leverage](./images/SWE-own-your-own-ai_01.png)
 
-The new office divide is not between people who “use AI” and people who don’t. That split evaporated the moment autocomplete stopped feeling like magic and started feeling like plumbing. The real divide is between engineers who treat AI like a gadget and engineers who treat it like a *system*, one that can compound, drift, leak, and occasionally betray you.
+# Bring Your Own AI, Bring Your Own Leverage
 
-You can see the shape of the shift in the way companies talk. “We need to standardize.” “We need a single tool.” “We need governance.” They want a centralized corporate brain, something legible enough to audit and scalable enough to distribute. It makes sense. A company is, among other things, a machine for turning chaos into repeatable output.
+The next divide in software is not between engineers who use AI and engineers who do not. That distinction is already dying. AI is becoming part of the plumbing. The real divide is between engineers who use it as a convenience and engineers who are quietly building a system around their own judgment.
 
-But there’s another machine forming inside the machine.
+Call that system BYOAI if you like. The name matters less than the reality. A certain kind of engineer is starting to assemble a portable augmentation layer that can survive tool churn, team changes, and even job changes. Not a private archive of company assets. Not a rogue bundle of internal docs and prompts. Something narrower and more durable: a way of turning messy intent into reliable work.
 
-A certain kind of engineer is quietly assembling a private augmentation layer they can carry across teams and across jobs. Not proprietary company files, not internal diagrams, not the secret sauce. Something else. A portable interface to judgment. A small library of reusable commands, skills, patterns, and review gates that turns messy intent into shippable work, reliably, without turning every sprint into a security incident.
+Companies can feel part of this shift already. You hear it in the new liturgy of governance. We need one approved tool. We need standardization. We need visibility. We need controls. That instinct is not irrational. A company wants an AI layer it can audit, constrain, and distribute without inviting chaos.
 
-In a hypothetical scenario about an “intelligence explosion,” the stakes are described in economic terms. The unit of production becomes **human plus AI**, and the people who thrive are the ones who can bring their own compounding cognitive machinery to whatever institution hires them ([Nik G.][16]). Whether or not you buy the timeline, the direction is already visible in the day-to-day reality of software work. Tool churn is constant; context is the scarce asset. The question is who owns the context.
+But the engineer has a different problem. Companies buy tools. Engineers are judged on output. The question for the individual is not just which tool the company picked. It is whether they are building a way of working that compounds over time.
 
-And an even sharper question follows. If you can own an augmentation layer, can you own it without becoming reckless, unethical, or simply delusional about what belongs to you?
+That is the real promise of BYOAI. Not private magic. Not prompt hoarding. A portable system for thinking, specifying, reviewing, and shipping that gets better as you do.
 
-## The abstraction ladder moved again, and the bottleneck moved with it
+In a hypothetical account of an “intelligence explosion,” the economic unit becomes **human plus AI** ([Nik G.][16]). You do not have to buy the timeline to see the direction. The engineer who can bring a disciplined augmentation layer into an institution will have leverage. The hard part is doing that without crossing the line between personal capability and company property.
 
-Software engineering has always been a game of moving the bottleneck up the stack.
+## BYOAI is not a separate universe
 
-First the bottleneck was the machine. Then it was the language. Then it was the architecture, the APIs, the deployment pipeline, the whole sprawling apparatus that turned code into a living system. Each era created new specialists, then new integrators, then a new mythology about what “a good engineer” is supposed to be.
+The easiest mistake is to imagine personal AI and company AI as two sealed worlds.
 
-AI shifts the bottleneck again, and in a way that is easy to misunderstand.
+That is not how work actually happens now, and it is probably not how it will happen later.
 
-Code is getting cheaper. Not “free,” not “perfect,” but cheap enough that for many tasks, the marginal cost of producing another plausible implementation is collapsing. That does not mean engineering becomes trivial. It means the scarce part migrates.
+Right now, every new hire already arrives with a private operating history. They bring instincts, habits, patterns, review standards, decomposition tricks, scar tissue, and hard-won judgment from other companies and personal projects. They do not leave all of that at the door. They bring it in through the brain. The company’s engineering loop then changes a little in response. The hire adapts to the company, and the company adapts, at least a little, to the hire.
 
-The scarce part becomes *intent*, *constraints*, *specification*, and *verification*. The work of saying what the system should do, under what rules, with what safety rails, and how you will prove it is correct. The parts of engineering that used to be handled informally, half in ticket text and half in someone’s head, become the core.
+BYOAI should be understood in that same light.
 
-This is why the old “full-stack” identity is about to be renamed without anyone holding a ceremony. The new high-leverage engineer is the person who can run the **idea-to-shipping loop** end to end. Not by doing every role perfectly, not by pretending product, design, QA, and ops cease to exist, but by being able to shape intent into an executable plan, drive implementation with discipline, and close the loop with real verification. That is the new kind of integration skill.
+A company has its own loop: its standards, specs, review process, architecture rules, security boundaries, and shipping culture. An engineer can have a personal loop too: reusable ways of turning requests into structure, structure into action, action into review. The future is not that one replaces the other. The future is that the relationship becomes more explicit.
 
-If that is true, then the obvious next question is not philosophical. It is practical.
+At first, that interaction remains indirect. Your personal AI helps you think better, structure better, review better, and learn faster. Then you bring those improvements into the company the old-fashioned way, through your judgment, your decisions, your design comments, your code reviews, your specs. In time, with permission and with guardrails, some of that interaction may become more direct: personal AI systems and company AI systems informing each other across a controlled boundary.
 
-What is the engineer’s durable asset in a world where tools keep changing?
+That is the real thesis. BYOAI is valuable not because it lets you escape the company’s ecosystem, but because it helps you contribute more to it.
 
-## BYOAI is not a brand, it is a portable interface to judgment
+## The company loop and the personal loop should enhance each other
 
-The most common mistake right now is treating AI as a tool choice, like choosing a linter or a cloud provider. Pick a vendor, standardize, teach the team the shortcuts, and you’re done.
+![two loops](./images/SWE-own-your-own-ai_02.png)
 
-Companies want that. A centralized approach makes governance easier, makes compliance easier, makes managers feel like they can answer the question “what are we doing here?”
+That is why it is too simple to say there is a personal core over here and a company overlay over there, with a hard wall and no contact except obedience. The better analogy is apprenticeship, but formalized.
 
-But engineers live inside a different physics. Engineers are judged, often brutally, on what they can ship and how reliably they can do it. Tools change. Teams change. The constraints of the codebase change. The person who depends on one sanctioned interface is fragile. The person who brings a portable interface to their own best practices is resilient.
+A company’s AI layer will encode institutional memory: how specs are written, what standards matter, what review gates must hold, what risks are unacceptable, what “done” means in that environment. A personal AI layer can encode the engineer’s own best patterns: how they clarify vague requests, how they decompose ambiguity, how they test assumptions, how they pressure their own work before someone else has to.
 
-That is the simplest definition of BYOAI for a software engineer: **a portable augmentation layer you can plug into any environment without becoming dependent on a single tool**.
+Those two loops should meet.
 
-One reason this is plausible is that the ecosystem is quietly converging on the same underlying pattern. Many “coding agent” tools now support file-backed customization, where behavior, rules, and reusable routines live in version control as plain text. Claude Code’s “skills” are explicitly folder-based and invoked like commands ([Claude Code Docs][3]). Cursor documents its own skills layer and explicitly supports loading compatibility from tool-specific locations such as `.claude/skills` ([Cursor Docs][1]). Cursor also documents support for Claude Code-style hook scripts, which is another way of saying these tools are learning to interoperate at the file level, not just at the UI level ([Cursor Third-Party Hooks][2]). This matters because it suggests the enduring artifact is not the button you click. It is the context you can carry.
+Sometimes the company loop should dominate because the environment is highly regulated, highly sensitive, or simply has very good local practices. Sometimes the new hire’s personal loop should improve the company’s way of working because it carries a sharper spec habit, a better review discipline, a cleaner decomposition method, or a more robust way of checking outputs. That already happens informally through people. The point is that it may gradually happen more explicitly through AI systems too.
 
-So the goal is not “become the world’s best user of Tool X.” The goal is to make your work portable across Tool X, Tool Y, and whatever your next employer mandates, because the value is in the system you’ve built around how you think and how you verify.
+But that only works if the boundary is clear. Experience may cross. Protected artifacts may not.
 
-That, in turn, forces a discipline that is easy to skip when the tools are shiny.
+That distinction matters because it keeps BYOAI from collapsing into either fantasy or theft. Fantasy says your personal AI can replace the company’s institutional layer. Theft says the company layer can be quietly copied into your private stack. Both are dead ends.
 
-You need architecture.
+The real opportunity is narrower and more interesting. Build a personal loop that makes you better inside any company loop, then let the two improve each other within a controlled boundary.
 
-## The only portable stack worth having comes in two layers
+## What you should actually build for yourself
 
-A portable augmentation layer has a moral hazard baked into it. If you build a powerful personal system while employed, it becomes easy to blur the line between “experience you can carry” and “assets that do not belong to you.” It also becomes easy to blur the line between “useful automation” and “security incident waiting to happen.”
+![Build for yourself](./images/SWE-own-your-own-ai_03.png)
 
-So the portable BYOAI stack that survives adulthood has a simple structural rule.
+If BYOAI is going to matter, it has to be more than a folder full of prompts.
 
-It is two layers.
+The useful thing to build is a private, evolving loop for how you work. A system that helps you take fuzzy requests and push them toward something structured, testable, and shippable. Not because your personal loop is “the right one,” but because engineers who formalize their judgment get compounding returns.
 
-**A personal core**, which is yours and designed to travel. This is where you keep generalized practices, reusable routines, and the scaffolding that turns fuzzy intent into repeatable work.
+One good example is spec-driven development. GitHub’s Spec Kit frames it as a way to make outcomes more predictable and avoid regenerating everything from scratch ([GitHub Spec Kit][6]). Thoughtworks treats spec-driven development as one of the engineering practices emerging with AI because specs are increasingly the natural interface between humans and models ([Thoughtworks][7]). Martin Fowler makes the same broader point in a looser way: the spec is becoming shared working material for both people and machines ([Martin Fowler][8]).
 
-**A company overlay**, which is job-specific and assumed non-portable. This is where you encode how that particular codebase does things, what standards are enforced, what constraints exist, and what is simply true because of local decisions.
+That matters here for a simple reason. A spec is one of the cleanest places for the personal loop and the company loop to meet.
 
-The point of describing it this way is not to prescribe a folder structure or tell anyone how to name things. Nobody knows what the canonical layout will be in two years. The point is conceptual. Your portable layer must be separated from the layer that is infused with proprietary context.
+The company may already have standards for what a good spec looks like. A strong engineer may arrive with their own disciplined way of turning a vague request into a tighter brief, then pressure-testing that brief before implementation begins. That does not undermine the company loop. It can strengthen it.
 
-This makes BYOAI credible because it answers the two objections that otherwise kill it.
+The same is true of decomposition, self-review, and verification. You do not need a giant personal framework. You need a few repeatable moves that actually help:
 
-First, it answers the ethical objection. It is possible to compound your own practices without exporting someone else’s property.
+* turn a vague request into a clearer spec or plan
+* break that work into tractable units
+* review the output against explicit expectations
+* pressure-test the result before it becomes someone else’s problem
+* capture lessons that are general enough to reuse later
 
-Second, it answers the practical objection. You can adapt to any company’s tooling and standards because your portable layer is built to map onto local conventions rather than overwrite them.
+That is a personal loop. It is worth building because it makes you more useful now, and because it prepares you for a future in which personal AI and company AI may have a more direct handshake.
 
-Now the question becomes what you put into that portable layer without turning it into a cult of process.
+The engineer who waits for the company to build all of this for them is waiting too long.
 
-A useful answer is to build the portable layer around the idea-to-shipping loop itself.
+## The firewall is what makes BYOAI legitimate
 
-## The loop that matters is idea-to-shipping, not prompt-to-code
+This is the part people will be tempted to wave away with vibes.
 
-There’s a reason “vibe coding” feels exhilarating and also feels like gambling. It collapses the loop down to “describe thing, generate code, hope it works.” It is fast in the way a sprint downhill is fast.
+Do not.
 
-Spec-driven development emerged as a reaction to this, and it is worth paying attention to because it signals where serious engineering culture is trying to land. GitHub’s Spec Kit frames spec-driven development as a way to make outcomes more predictable and to avoid regenerating everything from scratch ([GitHub Spec Kit][6]). Thoughtworks treats it as one of the new engineering practices rising with AI adoption, precisely because specs are the natural input medium for LLMs ([Thoughtworks][7]). Martin Fowler notes the term is evolving but the core idea holds. The spec becomes a shared source of truth for both human and machine, and tools increasingly revolve around it ([Martin Fowler][8]). None of these sources claim SDD is the final form. They are pointing at a center of gravity.
+BYOAI only works if there is a real firewall between transferable experience and non-transferable artifacts. That is what keeps the system ethical, defensible, and professionally credible.
 
-The best portable stack does not worship a particular workflow. It does something more grounded. It captures the repeated motions that turn “we should build this” into “it shipped and it didn’t break everything,” and it makes those motions reusable.
+Copyright law draws part of that line. It protects specific expression, not ideas or systems in the abstract ([Cornell LII][11]). Trade secret law draws another part. Information can be protected precisely because it is not generally known and because the company takes steps to keep it that way ([Cornell Wex][12]). Privacy law adds another warning. Sensitive or identifying information can remain risky even when obvious labels are stripped away ([OPC Canada][13]).
 
-One approach, as a concrete example, is to build a small set of repeatable commands that mirror the loop:
+Then there is the employment reality. In the United States, software created within the scope of employment generally belongs to the employer ([ACC][17]). In Canada, ownership and control often turn on the employment relationship and the governing agreements ([Trade Commissioner Canada][14]; [Smart & Biggar][15]). In the EU, the practical default for employees is similarly employer-friendly, while contractors often require explicit assignment language ([Aptus Legal][18]).
 
-* turn a request into a structured spec
-* decompose the spec into executable tickets
-* implement tickets with quality expectations baked in
-* actively attack your own changes to discover gaps
-* review a branch against standards and invariants before shipping
+That is the legal frame. The practical frame is even simpler.
 
-This kind of command surface can be extremely small. The magic is not in the names. The magic is in what the commands load. They load generalized patterns you’ve refined over time, and they load local constraints from the overlay. The same loop behaves differently in different codebases, but the *shape* of the loop stays stable.
+Do not move internal code, internal prompts, internal specs, internal command files, internal system maps, internal heuristics, customer data, private schemas, or company-specific architecture knowledge into your personal stack. Do not rationalize this as “my workflow.” It is not your workflow if it is made of their assets.
 
-The cultural point is bigger than the mechanics. The portable engineer isn’t trying to outsource thinking. They’re trying to *formalize thinking*, then use automation to execute it consistently.
+What you can carry is the general lesson. The pattern. The clean-room version. The habit you can rebuild from first principles outside the company context.
 
-That is where BYOAI stops being a productivity toy and becomes a personal operating system.
+That is how engineers have always developed. The difference is that AI makes the loop more explicit and therefore easier to misuse. Which means the responsibility becomes more explicit too.
 
-It is also where the story turns dangerous, because automation at this level interacts with real systems, real secrets, and real consequences.
+## If you bring AI skills into the company, you own the risk too
 
-## The trust boundary is not optional, it is the whole point
+This is where the security conversation comes back to the main thesis.
 
-Every generation of tooling produces a new kind of recklessness, usually disguised as progress. In the AI era, the reckless move is connecting agents to repos, shells, networks, and credentials without building a trust boundary.
+A future shaped by BYOAI will not only involve people bringing judgment into companies. It will also involve people bringing reusable skills, commands, hooks, and agent behaviors into company environments. That can be enormously valuable. It can also be reckless.
 
-Prompt injection research makes the underlying problem plain. When you build systems that follow instructions embedded in content, you create an attack surface. Anthropic’s own work treats prompt injection defenses as a serious ongoing research and engineering problem, especially in environments like web browsing where adversarial content is expected ([Anthropic][4]). This is not a niche concern for paranoid people. It is the predictable result of mixing instruction-following systems with untrusted inputs.
+Claude Code’s skills system makes reusable routines a first-class concept ([Claude Code Docs][3]). Cursor documents both its own skills layer and compatibility with adjacent ecosystems ([Cursor Docs][1]; [Cursor Third-Party Hooks][2]). That is exactly why the security question matters. The more these systems become portable, the more human responsibility matters at the point where they touch the company’s environment.
 
-Then add the emerging supply chain problem. Skills and plugins and reusable “agent capabilities” are already being packaged and shared. That sounds like an ecosystem. It also sounds like a malware distribution channel. Snyk’s ToxicSkills research reports serious issues in agent skills ecosystems, including risks that stem from skills inheriting the agent’s permissions and touching local resources ([Snyk][9]). In follow-up work, Snyk documented a malicious “Google” skill scenario tied to OpenClaw that relied on social engineering and malware delivery tactics ([Snyk Follow-up][10]). Even if you never install a third-party skill, the existence of this attack surface should change how you think.
+Anthropic’s research on prompt injection makes the general risk clear: instruction-following systems can be manipulated through content, which turns context itself into an attack surface ([Anthropic][4]). Snyk’s ToxicSkills research and follow-up work on malicious skill distribution make the ecosystem risk even more concrete. A reusable skill can become a supply-chain problem the moment it inherits permissions and touches local resources ([Snyk][9]; [Snyk Follow-up][10]).
 
-BYOAI, if it means anything beyond “I have prompts,” must include a trust boundary. Not an aspirational “be careful,” but a real set of rules.
+So BYOAI is not just “bring your own leverage.” It is also “bring your own responsibility.”
 
-Treat your agent routines like dependencies. Review them. Version them. Track changes.
+If you want your personal loop to interact with a company loop, you are responsible for how that interaction happens. You are responsible for permissions. You are responsible for what data enters the system. You are responsible for what code or behaviors you introduce. You are responsible for whether a useful skill is actually safe to bring into that environment.
 
-Default to least privilege. If the agent doesn’t need shell access, it doesn’t get it. If it doesn’t need network access, it doesn’t get it. If it doesn’t need production credentials, it never sees them.
+That is not a side issue. It is part of the definition.
 
-Separate modes of operation. A read-only review mode is fundamentally different from a write mode. Don’t blend them casually.
+A mature BYOAI practice does not sneak capabilities into the company under cover of productivity. It treats portability as something that must be earned through transparency, review, permission, and restraint.
 
-Define data handling rules. Decide what is allowed to be included as context and what is forbidden, then enforce it.
+## Start building the loop now
 
-And define failure modes. What do you do when the agent is wrong, which it will be, confidently, at inconvenient moments.
+The best advice is almost boring.
 
-This is where BYOAI starts to look like professional engineering rather than hobbyism. It is also where the second boundary becomes unavoidable.
+Start building your private loop now, on things you actually own.
 
-If you can own a portable augmentation layer, what exactly are you allowed to carry?
+Use personal projects, sandbox repos, or clean-room work to figure out how you like to specify, decompose, review, and verify. Build small reusable routines. See what survives contact with reality. Keep only the parts that generalize. Throw away the rest.
 
-## Transfer experience, not artifacts
+Then bring the value into work in whatever way is appropriate.
 
-The easiest way to make BYOAI sound like a scam is to imply that engineers should “take their company’s AI” with them. That is a euphemism for theft, and it will poison the whole argument.
+Sometimes that will be direct, with permission. You may be able to contribute reusable patterns, propose better spec practices, introduce safer review gates, or help shape the company’s own AI layer.
 
-The clean version is more mature and more powerful.
+Sometimes it will still happen the old way, smuggled in through your brain. You will simply become the person who writes clearer specs, decomposes better, catches more edge cases, and improves the local loop by example.
 
-Your brain is the generalization layer. You transfer experience, not proprietary artifacts.
+Both paths matter. Both are valuable. Both prepare you for the more direct future.
 
-There is a legal concept worth stating plainly because it anchors the intuition. Copyright law does not protect ideas, procedures, or systems as such, but it does protect the specific expression of those things ([Cornell LII][11]). That means you can learn a pattern, then re-express it. It does not mean you can copy internal docs, prompts, code, or diagrams, even if you authored them.
+Because that future is not hard to imagine now. Personal AI on one side. Company AI on the other. A controlled handshake between them. A negotiation between personal judgment and institutional memory. Not a merger. Not a free-for-all. A governed exchange.
 
-Then there is confidentiality and trade secret. A trade secret is, broadly, information that derives value from not being generally known and is subject to reasonable efforts to keep it secret ([Cornell Wex][12]). Internal workflows, decision rules, proprietary heuristics, and architecture details can fall into that category depending on the facts.
+The engineers who start building their side of that relationship now will be in a stronger position when the connection gets tighter.
 
-Then there is privacy. Personal information includes information about an identifiable individual, and identifiability can arise from combinations of details, not only explicit identifiers ([OPC Canada][13]). In other words, “I removed the names” does not necessarily make it safe.
+That is why BYOAI matters.
 
-Then there are employment agreements and policy realities. Ownership of IP can be shaped by contracts and context, not just by personal belief. In the US, code written within the scope of employment is automatically the employer’s under the “work made for hire” doctrine, and even independent contractor arrangements require explicit written assignment to transfer rights cleanly ([ACC][17]). In the EU, Directive 2009/24/EC establishes a similar default: software created by employees in the course of their employment belongs to the employer, while contractors remain the copyright owners absent a written assignment — notably, the US “work for hire” framing carries no legal weight in EU jurisdictions ([Aptus Legal][18]). For Canadian employers, the same underlying tension applies — “who owns what” is not always intuitive and often turns on agreements and circumstances ([Smart & Biggar][15]). Across all three regimes, agreements establish rights and obligations that matter later, and personal belief about ownership is not a substitute for a written record ([Trade Commissioner Canada][14]).
-
-So BYOAI needs a bright line, and it should be stated without cute ambiguity.
-
-Do not transfer:
-
-* copyrighted expression like internal code, docs, specs, prompts, command files, diagrams
-* PII or customer data
-* internal APIs, schemas, endpoints, or internal tool behavior
-* company-specific domain decision rules and proprietary heuristics
-* architecture, threat models, and system maps tied to a specific org
-
-What you *can* transfer is the generalized understanding you built while doing the work, expressed in a clean-room way.
-
-A simple operational rule captures it. If you want to “graduate” a lesson into your portable stack, rebuild it outside the company context. Rewrite from first principles. Reproduce the idea on a personal sandbox project. Strip identifying details. If you cannot explain it without referencing internal constraints, it belongs in the overlay, not in your portable core.
-
-This is not just legal hygiene. It is also the discipline that makes your portable stack genuinely portable. It forces you to focus on the reusable truths rather than the local trivia.
-
-So what does a sane person do next, without turning their life into a systems project?
-
-## Start broad, keep it living, and let compounding do the work
-
-The fastest way to build a portable AI layer is to use it on something you actually own.
-
-Not a work project. Not a fork of an internal tool. Something in a domain you find interesting where the only stakeholder is you and the codebase is clean from the start.
-
-The reason is not just legal hygiene, though it helps. The reason is focus. When you strip out the domain specifics of your employer — the internal APIs, the organizational conventions, the business rules that belong to someone else — what remains is the part that is actually portable. The spec structure. The decomposition habits. The review gates. The way you think before you type. That is what you are trying to formalize, and a personal project gives you an uncontaminated surface to do it.
-
-Pick something small enough to ship end to end. Build it with your AI layer in the loop the whole way, from intent to running code. The goal is not a product. The goal is to run the full idea-to-shipping loop in an environment you control, so you can see where the friction lives, what repeats, and what you would want to routinize the next time.
-
-If it gets far enough to publish, publish it. Not because distribution is the point, but because shipping in public sharpens the discipline. It forces you to write specs that hold, to set review gates that actually catch things, to close the loop instead of leaving it open.
-
-Do not try to replicate the patterns of your employer. That is the wrong abstraction. Instead, use your experience as signal. You have seen what kinds of specs fail. You have seen what kinds of reviews catch real bugs. You have seen what decomposition looks like when it works and when it collapses. Build against that knowledge, not against any specific company’s implementation of it.
-
-What you carry forward is not the project. It is the patterns that survived it — the spec template that didn’t fall apart, the decomposition approach that held at scale, the review gate that caught the kind of regression you have seen before. Those are yours. They were built without touching what belongs to someone else, which means you can take them anywhere.
-
-That changes how you show up at work.
-
-## Bring BYOAI to work as outcomes, not as a secret weapon
-
-The fastest way to get your BYOAI stack banned is to treat it like contraband.
-
-Companies are not irrational for wanting governance. They are responding to real risks, including security, privacy, and IP exposure. A mature BYOAI approach aligns with those concerns rather than sneering at them.
-
-Use AI workflows transparently and within policy. Keep company-specific overlays inside company systems. When you use a portable process, present it as outcomes. Better specs. Faster iteration. Fewer regressions. Clearer reviews. A more reliable idea-to-shipping loop.
-
-And don’t try to import a company’s assets into your private core. Instead, adapt. Build an overlay that reflects local conventions. Let your portable routines produce outputs that match the company’s standards. The only thing you carry forward is the generalized learning that you can ethically rebuild later.
-
-This is how you become valuable without becoming a risk.
-
-It also hints at what the market is going to reward when the novelty wears off.
-
-## When the market catches up, this becomes the baseline
-
-Right now, the market is still catching up. Titles lag. Hiring rubrics lag. Compensation models lag. People talk about AI in sweeping abstractions while quietly using it for the gritty parts of shipping software.
-
-But the direction is already visible. “Using AI” will become table stakes. It will stop differentiating in the same way that “uses an IDE” stopped differentiating. The differentiator will be the engineer who can operate a governed augmentation layer, one that reliably turns messy intent into correct, verifiable output without opening new failure modes.
-
-Tool churn will accelerate. Portability will matter more than brand allegiance.
-
-Trust failures will rise. Governance will become a status marker, like tests did, like CI did, like security reviews did.
-
-And the value of engineers will tilt toward those who can run the idea-to-shipping loop with discipline, because in a world where generation is cheap, the scarce layer is judgment applied consistently.
-
-That is the grown-up version of BYOAI. Not “I have a magic assistant.” More like “I have a portable system for turning intent into shipped work, and I know where the edges are.”
-
-If you want to start, start small. Capture one repeated motion in your own work. Make it reusable. Make it safe. Make it portable. Then let it compound.
-
-That’s what leverage looks like when it is earned.
+Not because it lets you evade the company. Because it gives you something better to bring to it.
 
 ---
 
 ## References
+
+* [Cursor — Skills Layer Documentation][1]
+* [Cursor — Third-Party Hook Scripts][2]
+* [Claude Code — Skills Documentation][3]
+* [Anthropic — Prompt Injection Defenses (Research)][4]
+* [GitHub — Spec Kit][6]
+* [Thoughtworks — Spec-Driven Development: Unpacking 2025 Engineering Practices][7]
+* [Martin Fowler — Exploring Gen AI: Spec-Driven Development Tools][8]
+* [Snyk — ToxicSkills: Malicious AI Agent Skills in the Wild][9]
+* [Snyk — ClawHub, OpenClaw, and Malicious Skill Distribution][10]
+* [Cornell LII — 17 U.S.C. § 102: Subject Matter of Copyright][11]
+* [Cornell LII — Trade Secret (Wex Legal Dictionary)][12]
+* [Office of the Privacy Commissioner of Canada — Identifying Information Under PIPEDA][13]
+* [Trade Commissioner Canada — Employment Contract IP Ownership for Canadian SMEs][14]
+* [Smart & Biggar — Do You Actually Own the IP Generated by Your Canadian Employees?][15]
+* [Nik G. — The 2028 Intelligence Explosion][16]
+* [ACC — Quick Counsel: Software Work for Hire (United States)][17]
+* [Aptus Legal — Who Owns the Code? IP Risks Under EU and Cyprus Copyright Law][18]
 
 [1]: https://cursor.com/docs/context/skills
 [2]: https://cursor.com/docs/agent/third-party-hooks

@@ -11,6 +11,13 @@ layout: default
 ## General
 
 <div class="card-grid">
+  <a href="pages/articles/SWE-own-your-own-ai.html" class="card-item">
+    <img src="pages/articles/images/SWE-own-your-own-ai_01.png" class="card-image" alt="Bring Your Own AI, Bring Your Own Leverage Banner" />
+    <h3 class="card-title">Bring Your Own AI, Bring Your Own Leverage</h3>
+    <p class="card-description">Why engineers should build a portable personal AI workflow that compounds their judgment, while keeping a strict boundary between reusable skill and company property.</p>
+    <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
+  </a>
+
   <a href="pages/articles/vibe-v-agentic-swe.html" class="card-item">
     <img src="pages/articles/images/vibe_v_agentic-swe_01.png" class="card-image" alt="The Vibe Trap Banner" />
     <h3 class="card-title">The Vibe Trap</h3>
@@ -59,6 +66,11 @@ layout: default
 <hr>
 
 ## All Articles
+
+### [Bring Your Own AI, Bring Your Own Leverage](articles/SWE-own-your-own-ai.md) (2026)
+*By Dominik Gorecki*
+
+An argument for building a personal AI workflow that strengthens your engineering judgment and travels with you, without crossing the line between transferable experience and company-owned assets.
 
 ### [The Vibe Trap: From Vibe Coding to Agentic Engineering](articles/vibe-v-agentic-swe.md) (2026)
 *By Dominik Gorecki*
