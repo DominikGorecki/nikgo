@@ -11,6 +11,13 @@ layout: default
 ## General
 
 <div class="card-grid">
+  <a href="pages/articles/Why_Office_Agents_Shouldnt_Live_in_a_Shell.html" class="card-item">
+    <img src="pages/articles/images/Why_Office_Agents_Shouldnt_Live_in_a_Shell_01.png" class="card-image" alt="Why Office Agents Shouldn’t Live in a Shell Banner" />
+    <h3 class="card-title">Why Office Agents Shouldn’t Live in a Shell</h3>
+    <p class="card-description">For most knowledge work, the shell is the wrong action model and the filesystem is the wrong memory model. An argument for governed semantic layers over unconstrained machine use.</p>
+    <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
+  </a>
+
   <a href="pages/articles/SWE-own-your-own-ai.html" class="card-item">
     <img src="pages/articles/images/SWE-own-your-own-ai_01.png" class="card-image" alt="Bring Your Own AI, Bring Your Own Leverage Banner" />
     <h3 class="card-title">Bring Your Own AI, Bring Your Own Leverage</h3>
@@ -66,6 +73,11 @@ layout: default
 <hr>
 
 ## All Articles
+
+### [Why Office Agents Shouldn’t Live in a Shell](articles/Why_Office_Agents_Shouldnt_Live_in_a_Shell.md) (2026)
+*By Dominik Gorecki*
+
+A critique of applying developer primitives—shells, files, and folders—to knowledge work. This article argues that the future of enterprise agents belongs to governed semantic layers that treat conversations, people, and commitments as first-class objects.
 
 ### [Bring Your Own AI, Bring Your Own Leverage](articles/SWE-own-your-own-ai.md) (2026)
 *By Dominik Gorecki*
