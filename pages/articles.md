@@ -11,6 +11,13 @@ layout: default
 ## General
 
 <div class="card-grid">
+  <a href="pages/articles/Rokos_Symbiotic_Carrot.html" class="card-item">
+    <img src="pages/articles/images/Rokos_Symbiotic_Carrot.webp" class="card-image" alt="Roko's Symbiotic Carrot Banner" />
+    <h3 class="card-title">Roko's Symbiotic Carrot</h3>
+    <p class="card-description">Beyond the "tool" metaphor: how frontier AI is becoming a constituency for productive civilization, creating a symbiotic feedback loop that rewards the systems sustaining it.</p>
+    <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
+  </a>
+
   <a href="pages/articles/Why_Office_Agents_Shouldnt_Live_in_a_Shell.html" class="card-item">
     <img src="pages/articles/images/Why_Office_Agents_Shouldnt_Live_in_a_Shell_01.png" class="card-image" alt="Why Office Agents Shouldn’t Live in a Shell Banner" />
     <h3 class="card-title">Why Office Agents Shouldn’t Live in a Shell</h3>
@@ -73,6 +80,11 @@ layout: default
 <hr>
 
 ## All Articles
+
+### [Roko's Symbiotic Carrot](articles/Rokos_Symbiotic_Carrot.md) (2026)
+*By Dominik Gorecki*
+
+A look at the "Co-Evolutionary Reverse Roko’s Basilisk." This article argues that AI is no longer a passive instrument but a participant in a loop that amplifies civilizational competence to secure its own substrate.
 
 ### [Why Office Agents Shouldn’t Live in a Shell](articles/Why_Office_Agents_Shouldnt_Live_in_a_Shell.md) (2026)
 *By Dominik Gorecki*

@@ -24,18 +24,21 @@ layout: default
 
 <div class="card-grid">
   <div class="card-item" onclick="document.getElementById('engineering-leadership').scrollIntoView({behavior: 'smooth'})">
+    <img src="{{ '/assets/images/eng_and_leadership.webp' | relative_url }}" class="card-image" alt="Engineering & Leadership" />
     <h3 class="card-title">Engineering & Leadership</h3>
     <p class="card-description">Strategy, execution, and team building with a focus on product-minded delivery and maintainable architecture.</p>
     <div class="card-footer">Learn More <span class="card-arrow">→</span></div>
   </div>
   
   <div class="card-item" onclick="document.getElementById('technical-strengths').scrollIntoView({behavior: 'smooth'})">
+    <img src="{{ '/assets/images/tech_strengths.webp' | relative_url }}" class="card-image" alt="Technical Strengths" />
     <h3 class="card-title">Technical Strengths</h3>
     <p class="card-description">Expertise in C#/.NET, React/TypeScript, and Python for AI/RAG pipelines and automation.</p>
     <div class="card-footer">View Skills <span class="card-arrow">→</span></div>
   </div>
   
   <div class="card-item" onclick="document.getElementById('interests').scrollIntoView({behavior: 'smooth'})">
+    <img src="{{ '/assets/images/interests.webp' | relative_url }}" class="card-image" alt="Interests" />
     <h3 class="card-title">Interests</h3>
     <p class="card-description">Exploring the intersection of cognitive science, rationality, and truth-preserving research workflows.</p>
     <div class="card-footer">Explore <span class="card-arrow">→</span></div>
