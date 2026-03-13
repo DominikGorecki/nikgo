@@ -59,7 +59,7 @@ layout: default
 <div class="card-grid">
   <a href="pages/articles/SWE_LLM_Tokenomecs_V2.pdf" class="card-item">
     <img src="pages/articles/figures/SWE_LLM_Tokenization_chart.png" class="card-image" alt="LLM Tokenomics for Software Teams" />
-    <h3 class="card-title">SWE LLM Tokenomics</h3>
+    <h3 class="card-title">AI Tokenomics for Software Engineering</h3>
     <p class="card-description">A practical framework for software teams to choose AI models by balancing immediate costs with the real-world impact of mistakes, retries, and extra review work.</p>
     <div class="card-footer">Read Paper <span class="card-arrow">→</span></div>
   </a>
@@ -87,6 +87,11 @@ layout: default
 <hr>
 
 ## All Articles
+
+### [AI Tokenomics for Software Engineering](articles/SWE_LLM_Tokenomecs_V2.pdf) (March 2026)
+*By Dominik Gorecki*
+
+This paper presents a practical way for software teams to choose AI models by balancing immediate model cost with the real-world cost of mistakes, retries, delays, and extra review work. It also shows how to re-evaluate that choice at each step of an iterative workflow and how to test the approach fairly against simpler baselines on the same tasks.
 
 ### [Roko's Symbiotic Carrot](articles/Rokos_Symbiotic_Carrot.md) (2026)
 *By Dominik Gorecki*
@@ -117,11 +122,6 @@ A look at the AI "Jobpocalypse" narrative, arguing that while AI will disrupt sp
 *By Dominik Gorecki*
 
 A macro memo on the resolution of the Global Intelligence Crisis through the shift to "Bring Your Own AI"—where individuals own their compounding cognitive assets rather than firms centralizing cognition.
-
-### [SWE LLM Tokenomics](articles/SWE_LLM_Tokenomecs_V2.pdf) (2026)
-*By Dominik Gorecki*
-
-This paper presents a practical way for software teams to choose AI models by balancing immediate model cost with the real-world cost of mistakes, retries, delays, and extra review work. It also shows how to re-evaluate that choice at each step of an iterative workflow and how to test the approach fairly against simpler baselines on the same tasks.
 
 ### [Domain-Specific RAG with Gemini 3 Flash Beats PRO with Web Search Grounding](articles/small_RAG_beats_large_large_search.md)
 *By Dominik Gorecki*
