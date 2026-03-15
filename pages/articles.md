@@ -11,6 +11,13 @@ layout: default
 ## General
 
 <div class="card-grid">
+  <a href="pages/articles/wrong_kind_of_smart.html" class="card-item">
+    <img src="pages/articles/images/wrong_kind_of_smart_01.webp" class="card-image" alt="The Wrong Kind of Smart and the Most Expensive Model in the Room Banner" />
+    <h3 class="card-title">The Wrong Kind of Smart and the Most Expensive Model in the Room</h3>
+    <p class="card-description">Why using premium reasoning for trivial coding work is often just expensive theater, and why the real question is the total cost of getting the work done.</p>
+    <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
+  </a>
+
   <a href="pages/articles/Rokos_Symbiotic_Carrot.html" class="card-item">
     <img src="pages/articles/images/Rokos_Symbiotic_Carrot.webp" class="card-image" alt="Roko's Symbiotic Carrot Banner" />
     <h3 class="card-title">Roko's Symbiotic Carrot</h3>
@@ -87,6 +94,11 @@ layout: default
 <hr>
 
 ## All Articles
+
+### [The Wrong Kind of Smart and the Most Expensive Model in the Room](articles/wrong_kind_of_smart.md) (2026)
+*By Dominik Gorecki*
+
+A case against hiring a neurosurgeon to trim a hedge. This article argues that software teams should stop mistaking the strongest model for the right default and start routing intelligence by the total expected cost of completion.
 
 ### [AI Tokenomics for Software Engineering](articles/SWE_LLM_Tokenomecs_V2.pdf) (March 2026)
 *By Dominik Gorecki*

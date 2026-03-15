@@ -1,5 +1,7 @@
 # The Wrong Kind of Smart and the Most Expensive Model in the Room
 
+![The Wrong Kind of Smart](./images/wrong_kind_of_smart_01.webp)
+
 ## Six pixels of whitespace
 
 A software engineer opens an agentic coding tool, leaves the strongest model selected by default, and asks it to add a little more space between a form label and an input field.
@@ -37,6 +39,8 @@ That matters because it punctures a comforting fantasy. The fantasy is that cost
 Software work is not a single call. It is a loop.
 
 ## A better map of the work
+
+![A better map of the work](./images/wrong_kind_of_smart_02.webp)
 
 To reason about that loop, teams need a better way to describe the work itself.
 
@@ -85,6 +89,8 @@ That is the real shift underway. We are moving from taste-based prompting to pol
 ## The operating model
 
 The immediate lesson is not to impose a rigid playbook. It is to become more observant.
+
+![The operating model](./images/wrong_kind_of_smart_03.webp)
 
 Thoughtful teams should experiment with model choice by task type. They should notice where weaker models create cheap, acceptable misses and where they create expensive downstream chaos. They should distinguish task difficulty from task size. They should treat verification cost as part of the task, not as an afterthought. They should stop treating the strongest default as neutral.
 
