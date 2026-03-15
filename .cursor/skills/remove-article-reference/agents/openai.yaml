@@ -1,0 +1,4 @@
+interface:
+  display_name: "Remove Article Reference"
+  short_description: "Strip references and links from markdown, creating clean copies."
+  default_prompt: "I have an article markdown file that needs references and links removed. Can you create a no-reference version of it for me?"
