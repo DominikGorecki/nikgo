@@ -1,6 +1,4 @@
-# The Wrong Kind of Smart
-
-# The Most Expensive Model in the Room
+# The Wrong Kind of Smart and the Most Expensive Model in the Room
 
 ## Six pixels of whitespace
 
@@ -100,7 +98,7 @@ The next generation of software teams will not be separated simply by who has ac
 
 ## Read the full technical white paper this is based on
 
-For the formal version of this argument, including the decomposition of work into context complexity and output scope, the pricing of failure, and the move from one-step routing to iterative rerouting, see ([5]).
+For the formal version of this argument, including the decomposition of work into context complexity and output scope, the pricing of failure, and the move from one-step routing to iterative rerouting, see [the full white paper][5].
 
 ## References
 
