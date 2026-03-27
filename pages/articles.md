@@ -102,12 +102,12 @@ layout: default
 
 ## All Articles
 
-### [The Companies That OODA Faster](articles/OODA_faster.md) (2026)
+### [The Companies That OODA Faster](articles/OODA_faster.md) (April 2026)
 *By Dominik Gorecki*
 
 Incremental rollouts and steering committees are a comforting story; the market is sorting on something colder. This piece argues that agentic AI is compressing Boyd’s loop—always-on observation, structured orientation, ranked decisions, execution without ticket-queue theater—and that durable, versioned company memory is what turns that speed into a moat instead of chaos.
 
-### [The Wrong Kind of Smart and the Most Expensive Model in the Room](articles/wrong_kind_of_smart.md) (2026)
+### [The Wrong Kind of Smart and the Most Expensive Model in the Room](articles/wrong_kind_of_smart.md) (April 2026)
 *By Dominik Gorecki*
 
 A case against hiring a neurosurgeon to trim a hedge. This article argues that software teams should stop mistaking the strongest model for the right default and start routing intelligence by the total expected cost of completion.
