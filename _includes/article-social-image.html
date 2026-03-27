@@ -1,0 +1,46 @@
+{% comment %}
+  First image in article markdown (same as typical index card art): ![alt](url), else first <img src="...">.
+{% endcomment %}
+{% assign og_src_raw = '' %}
+{% assign og_image_alt = '' %}
+{% assign raw = page.content %}
+{% if raw contains '![' %}
+  {% assign _md = raw | split: '![' %}
+  {% if _md.size > 1 %}
+    {% assign _blk = _md[1] %}
+    {% if _blk contains '](' %}
+      {% assign og_image_alt = _blk | split: '](' | first | strip %}
+      {% assign _u = _blk | split: '](' | last | split: ')' | first | strip %}
+      {% if _u != '' %}
+        {% assign og_src_raw = _u %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+{% if og_src_raw == '' %}
+  {% if raw contains 'src="' %}
+    {% assign _sc = raw | split: 'src="' %}
+    {% if _sc.size > 1 %}
+      {% assign og_src_raw = _sc[1] | split: '"' | first | strip %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+{% if og_src_raw != '' %}
+  {% if og_src_raw contains '://' %}
+    {% assign og_abs = og_src_raw %}
+  {% else %}
+    {% assign _first = og_src_raw | slice: 0, 1 %}
+    {% if _first == '/' %}
+      {% assign og_abs = og_src_raw | absolute_url %}
+    {% else %}
+      {% assign _rel = og_src_raw | replace_first: './', '' %}
+      {% assign _path = page.dir | append: _rel %}
+      {% assign og_abs = _path | absolute_url %}
+    {% endif %}
+  {% endif %}
+  <meta property="og:image" content="{{ og_abs }}">
+  <meta name="twitter:image" content="{{ og_abs }}">
+  {% if og_image_alt != '' %}
+  <meta property="og:image:alt" content="{{ og_image_alt | xml_escape }}">
+  {% endif %}
+{% endif %}
