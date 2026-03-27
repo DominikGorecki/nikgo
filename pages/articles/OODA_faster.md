@@ -1,3 +1,5 @@
+![Companies that OODA faster](./images/OODA_faster_01.webp)
+
 # The Companies That OODA Faster
 
 There is a very soothing executive fantasy about AI. Buy the copilots. Run the pilots. Form the steering committee. Measure “productivity uplift.” Roll the tools out department by department. Let the organization absorb the future in neat, tasteful increments.
@@ -18,6 +20,8 @@ An agentic company does something else. It turns the whole enterprise into a tig
 
 Observe becomes always-on sensing. Agents ingest product telemetry, customer complaints, repo activity, pipeline changes, vendor signals, policy updates.
 
+![Fast OODA Loop](./images/OODA_faster_02.webp)
+
 Orient becomes structured synthesis. Anthropic’s own engineering guidance gets at the heart of it: the real challenge is not prompt engineering but context engineering, assembling the right memory, tools, and state for the task at hand ([Effective Context Engineering][5]).
 
 Decide becomes ranked options instead of blank-page deliberation.
@@ -33,6 +37,8 @@ The practical question, of course, is how a large organization does this without
 First, you need orchestration: Bedrock Agents, Azure AI Foundry, something that can coordinate models, tools, and actions at enterprise scale ([Amazon Bedrock Agents][6]; [Microsoft Foundry][7]). Second, you need retrieval across the real company, not just clever prompting: data connectors, grounded access, permissions, actual institutional visibility ([Amazon Bedrock Knowledge Bases][8]). Third, you start with narrow use cases, but build them so they can spread.
 
 Then comes the real moat: the Company Context Bank.
+
+![Company Context Bank](./images/OODA_faster_03.webp)
 
 Without a durable memory layer, enterprise AI is just a string of expensive amnesias. The Context Bank is a living, versioned, queryable memory system: company strategy at the top, function workflows beneath that, team norms below that, individual preferences below that still. Stored in plain files. Versioned in Git. Retrieved in slices. An agent working on a release does not need the whole company stuffed into its prompt. It needs the relevant security policy, the engineering workflow, the team’s norms, and the task owner’s standing preferences. Progressive disclosure exists for exactly this reason: bring in the right layer at the right time, not the whole attic at once ([Progressive Disclosure][9]).
 

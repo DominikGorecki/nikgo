@@ -11,6 +11,13 @@ layout: default
 ## General
 
 <div class="card-grid">
+  <a href="pages/articles/OODA_faster.html" class="card-item">
+    <img src="pages/articles/images/OODA_faster_01.webp" class="card-image" alt="The Companies That OODA Faster banner" />
+    <h3 class="card-title">The Companies That OODA Faster</h3>
+    <p class="card-description">The 2026 split is not “has AI” versus “does not.” It is OODA velocity: who observes, orients, decides, and acts while rivals are still trapped in meetings and PDFs—and why a Context Bank beats another expensive amnesia.</p>
+    <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
+  </a>
+
   <a href="pages/articles/wrong_kind_of_smart.html" class="card-item">
     <img src="pages/articles/images/wrong_kind_of_smart_01.webp" class="card-image" alt="The Wrong Kind of Smart and the Most Expensive Model in the Room Banner" />
     <h3 class="card-title">The Wrong Kind of Smart and the Most Expensive Model in the Room</h3>
@@ -94,6 +101,11 @@ layout: default
 <hr>
 
 ## All Articles
+
+### [The Companies That OODA Faster](articles/OODA_faster.md) (2026)
+*By Dominik Gorecki*
+
+Incremental rollouts and steering committees are a comforting story; the market is sorting on something colder. This piece argues that agentic AI is compressing Boyd’s loop—always-on observation, structured orientation, ranked decisions, execution without ticket-queue theater—and that durable, versioned company memory is what turns that speed into a moat instead of chaos.
 
 ### [The Wrong Kind of Smart and the Most Expensive Model in the Room](articles/wrong_kind_of_smart.md) (2026)
 *By Dominik Gorecki*
