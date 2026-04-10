@@ -12,7 +12,7 @@ That is the uncomfortable fact of 2026. The engineers pulling ahead are not the 
 
 The old debate about whether AI matters for software development is over. The interesting question now is what kind of developer emerges on the other side of widespread adoption.
 
-Stack Overflow’s recent data makes the shape of the moment plain. More than 84 percent of developers say they are using or planning to use AI tools. In the 2025 results, 80 percent said they were already using AI tools in their workflows, but trust in those tools had fallen to 29 percent. Sixty-six percent said they were spending more time fixing “almost-right” AI-generated code, and 75 percent said that when they do not trust the answer, they still ask another person. ([AI | 2025 Stack Overflow Developer Survey][1], [Mind the gap: Closing the AI trust gap for developers][2])
+Stack Overflow’s recent data makes the shape of the moment plain. More than 84 percent of developers say they are using or planning to use AI tools. In the 2025 results, 80 percent said they were already using AI tools in their workflows, but trust in those tools had fallen to 29 percent. Sixty-six percent said they were spending more time fixing “almost-right” AI-generated code, and 75 percent said that when they do not trust the answer, they still ask another person. ([AI \| 2025 Stack Overflow Developer Survey][1], [Mind the gap: Closing the AI trust gap for developers][2])
 
 That is the whole tension. Adoption has gone mainstream faster than judgment has. The tools are everywhere. The craft for using them well is not. If you still think this phase can be managed with light exposure, a lunch-and-learn, and the company’s blessed plugin, you are confusing access with training.
 
@@ -84,7 +84,7 @@ The company can standardize the tool. It cannot standardize your edge.
 
 ## References
 
-* [AI | 2025 Stack Overflow Developer Survey][1]
+* [AI \| 2025 Stack Overflow Developer Survey][1]
 * [Mind the gap: Closing the AI trust gap for developers][2]
 * [Claude Code overview][3]
 * [Best Practices for Claude Code][4]

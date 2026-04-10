@@ -11,6 +11,13 @@ layout: default
 ## General
 
 <div class="card-grid">
+  <a href="pages/articles/your_ai_career_plan.html" class="card-item">
+    <img src="pages/articles/images/your_ai_career_plan.webp" class="card-image" alt="Your Company’s AI Rollout Is Not Your Career Plan banner" />
+    <h3 class="card-title">Your Company’s AI Rollout Is Not Your Career Plan</h3>
+    <p class="card-description">A case against mistaking corporate rollout for personal adaptation. The engineers pulling ahead are building a private practice with multiple tools, real reps, and portable judgment long before the company catches up.</p>
+    <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
+  </a>
+
   <a href="pages/articles/OODA_faster.html" class="card-item">
     <img src="pages/articles/images/OODA_faster_01.webp" class="card-image" alt="The Companies That OODA Faster banner" />
     <h3 class="card-title">The Companies That OODA Faster</h3>
@@ -101,6 +108,11 @@ layout: default
 <hr>
 
 ## All Articles
+
+### [Your Company’s AI Rollout Is Not Your Career Plan](articles/your_ai_career_plan.md) (April 2026)
+*By Dominik Gorecki*
+
+A case against mistaking procurement for progress. This article argues that a company-approved AI seat is not a career plan, and that the engineers pulling ahead are the ones building portable judgment through personal tools, comparative practice, and real reps outside the sanctioned sandbox.
 
 ### [The Companies That OODA Faster](articles/OODA_faster.md) (April 2026)
 *By Dominik Gorecki*
