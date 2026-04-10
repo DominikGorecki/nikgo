@@ -18,7 +18,7 @@ That is the whole tension. Adoption has gone mainstream faster than judgment has
 
 Companies do not adopt AI the way individual engineers should. Companies buy for governance, procurement, privacy review, and political peace among stakeholders. That is rational. It is also not the same thing as building mastery.
 
-The enterprise instinct is always to centralize. One approved model. One approved memory layer. One approved workflow. One recent essay on BYOAI framed the larger version of this mistake as the fantasy of the “central brain” company, the institution that wants compounding talent while also owning the compounding engine. The alternative is not chaos. It is portable augmentation: a personal system of context, judgment, and workflow that belongs to the worker and moves with them. ([THE 2028 INTELLIGENCE EXPLOSION][14])
+The enterprise instinct is always to centralize. One approved model. One approved memory layer. One approved workflow. In a recent article on BYOAI, I framed the larger version of this mistake as the fantasy of the “central brain” company, the institution that wants compounding talent while also owning the compounding engine. The alternative is not chaos. It is portable augmentation: a personal system of context, judgment, and workflow that belongs to the worker and moves with them. ([THE 2028 INTELLIGENCE EXPLOSION][14])
 
 This matters at every level. Junior engineers need the reps because they are still forming taste. Mid-career engineers need them because leverage only compounds when it gets operational. Senior engineers may need them most of all, because “I’ll let the younger people figure it out” is a fine strategy if your ambition is to become a manager of a future you do not actually understand.
 
