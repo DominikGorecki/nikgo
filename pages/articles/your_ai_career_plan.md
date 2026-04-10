@@ -1,3 +1,5 @@
+![your_ai_career_plan](./images/your_ai_career_plan.webp)
+
 # Your Company’s AI Rollout Is Not Your Career Plan
 
 Somewhere inside a respectable software company, two engineers are being told the same soothing story. The company bought seats. Legal blessed the vendor. Security approved the workflow. There is now a sanctioned AI assistant in the IDE, a little square of corporate reassurance. You may begin innovating.
@@ -26,9 +28,11 @@ This matters at every level. Junior engineers need the reps because they are sti
 
 The right move for many engineers is not to buy one extravagant premium plan and declare victory. It is to widen the learning surface. Several of the major products already have free or accessible individual tiers. Gemini Code Assist for individuals is available at no cost. Cursor has a free Hobby tier and a $20 Pro plan. Claude’s Pro plan is $20 a month. Codex is included across the main ChatGPT paid lineup and, for now, also appears in Free and Go on a limited basis. ([Gemini Code Assist overview][8], [Cursor Pricing][11], [Choosing a Claude plan][12], [Using Codex with your ChatGPT plan][13])
 
-If I were advising an engineer how to build a personal stack right now, I would start with Claude, then Cursor, then Codex, then Gemini. That is not an objective leaderboard. It is a learning order.
+![multiple_ai_coding_tools](./images/your_ai_career_plan_02.webp)
 
-Claude first, because Claude Code is the clearest lesson in codebase-native agentic work. Anthropic describes it plainly: it reads your codebase, edits files, runs commands, and works across terminal, IDE, desktop, and browser. Cursor second, because it is the fastest way to feel what happens when the editor itself becomes an agentic environment. Its pricing page now reads like a map of the new terrain: cloud agents, skills, hooks, and frontier models. Codex third, because OpenAI has turned it into a more explicit command center for parallel work with worktrees, automations, Git functionality, and skills. Gemini fourth, because Google has pushed it toward agent mode and now exposes Gemini CLI as an open source terminal agent with MCP support and a ReAct loop. ([Claude Code overview][3], [Cursor Pricing][11], [Codex app][5], [Gemini Code Assist release notes][9], [Gemini CLI][10])
+If I were advising an engineer how to build a personal stack right now, I would not treat these tools as a sequence. I would use Claude, Cursor, Codex, and Gemini at the same time, on real work, so you can feel the differences directly. That is not an objective leaderboard. It is a comparative practice.
+
+Claude matters because Claude Code is a clear example of codebase-native agentic work: it reads your codebase, edits files, runs commands, and works across terminal, IDE, desktop, and browser. Cursor matters because it shows what happens when the editor itself becomes an agentic environment; its pricing page now reads like a map of the new terrain, with cloud agents, skills, hooks, and frontier models. Codex matters because OpenAI has turned it into a more explicit command center for parallel work with worktrees, automations, Git functionality, and skills. Gemini matters because Google has pushed it toward agent mode and now exposes Gemini CLI as an open source terminal agent with MCP support and a ReAct loop. The point of using all of them is to understand how they differ, where they overlap, and how fast the ground is moving under each of them. ([Claude Code overview][3], [Cursor Pricing][11], [Codex app][5], [Gemini Code Assist release notes][9], [Gemini CLI][10])
 
 The point is not brand loyalty. The point is comparative judgment. A personal stack teaches you what each tool is good at, how much structure it needs, and when to switch.
 
@@ -60,7 +64,7 @@ The future does not belong to the engineer with the longest prompt library. It b
 
 ## OpenClaw is graduate school
 
-OpenClaw belongs in this conversation, but late. It is not the first tool to buy. It is what you reach for after you have built some competence with ordinary coding agents and want to understand what happens when the boundary moves from editor and terminal to the operating system itself.
+OpenClaw belongs in this conversation, but late. It is not the first tool to try. It is what you reach for after you have built some competence with ordinary coding agents and want to understand what happens when the boundary moves from editor and terminal to the operating system itself.
 
 The repo describes OpenClaw as a personal AI assistant for any OS. Its own security guidance is even more revealing. OpenClaw says its model is a one-user trusted-operator setup, not a shared multi-tenant boundary. Anthropic’s computer-use documentation carries a similar warning label in plainer language: review every action and log, and keep these systems away from precision-critical or sensitive tasks unless a human is supervising. That is not boilerplate. It is the frontier telling you what it is. ([OpenClaw Personal AI Assistant][15], [OpenClaw Security Overview][16], [Computer use tool][17])
 
@@ -72,7 +76,7 @@ So yes, experiment. But do it the way grown engineers experiment. Use non-sensit
 
 This is not a sermon about turning every evening into unpaid labor for future employers. It is an argument that the tool surface is moving too fast, and too much professional leverage now lives in personal judgment, for passive corporate exposure to count as sufficient training.
 
-Use the company seat if they buy you one. Then go build a practice that belongs to you. Get a few personal tools. Build one small system. Invent one workflow that did not come from a template. Keep notes. Keep rules. Keep scars. Learn how agents behave when the task is yours, the machine is yours, the mess is yours, and the judgment is yours.
+Use the company seat at the company (if they buy you one). Then go build a practice that belongs to you. Get a few personal tools. Build one small system. Invent one workflow that did not come from a template. Keep notes. Keep rules. Keep scars. Learn how agents behave when the task is yours, the machine is yours, the mess is yours, and the judgment will also be yours.
 
 Because that is the real divide opening in software engineering now. Not AI versus no AI. Not early adopters versus skeptics. It is engineers who are building portable leverage versus engineers who are renting it from the institution.
 
