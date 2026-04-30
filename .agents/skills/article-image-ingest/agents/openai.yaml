@@ -1,0 +1,4 @@
+interface:
+  display_name: "Article Image Ingest"
+  short_description: "Prepare and place ordered article images."
+  default_prompt: "Use $article-image-ingest to convert raw article images and place them into an article markdown file."

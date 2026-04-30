@@ -4,3 +4,4 @@ Gemfile.lock
 *.gem
 .cbx/
 .cursor/
+pages/articles/raw-images/
