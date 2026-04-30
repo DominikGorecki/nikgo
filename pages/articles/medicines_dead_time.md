@@ -1,16 +1,18 @@
+![Patient waiting outside a clinical research laboratory](./images/01__medicines_dead_time.webp)
+
 # Medicine’s Dead Time
 
-Somewhere, a patient with newly diagnosed mantle cell lymphoma is not waiting for a miracle. He is waiting for a system to finish knowing what it may already be starting to know.
+Somewhere, a patient with newly diagnosed mantle cell lymphoma is not waiting for a miracle. He is waiting for a system to finish knowing what it may already know.
 
-His disease is not theoretical. Mantle cell lymphoma is a rare and typically aggressive form of non-Hodgkin lymphoma, accounting for roughly 6 percent of U.S. non-Hodgkin lymphoma cases, according to the Lymphoma Research Foundation ([Lymphoma Research Foundation][3]). ([Lymphoma Research Foundation][1]) It is the kind of diagnosis that turns time into an adversary. The calendar is no longer administrative furniture. It is biology. It is tumor burden, immune exhaustion, organ function, scan intervals, family logistics, and the dull, obscene arithmetic of whether the next option arrives before the body stops being able to use it.
+His disease is not theoretical. Mantle cell lymphoma is a rare and typically aggressive form of non-Hodgkin lymphoma, accounting for roughly 6 percent of U.S. non-Hodgkin lymphoma cases, according to the Lymphoma Research Foundation ([Lymphoma Research Foundation][3]).  It is the kind of diagnosis that turns time into an adversary. The calendar is no longer administrative furniture. It is biology. It is tumor burden, immune exhaustion, organ function, scan intervals, family logistics, and the dull, obscene arithmetic of whether the next option arrives before the body stops being able to use it.
 
 He is not asking medicine to be careless. He is not demanding that a regulator bless every molecule with a good story and a billionaire sponsor. He is asking something simpler, and more difficult: if a therapy is moving through the system, if early signals are accumulating, if safety can be watched in something closer to real time, then what exactly is he waiting for?
 
 That question used to sound impatient. Increasingly, it sounds scientific.
 
-In April 2026, the U.S. Food and Drug Administration announced what, on paper, looked like a process reform: two proof-of-concept real-time clinical trials, one from AstraZeneca and one from Amgen. AstraZeneca’s TRAVERSE study is a Phase 2 multi-site trial in treatment-naïve mantle cell lymphoma, with participation from MD Anderson and the University of Pennsylvania. Amgen’s STREAM-SCLC trial is a Phase 1b study in limited-stage small cell lung carcinoma ([FDA][1]). ([U.S. Food and Drug Administration][2])
+In April 2026, the U.S. Food and Drug Administration announced what, on paper, looked like a process reform: two proof-of-concept real-time clinical trials, one from AstraZeneca and one from Amgen. AstraZeneca’s TRAVERSE study is a Phase 2 multi-site trial in treatment-naïve mantle cell lymphoma, with participation from MD Anderson and the University of Pennsylvania. Amgen’s STREAM-SCLC trial is a Phase 1b study in limited-stage small cell lung carcinoma ([FDA][1]). 
 
-The agency described the move in the language of endpoints, safety signals, trial phases, and decision-making. Reuters sharpened the point: the program is meant to reduce “dead time” in drug development, with FDA Commissioner Marty Makary saying administrative tasks and paperwork consume about 45 percent of the time from early testing to submission for approval ([Reuters][2]). ([Reuters][3])
+The agency described the move in the language of endpoints, safety signals, trial phases, and decision-making. Reuters sharpened the point: the program is meant to reduce “dead time” in drug development, with FDA Commissioner Marty Makary saying administrative tasks and paperwork consume about 45 percent of the time from early testing to submission for approval ([Reuters][2]). 
 
 Dead time. There it was, tucked inside the machinery. Not toxicity. Not disease progression. Not a failed endpoint. Dead time.
 
@@ -26,6 +28,8 @@ That asymmetry has shaped the emotional life of medicine. Action feels morally c
 
 This is the central ethical reversal hiding inside the FDA’s real-time trial initiative. The agency deserves credit for making dead time visible. Once visible, it can no longer be treated as mere procedure. The days, weeks, and months consumed by data cleaning, package preparation, sequential review, duplicative queries, fragmented systems, and national silos are not just clerical residue. In lethal disease, they are part of the clinical environment.
 
+![Blueprint of a delayed drug development pipeline](./images/02__medicines_dead_time.webp)
+
 The old shorthand, “first do no harm,” was never quite as simple as its bumper-sticker form. The Hippocratic tradition does not command paralysis. It asks physicians not to intentionally injure. But modern medical culture has often converted that deeper ethic into a bias toward delay, as though the primary danger lies in doing something, while waiting occupies a clean moral space.
 
 It does not. Waiting acts on patients. It acts through disease.
@@ -34,7 +38,7 @@ It does not. Waiting acts on patients. It acts through disease.
 
 The most interesting thing about the FDA’s real-time trials announcement is not that it involves AI or that it sounds modern. Every institution now knows how to sprinkle AI over a press release like parsley on a hotel omelet. The more important admission is institutional: some delay is not necessary caution. Some delay is latency.
 
-In the real-time clinical trials model, regulators can see aggregated safety and efficacy signals as studies progress, rather than waiting for companies to compile traditional submissions after the fact. Reuters reported that the FDA would not receive raw patient data, but aggregated information such as adverse-effect rates and tumor responses ([Reuters][2]). ([Reuters][3]) That matters. It means the reform is not a fantasy of total surveillance or regulatory impulsiveness. It is an attempt to move the evidentiary process from batch mode toward live mode.
+In the real-time clinical trials model, regulators can see aggregated safety and efficacy signals as studies progress, rather than waiting for companies to compile traditional submissions after the fact. Reuters reported that the FDA would not receive raw patient data, but aggregated information such as adverse-effect rates and tumor responses ([Reuters][2]). That matters. It means the reform is not a fantasy of total surveillance or regulatory impulsiveness. It is an attempt to move the evidentiary process from batch mode toward live mode.
 
 The distinction is crucial. A conventional trial produces evidence, but the system often handles that evidence in slow pulses. Sites enroll patients. Sponsors collect data. Data are cleaned. Reports are assembled. Files are submitted. Regulators review. Questions come back. Responses go out. Meetings happen. Decisions emerge.
 
@@ -48,7 +52,7 @@ For the lymphoma patient outside the trial, this distinction is not procedural. 
 
 Medicine has heard this kind of question before.
 
-During the AIDS crisis, patients and activists forced regulators, researchers, and physicians to confront a brutal fact: traditional evidentiary timelines can become morally grotesque when people are dying quickly and no adequate treatments exist. The FDA’s accelerated approval pathway was established to allow earlier approval of drugs for serious conditions with unmet medical need based on surrogate endpoints reasonably likely to predict clinical benefit ([FDA Accelerated Approval Program][4]). ([U.S. Food and Drug Administration][4]) A 2022 analysis in *Therapeutic Innovation & Regulatory Science* notes that accelerated approval was established by FDA regulation in 1992 in response to the AIDS epidemic ([Therapeutic Innovation & Regulatory Science][5]). ([PMC][5])
+During the AIDS crisis, patients and activists forced regulators, researchers, and physicians to confront a brutal fact: traditional evidentiary timelines can become morally grotesque when people are dying quickly and no adequate treatments exist. The FDA’s accelerated approval pathway was established to allow earlier approval of drugs for serious conditions with unmet medical need based on surrogate endpoints reasonably likely to predict clinical benefit ([FDA Accelerated Approval Program][4]). A 2022 analysis in *Therapeutic Innovation & Regulatory Science* notes that accelerated approval was established by FDA regulation in 1992 in response to the AIDS epidemic ([Therapeutic Innovation & Regulatory Science][5]). 
 
 That history is often remembered as a triumph of activism over bureaucracy, and partly it was. But its deeper lesson is more uncomfortable. AIDS activists did not simply ask the system to move faster. They exposed an ethical accounting error. They insisted that the people dying outside the evidentiary process were part of the moral equation.
 
@@ -60,7 +64,9 @@ That distinction matters now because the tools are changing. AIDS activists had 
 
 The future of drug development will not be shaped by one FDA pilot. It will be shaped by a larger scientific migration: from animal-heavy, sequential, paperwork-bound systems toward more human-relevant, computational, monitored, adaptive evidence systems.
 
-The FDA’s own work on New Approach Methodologies points in this direction. The agency has described a shift toward human-relevant methods such as AI-powered models, organ-on-chip systems, and in silico modeling. It also notes a stark fact: more than 90 percent of drugs that appear safe in animals fail in humans ([FDA New Approach Methodologies][6]). ([U.S. Food and Drug Administration][6]) That number should land like a hammer. It does not mean animal studies are useless. It does mean the old pipeline, for all its ritual authority, is full of uncertainty masquerading as prudence.
+The FDA’s own work on New Approach Methodologies points in this direction. The agency has described a shift toward human-relevant methods such as AI-powered models, organ-on-chip systems, and in silico modeling. It also notes a stark fact: more than 90 percent of drugs that appear safe in animals fail in humans ([FDA New Approach Methodologies][6]).  That number should land like a hammer. It does not mean animal studies are useless. It does mean the old pipeline, for all its ritual authority, is full of uncertainty masquerading as prudence.
+
+![Human-relevant biomedical models connected to a patient](./images/03__medicines_dead_time.webp)
 
 AI will not magically solve this. Anyone who says otherwise should be kept at least 500 yards from a clinical protocol. Models can overfit. Biological systems surprise. Organoids are not people. An organ-on-chip is not a marriage of liver, immune system, microbiome, age, sex, comorbidity, environment, and bad luck. Human beings remain defiantly inconvenient.
 
@@ -78,7 +84,7 @@ This is especially obvious in rare and lethal diseases. The patients are distrib
 
 For a disease like mantle cell lymphoma, fragmentation is not a technical annoyance. It is slower learning. Slower learning means slower confidence. Slower confidence means slower access. And slower access means some patients deteriorate or die before the system finishes reconciling itself.
 
-The World Health Organization has already moved partway toward this terrain. Its 2025 Global Action Plan for Clinical Trial Ecosystem Strengthening calls for sustainable, efficient, inclusive clinical-trial ecosystems that generate high-quality evidence for policy and practice ([WHO Global Action Plan][7]). ([World Health Organization][7]) The WHO also describes the plan as a way to help countries and stakeholders reform clinical trial systems so they are fit for purpose, inclusive, and locally led ([WHO Departmental Update][8]). ([World Health Organization][8])
+The World Health Organization has already moved partway toward this terrain. Its 2025 Global Action Plan for Clinical Trial Ecosystem Strengthening calls for sustainable, efficient, inclusive clinical-trial ecosystems that generate high-quality evidence for policy and practice ([WHO Global Action Plan][7]). The WHO also describes the plan as a way to help countries and stakeholders reform clinical trial systems so they are fit for purpose, inclusive, and locally led ([WHO Departmental Update][8]). 
 
 That last phrase matters. A global evidence system must not become a polished new instrument for rich countries to extract data from poor ones. It must not mean one imperial super-regulator. It must not mean lowering standards in the name of urgency. The point is not centralization for its own sake. The point is interoperable learning: shared endpoints, trusted data pipelines, real-time safety signals, harmonized evidence standards, faster recruitment, and regulatory cooperation that reflects the biological fact that cancer does not carry a passport.
 
@@ -90,7 +96,7 @@ There is an obvious objection to all of this, and it is a serious one. Faster ca
 
 The recent history of drug approval is not a clean morality play in which bold patients and brilliant innovators are forever thwarted by timid bureaucrats. The world is messier. Desperate patients can be exploited. Early signals can fade. Surrogate endpoints can mislead. Companies can wrap commercial pressure in compassionate language. Regulators can approve therapies whose benefits remain uncertain, while the costs, clinical burdens, and risks arrive immediately.
 
-Relyvrio for ALS is a useful warning. Amylyx began voluntarily discontinuing marketing authorizations in the U.S. and Canada after the Phase 3 PHOENIX trial failed to confirm benefit ([Amylyx][9]). ([Amylyx][9]) Elevidys is an even sharper safety caution. In 2025, the FDA said it had received three reports of fatal acute liver failure following Sarepta AAVrh74 gene therapies, requested suspension of distribution for Elevidys, and placed related trials on hold ([FDA Elevidys Safety Action][10]). ([U.S. Food and Drug Administration][10])
+Relyvrio for ALS is a useful warning. Amylyx began voluntarily discontinuing marketing authorizations in the U.S. and Canada after the Phase 3 PHOENIX trial failed to confirm benefit ([Amylyx][9]). Elevidys is an even sharper safety caution. In 2025, the FDA said it had received three reports of fatal acute liver failure following Sarepta AAVrh74 gene therapies, requested suspension of distribution for Elevidys, and placed related trials on hold ([FDA Elevidys Safety Action][10]). 
 
 These cases should not be waved away. They are the reason serious people should distrust cheap accelerationism. Speed without truth is not compassion. It is roulette with better branding.
 
@@ -128,7 +134,6 @@ The next version of “first do no harm” must have the courage to count the ha
 * [WHO releases global action plan to strengthen clinical trial ecosystems][8]
 * [Amylyx announces formal intention to remove RELYVRIO/ALBRIOZA from the market][9]
 * [FDA Requests Sarepta Therapeutics Suspend Distribution of ELEVIDYS][10]
-* Source outline and editorial brief 
 
 [1]: https://www.fda.gov/news-events/press-announcements/fda-announces-major-steps-implement-real-time-clinical-trials
 [2]: https://www.reuters.com/legal/litigation/us-fda-monitor-clinical-trial-data-real-time-pilot-program-aimed-speeding-2026-04-28/
