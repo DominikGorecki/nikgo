@@ -11,6 +11,13 @@ layout: default
 ## General
 
 <div class="card-grid">
+  <a href="pages/articles/medicines_dead_time.html" class="card-item">
+    <img src="pages/articles/images/01__medicines_dead_time.webp" class="card-image" alt="Medicine’s Dead Time banner" />
+    <h3 class="card-title">Medicine’s Dead Time</h3>
+    <p class="card-description">A case for counting delay as harm in lethal disease. This article argues that FDA real-time trials, continuous monitoring, and human-relevant evidence systems expose how much of medical caution is science and how much is latency.</p>
+    <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
+  </a>
+
   <a href="pages/articles/your_ai_career_plan.html" class="card-item">
     <img src="pages/articles/images/your_ai_career_plan.webp" class="card-image" alt="Your Company’s AI Rollout Is Not Your Career Plan banner" />
     <h3 class="card-title">Your Company’s AI Rollout Is Not Your Career Plan</h3>
@@ -108,6 +115,11 @@ layout: default
 <hr>
 
 ## All Articles
+
+### [Medicine’s Dead Time](articles/medicines_dead_time.md) (April 2026)
+*By Dominik Gorecki*
+
+A case for counting delay as harm in lethal disease. This article argues that FDA real-time trials, continuous monitoring, and human-relevant evidence systems expose how much of medical caution is science and how much is latency.
 
 ### [Your Company’s AI Rollout Is Not Your Career Plan](articles/your_ai_career_plan.md) (April 2026)
 *By Dominik Gorecki*
