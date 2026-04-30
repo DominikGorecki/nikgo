@@ -1,0 +1,4 @@
+interface:
+  display_name: "Article Index Update"
+  short_description: "Add new articles or white papers to pages/articles.md."
+  default_prompt: "Use $article-index-update to add a newly published article or paper to pages/articles.md."
