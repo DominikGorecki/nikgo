@@ -8,8 +8,16 @@ layout: default
 
 <div class="card-grid">
   <a href="https://vulclab.com" class="card-item">
+    <img src="{{ '/assets/images/vulc-logo-sm.png' | relative_url }}" alt="VulcLab.com logo" class="card-logo">
     <h3 class="card-title">VulcLab.com</h3>
     <p class="card-description">RAG Academic/Business (deep) Research over your documents. A research and knowledge assistant that lets you query your own library—papers, textbooks, notes, and internal docs—through a normal chat workflow.</p>
+    <div class="card-footer">Visit Site <span class="card-arrow">→</span></div>
+  </a>
+
+  <a href="https://mycue.ai" class="card-item">
+    <img src="{{ '/assets/images/myCueFacIvon.png' | relative_url }}" alt="MyCue.ai icon" class="card-logo">
+    <h3 class="card-title">MyCue.ai</h3>
+    <p class="card-description">A reusable AI prompt and workflow library for building, organizing, versioning, and sharing prompts across ChatGPT, Claude, Gemini, and other AI tools.</p>
     <div class="card-footer">Visit Site <span class="card-arrow">→</span></div>
   </a>
 
@@ -38,3 +46,6 @@ layout: default
 
 ### VulcLab.com
 > VulcanLab is a research and knowledge assistant that lets you query your own library—papers, textbooks, notes, internal docs, and curated resources—through a normal chat workflow. Instead of producing “generic chatbot” answers, VulcanLab retrieves the most relevant passages from your materials and uses them to generate structured, high-signal responses that stay anchored to what you trust.
+
+### MyCue.ai
+> MyCue.ai is a reusable prompt and workflow library for people who work with AI tools every day. It turns scattered prompts into an organized system with smart variables, version history, private collections, public sharing, forkable community prompts, and reusable snippets for recurring instructions.
