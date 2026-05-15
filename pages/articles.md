@@ -11,6 +11,13 @@ layout: default
 ## General
 
 <div class="card-grid">
+  <a href="pages/articles/Market_for_Portable_Minds.html" class="card-item">
+    <img src="pages/articles/images/02__Market_for_Portable_Minds.webp" class="card-image" alt="The Market for Portable Minds banner" />
+    <h3 class="card-title">The Market for Portable Minds</h3>
+    <p class="card-description">A case for keeping productive intelligence portable as AI moves into work. This article argues that workers need ownable generalized context, companies need protected specialized context, and markets need negotiated mobility rather than one giant agentic bureaucracy.</p>
+    <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
+  </a>
+
   <a href="pages/articles/medicines_dead_time.html" class="card-item">
     <img src="pages/articles/images/01__medicines_dead_time.webp" class="card-image" alt="Medicine’s Dead Time banner" />
     <h3 class="card-title">Medicine’s Dead Time</h3>
@@ -115,6 +122,11 @@ layout: default
 <hr>
 
 ## All Articles
+
+### [The Market for Portable Minds](articles/Market_for_Portable_Minds.md) (May 2026)
+*By Dominik Gorecki*
+
+A case for keeping productive intelligence portable as AI moves into work. This article argues that human+agent capability should travel through negotiated context layers, letting workers carry generalized skill while companies protect specialized systems.
 
 ### [Medicine’s Dead Time](articles/medicines_dead_time.md) (April 2026)
 *By Dominik Gorecki*
