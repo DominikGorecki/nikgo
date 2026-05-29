@@ -11,6 +11,13 @@ layout: default
 ## General
 
 <div class="card-grid">
+  <a href="pages/articles/attention_is_fundamental.html" class="card-item">
+    <img src="pages/articles/images/01__attention_is_fundamental.webp" class="card-image" alt="Attention Is Fundamental banner" />
+    <h3 class="card-title">Attention Is Fundamental</h3>
+    <p class="card-description">A case for treating attention as the first allocation system behind leadership, markets, platforms, and AI. This article argues that what people and institutions repeatedly make impossible to ignore becomes the world they inhabit.</p>
+    <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
+  </a>
+
   <a href="pages/articles/Market_for_Portable_Minds.html" class="card-item">
     <img src="pages/articles/images/02__Market_for_Portable_Minds.webp" class="card-image" alt="The Market for Portable Minds banner" />
     <h3 class="card-title">The Market for Portable Minds</h3>
@@ -122,6 +129,11 @@ layout: default
 <hr>
 
 ## All Articles
+
+### [Attention Is Fundamental](articles/attention_is_fundamental.md) (May 2026)
+*By Dominik Gorecki*
+
+A case for treating attention as the first allocation system behind leadership, markets, platforms, and AI. This article argues that what people and institutions repeatedly make impossible to ignore becomes the world they inhabit, so leaders must steward attention toward reality instead of mere capture.
 
 ### [The Market for Portable Minds](articles/Market_for_Portable_Minds.md) (May 2026)
 *By Dominik Gorecki*
