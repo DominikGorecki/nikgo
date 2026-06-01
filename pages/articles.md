@@ -25,13 +25,6 @@ layout: default
     <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
   </a>
 
-  <a href="pages/articles/medicines_dead_time.html" class="card-item">
-    <img src="pages/articles/images/01__medicines_dead_time.webp" class="card-image" alt="Medicine’s Dead Time banner" />
-    <h3 class="card-title">Medicine’s Dead Time</h3>
-    <p class="card-description">A case for counting delay as harm in lethal disease. This article argues that FDA real-time trials, continuous monitoring, and human-relevant evidence systems expose how much of medical caution is science and how much is latency.</p>
-    <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
-  </a>
-
   <a href="pages/articles/your_ai_career_plan.html" class="card-item">
     <img src="pages/articles/images/your_ai_career_plan.webp" class="card-image" alt="Your Company’s AI Rollout Is Not Your Career Plan banner" />
     <h3 class="card-title">Your Company’s AI Rollout Is Not Your Career Plan</h3>
@@ -46,51 +39,10 @@ layout: default
     <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
   </a>
 
-  <a href="pages/articles/wrong_kind_of_smart.html" class="card-item">
-    <img src="pages/articles/images/wrong_kind_of_smart_01.webp" class="card-image" alt="The Wrong Kind of Smart and the Most Expensive Model in the Room Banner" />
-    <h3 class="card-title">The Wrong Kind of Smart and the Most Expensive Model in the Room</h3>
-    <p class="card-description">Why using premium reasoning for trivial coding work is often just expensive theater, and why the real question is the total cost of getting the work done.</p>
-    <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
-  </a>
-
-  <a href="pages/articles/Rokos_Symbiotic_Carrot.html" class="card-item">
-    <img src="pages/articles/images/Rokos_Symbiotic_Carrot.webp" class="card-image" alt="Roko's Symbiotic Carrot Banner" />
-    <h3 class="card-title">Roko's Symbiotic Carrot</h3>
-    <p class="card-description">Beyond the "tool" metaphor: how frontier AI is becoming a constituency for productive civilization, creating a symbiotic feedback loop that rewards the systems sustaining it.</p>
-    <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
-  </a>
-
-  <a href="pages/articles/Why_Office_Agents_Shouldnt_Live_in_a_Shell.html" class="card-item">
-    <img src="pages/articles/images/Why_Office_Agents_Shouldnt_Live_in_a_Shell_01.png" class="card-image" alt="Why Office Agents Shouldn’t Live in a Shell Banner" />
-    <h3 class="card-title">Why Office Agents Shouldn’t Live in a Shell</h3>
-    <p class="card-description">For most knowledge work, the shell is the wrong action model and the filesystem is the wrong memory model. An argument for governed semantic layers over unconstrained machine use.</p>
-    <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
-  </a>
-
-  <a href="pages/articles/SWE-own-your-own-ai.html" class="card-item">
-    <img src="pages/articles/images/SWE-own-your-own-ai_01.png" class="card-image" alt="Bring Your Own AI, Bring Your Own Leverage Banner" />
-    <h3 class="card-title">Bring Your Own AI, Bring Your Own Leverage</h3>
-    <p class="card-description">Why engineers should build a portable personal AI workflow that compounds their judgment, while keeping a strict boundary between reusable skill and company property.</p>
-    <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
-  </a>
-
   <a href="pages/articles/vibe-v-agentic-swe.html" class="card-item">
     <img src="pages/articles/images/vibe_v_agentic-swe_01.png" class="card-image" alt="The Vibe Trap Banner" />
     <h3 class="card-title">The Vibe Trap</h3>
     <p class="card-description">How "vibe coding" became the ultimate scaling trap and why "agentic engineering" is replacing it. An exploration of the shift from casual prompting to disciplined AI orchestration.</p>
-    <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
-  </a>
-
-  <a href="pages/articles/2028_intelligence_explosion.html" class="card-item">
-    <img src="pages/articles/images/2028_intelligence_explosion__current.png" class="card-image" alt="Intelligence Explosion Banner" />
-    <h3 class="card-title">The 2028 Intelligence Explosion</h3>
-    <p class="card-description">BYOAI, the end of the “central brain” company, and the return of the human production unit. This memo explores how individual ownership of intelligence saved the economy from a demand spiral.</p>
-    <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
-  </a>
-
-  <a href="pages/articles/great-ai-pink-slip-panic.html" class="card-item">
-    <h3 class="card-title">The Great AI Pink-Slip Panic</h3>
-    <p class="card-description">Why the "Jobpocalypse" narrative misses the economy's most basic trick. An exploration of labor data and historical patterns explaining why AI-driven disruption is more about reallocation than total deletion.</p>
     <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
   </a>
 </div>
