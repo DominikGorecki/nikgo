@@ -1,3 +1,5 @@
+![Coding slice beside the broader software engineering task](./images/01__90_percent_problem_of_agentic_SWE.webp)
+
 # The 90 Percent Problem of Agentic Software Delivery
 
 *Coding agents look revolutionary in the demo. The real transformation begins when leaders stop measuring generated code and start redesigning the journey from intent to trusted release.*
@@ -12,6 +14,7 @@ This is the seduction at the center of agentic software delivery. It turns the m
 
 The mirage is not that code is worthless. The mirage is that code is the bottleneck. A [Microsoft Research study](https://www.microsoft.com/en-us/research/publication/today-was-a-good-day-the-daily-life-of-software-developers/) of 5,971 developer self-reports found that developers spend surprisingly little time on development, and in a related discussion, Tom Zimmermann put code-writing at [66 minutes on a bad day and 96 on a good one](https://www.microsoft.com/en-us/research/podcast/the-productive-software-engineer-with-dr-tom-zimmermann/). The life-cycle view is wider still: SEBoK's summary of SWEBoK treats construction as one phase among analysis, design, testing, operation, maintenance, and end-of-life work [SEBoK](https://sebokwiki.org/wiki/Software_Engineering_in_the_Systems_Engineering_Life_Cycle). The 10 percent framing is a provocation, not a law, but the direction matters. Optimizing the typing slice while the rest of delivery keeps waiting in the hallway is not transformation. It is a brighter bulb over the most visible station.
 
+
 The tools themselves already know this. GitHub describes [Copilot's cloud agent](https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-cloud-agent) as work that can move through repository understanding, branch changes, pull requests, and outcome metrics. OpenAI describes [Codex](https://openai.com/index/introducing-codex/) as useful inside configured environments, checks, terminal output, and human review. Strip away the product names and the message is plain. The frontier is no longer keystrokes. It is the route by which a change becomes understood, argued over, proven, and trusted enough to release.
 
 ## The Old Queue
@@ -21,6 +24,8 @@ In the old model, the agent completes its assignment and the change begins its s
 It waits.
 
 It waits in the quiet jurisdictions that never appear in the demo. The reviewer opens the diff and has to rediscover the problem from the ticket, because the agent solved the words it was given, not the situation behind them. The green test run helps, but only a little. Someone still has to decide whether the checks cover the behavior customers will touch and whether this week's release can absorb one more surprise.
+
+![Coding as one narrow slice of the software delivery lifecycle](./images/02__90_percent_problem_of_agentic_SWE.webp)
 
 This is how acceleration becomes congestion. A pull request appears before the owner of the neighboring service has weighed in. CI fails for a reason nobody recognizes. The reviewer, already behind, reads the diff with the particular irritation reserved for work that looks finished while still asking to be understood.
 
@@ -37,6 +42,7 @@ As the work moves forward, that context should become evidence a reviewer can us
 Call this the delivery control plane. Not a prettier coding harness. Not a better prompt library. A delivery control plane is the layer that makes the reason for the change, the danger inside it, and the proof around it travel with the work itself.
 
 This is where agents become genuinely interesting. Not when they impersonate junior developers, but when they help the organization carry context forward instead of forcing humans to reconstruct it again and again. The real unit of work is not the prompt. It is not the diff. It is the trusted change.
+
 
 ## Measure the Flow
 
@@ -67,6 +73,8 @@ The better ROI conversation starts with the backlog, not the license count. Pick
 ## What Leaders Should Do Instead
 
 The practical move has almost no demo-room glamour. Pick one thin slice of work and walk it until it tells the truth.
+
+![Agents participating across the full delivery lifecycle](./images/03__90_percent_problem_of_agentic_SWE.webp)
 
 Choose a common path: a customer bug, a small feature, a dependency upgrade, a production incident follow-up. Map the journey from intent to release. Do not ask where the agent can write code. Ask where the organization loses context. Where does the reviewer have to infer the reason for the change? Where does release approval depend on memory rather than evidence?
 
