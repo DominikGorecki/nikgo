@@ -11,6 +11,13 @@ layout: default
 ## General
 
 <div class="card-grid">
+  <a href="pages/articles/90_percent_problem_of_agentic_SWE.html" class="card-item">
+    <img src="pages/articles/images/01__90_percent_problem_of_agentic_SWE.webp" class="card-image" alt="The 90 Percent Problem of Agentic Software Delivery banner" />
+    <h3 class="card-title">The 90 Percent Problem of Agentic Software Delivery</h3>
+    <p class="card-description">A case against mistaking faster code generation for software delivery transformation. This article argues that agentic SWE creates real leverage only when organizations carry context, risk, evidence, and trust from intent to release.</p>
+    <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
+  </a>
+
   <a href="pages/articles/attention_is_fundamental.html" class="card-item">
     <img src="pages/articles/images/01__attention_is_fundamental.webp" class="card-image" alt="Attention Is Fundamental banner" />
     <h3 class="card-title">Attention Is Fundamental</h3>
@@ -81,6 +88,11 @@ layout: default
 <hr>
 
 ## All Articles
+
+### [The 90 Percent Problem of Agentic Software Delivery](articles/90_percent_problem_of_agentic_SWE.md) (June 2026)
+*By Dominik Gorecki*
+
+A case against mistaking faster code generation for software delivery transformation. This article argues that agentic SWE creates real leverage only when organizations carry context, risk, evidence, and trust from intent to trusted release.
 
 ### [Attention Is Fundamental](articles/attention_is_fundamental.md) (May 2026)
 *By Dominik Gorecki*
