@@ -11,6 +11,13 @@ layout: default
 ## General
 
 <div class="card-grid">
+  <a href="pages/articles/ai_after_the_outrage_machine.html" class="card-item">
+    <img src="pages/articles/images/01__ai_after_the_outrage_machine.webp" class="card-image" alt="AI After the Outrage Machine banner" />
+    <h3 class="card-title">AI After the Outrage Machine</h3>
+    <p class="card-description">A case for AI as a social technology of proportion rather than capture. This article argues that the next useful layer should restore context, mediate disagreement, and return people to real relationships instead of optimizing outrage, persuasion, and synthetic company.</p>
+    <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
+  </a>
+
   <a href="pages/articles/90_percent_problem_of_agentic_SWE.html" class="card-item">
     <img src="pages/articles/images/01__90_percent_problem_of_agentic_SWE.webp" class="card-image" alt="The 90 Percent Problem of Agentic Software Delivery banner" />
     <h3 class="card-title">The 90 Percent Problem of Agentic Software Delivery</h3>
@@ -88,6 +95,11 @@ layout: default
 <hr>
 
 ## All Articles
+
+### [AI After the Outrage Machine](articles/ai_after_the_outrage_machine.md) (June 2026)
+*By Dominik Gorecki*
+
+A case for AI as a social technology of proportion rather than capture. This article argues that the next useful layer should restore context, mediate disagreement, and return people to real relationships instead of optimizing outrage, persuasion, and synthetic company.
 
 ### [The 90 Percent Problem of Agentic Software Delivery](articles/90_percent_problem_of_agentic_SWE.md) (June 2026)
 *By Dominik Gorecki*
