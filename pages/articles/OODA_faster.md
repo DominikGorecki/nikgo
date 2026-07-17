@@ -2,51 +2,37 @@
 
 # The Companies That OODA Faster
 
-There is a very soothing executive fantasy about AI. Buy the copilots. Run the pilots. Form the steering committee. Measure “productivity uplift.” Roll the tools out department by department. Let the organization absorb the future in neat, tasteful increments.
+The standard corporate AI rollout is reassuringly familiar: buy some copilots, run a few pilots, appoint a steering committee, measure the “productivity uplift,” and expand department by department. It is a sensible way to control risk. It may also be far too slow for what is happening.
 
-That fantasy is dying.
+In 2026, the useful distinction is not between companies that have AI and companies that do not. Nearly everyone has access to similar tools. The more consequential difference is how quickly a company notices a change, understands it, makes a decision, and follows through. That is OODA velocity: observe, orient, decide, act. John Boyd’s insight was that cycling through this loop faster does more than save time. It can leave an opponent responding to conditions that have already changed ([USNI Proceedings][1]).
 
-The real divide in 2026 is not between companies that “have AI” and companies that do not. It is between companies that move through reality faster than their rivals and companies that are still trapped in the old rhythm of reports, meetings, handoffs, approvals, and the ceremonial forwarding of PDFs. The decisive advantage is OODA velocity: observe, orient, decide, act. John Boyd’s point was simple and nasty. The side cycling through the loop faster does not just move sooner. It leaves the opponent reacting to a world that no longer exists ([USNI Proceedings][1]).
+Agentic AI matters because it can shorten each part of that loop, not merely help an individual employee finish a task faster.
 
-That is what agentic AI changes.
+Anthropic’s release cadence offers a recent example. In February 2026 it moved from Claude Opus 4.6 to Sonnet 4.6, expanded enterprise workflows through Cowork and plugins, and added computer-use capability through its Vercept acquisition, all within weeks ([Anthropic Newsroom][2]; [Cowork and Plugins][3]). Reuters reported a selloff in major software and services stocks as investors reconsidered the economics of legacy software businesses ([Reuters][4]). The individual announcements mattered, but so did the speed at which capabilities were accumulating.
 
-Look at the recent cadence out of Anthropic. In February 2026 it moved from Claude Opus 4.6 to Sonnet 4.6, then into broader enterprise workflow expansion through Cowork and plugins, plus deeper computer-use capability through its Vercept acquisition, all in a matter of weeks ([Anthropic Newsroom][2]; [Cowork and Plugins][3]). Reuters reported the market’s answer in cold blood: major software and services stocks got hit as investors absorbed what faster, more capable AI could do to legacy software economics ([Reuters][4]).
+Most companies still use AI as a local power tool. That can make an employee faster without making the organization much faster at all. Problems are still noticed late, context is reconstructed across meetings, decisions wait for several approvals, and action disappears into ticket queues.
 
-This was not just a story about model quality. It was a story about loop speed.
+An agentic operating model connects those stages instead of optimizing them one at a time.
 
-Most companies still use AI like a power tool. Helpful, local, impressive in demos. But a company that merely bolts AI onto existing workflows stays slow in all the old places. It still notices problems late. It still orients through fragmented human meetings. It still decides after delay. It still acts through ticket queues and managerial ceremony.
-
-An agentic company does something else. It turns the whole enterprise into a tighter organism.
-
-Observe becomes always-on sensing. Agents ingest product telemetry, customer complaints, repo activity, pipeline changes, vendor signals, policy updates.
+Observation becomes continuous. Agents can monitor product telemetry, customer complaints, repository activity, pipeline changes, vendor signals, and policy updates.
 
 ![Fast OODA Loop](./images/OODA_faster_02.webp)
 
-Orient becomes structured synthesis. Anthropic’s own engineering guidance gets at the heart of it: the real challenge is not prompt engineering but context engineering, assembling the right memory, tools, and state for the task at hand ([Effective Context Engineering][5]).
+Orientation becomes structured synthesis. Anthropic’s engineering guidance calls this context engineering: assembling the memory, tools, and state a task actually requires ([Effective Context Engineering][5]). Decisions can begin with ranked options and explicit tradeoffs instead of a blank page. Action can include writing code, running tests, drafting documents, and updating workflows. Humans still make the consequential calls, but they spend less time rebuilding the background needed to make them.
 
-Decide becomes ranked options instead of blank-page deliberation.
+Consider two companies facing the same churn problem. One notices it in a monthly review, commissions an analysis, debates the causes, agrees on next steps, and begins implementation several weeks later. The other catches the signal as it emerges, connects support transcripts with product behavior, prepares possible fixes, sends the strongest option for approval, and ships a controlled change that afternoon. The advantage does not come from exclusive access to a model. It comes from the way the company is organized around it.
 
-Act becomes execution. Code gets written. Tests run. documents drafted. Workflows updated. Humans still matter, but they are no longer spending their best hours reconstructing context from scratch.
+The practical problem is doing this without creating chaos. Another chatbot will not solve it. Companies need orchestration that can coordinate models, tools, and actions at enterprise scale, whether through Bedrock Agents, Azure AI Foundry, or a comparable system ([Amazon Bedrock Agents][6]; [Microsoft Foundry][7]). They also need governed retrieval across real company information: data connectors, grounded access, and permissions, not just better prompts ([Amazon Bedrock Knowledge Bases][8]). The first use cases should be narrow, but their foundations should be reusable.
 
-Picture two companies facing the same churn problem. The first notices it in a monthly review, commissions analysis, debates causes, aligns next steps, and begins implementation several weeks later. The second sees the signal as it emerges, correlates support transcripts with product behavior, generates fixes, tees up the best option for approval, and ships a controlled change that afternoon.
-
-Same market. Same model access. Different species of company.
-
-The practical question, of course, is how a large organization does this without collapsing into chaos. The answer is not one more chatbot. It is a system.
-
-First, you need orchestration: Bedrock Agents, Azure AI Foundry, something that can coordinate models, tools, and actions at enterprise scale ([Amazon Bedrock Agents][6]; [Microsoft Foundry][7]). Second, you need retrieval across the real company, not just clever prompting: data connectors, grounded access, permissions, actual institutional visibility ([Amazon Bedrock Knowledge Bases][8]). Third, you start with narrow use cases, but build them so they can spread.
-
-Then comes the real moat: the Company Context Bank.
+The most durable part of that foundation is what I call a Company Context Bank.
 
 ![Company Context Bank](./images/OODA_faster_03.webp)
 
-Without a durable memory layer, enterprise AI is just a string of expensive amnesias. The Context Bank is a living, versioned, queryable memory system: company strategy at the top, function workflows beneath that, team norms below that, individual preferences below that still. Stored in plain files. Versioned in Git. Retrieved in slices. An agent working on a release does not need the whole company stuffed into its prompt. It needs the relevant security policy, the engineering workflow, the team’s norms, and the task owner’s standing preferences. Progressive disclosure exists for exactly this reason: bring in the right layer at the right time, not the whole attic at once ([Progressive Disclosure][9]).
+Without durable memory, each AI workflow starts by rediscovering the company. A Context Bank would be a living, versioned, queryable memory system: company strategy at the top, functional workflows beneath it, then team norms and individual preferences. It could live in plain files, be versioned in Git, and be retrieved in small, relevant slices. An agent preparing a release does not need the entire company in its prompt. It needs the applicable security policy, engineering workflow, team conventions, and task owner’s standing preferences. Progressive disclosure is the discipline of supplying those layers when they become relevant ([Progressive Disclosure][9]).
 
-This is the shift. AI is no longer just software you use. It is becoming infrastructure you circulate through.
+At that point, AI is no longer a tool sitting in a browser tab. It becomes part of how information and work move through the company.
 
-And that creates a harsh new corporate divide. On one side: firms with AI tools in tabs. On the other: firms with agentic flow in their veins and institutional memory in their bones. Boyd’s old law still rules. The side that cycles faster wins.
-
-The question is whether your company will be the one disorienting the market, or the one staring at it, slightly dazed, while the world changes shape again.
+This creates a less dramatic but more useful dividing line. Some firms will give employees AI tools while preserving the same slow operating system. Others will build institutional memory and connect observation to action. Boyd’s principle still applies: the organization that completes the loop faster has the advantage. The question for executives is whether their AI program is improving that loop or merely adding a faster tool to one step inside it.
 
 ## References
 

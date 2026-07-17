@@ -4,39 +4,25 @@
 
 ## Six pixels of whitespace
 
-A software engineer opens an agentic coding tool, leaves the strongest model selected by default, and asks it to add a little more space between a form label and an input field.
+A software engineer opens an agentic coding tool, leaves the strongest model selected, and asks for a little more space between a form label and an input. Premium reasoning is now being billed to move the interface by six pixels. It is the digital equivalent of hiring a neurosurgeon to trim a hedge.
 
-That is the scene. Not a thorny migration. Not a production incident. Not a grand demonstration of machine intelligence. A few pixels of whitespace.
+The few extra cents are not important by themselves. The absence of a decision rule is. The engineer has not really chosen a model; the default has carried an assumption into the work: strongest must be safest, and it is better to overbuy intelligence than risk coming up short.
 
-And yet there it is: premium reasoning, meter running, the digital equivalent of hiring a neurosurgeon to trim a hedge.
-
-The issue is not the few extra cents. The issue is the missing decision rule. The engineer is not really choosing a model. The engineer is inheriting a mood. Strongest must be safest. Most expensive must be best. Better to overbuy intelligence than come up short.
-
-That instinct is understandable. It is also too crude for the world software teams are entering. Model choice is becoming an operational decision, not a personal quirk. Once that happens, the question changes. The real question is not which model looks smartest in isolation. It is which model choice minimizes the total cost of getting the work done.
+That instinct is understandable, but it is too crude for the way software teams are beginning to use agents. Model choice is becoming an operational decision rather than a personal preference. The relevant question is not which model looks smartest in isolation. It is which choice minimizes the total cost of finishing the work well.
 
 ## The wrong kind of smart
 
-The usual debate around coding models swings between two shallow instincts. One says use the best model you can afford. The other says squeeze cost wherever you can. Both miss the real economics of software work.
+Discussions about coding models often settle into two camps: use the best model you can afford, or minimize model spend wherever possible. Neither position captures the economics of software work.
 
-A model call has a visible price. That part is easy. It shows up on a dashboard. It can be multiplied, budgeted, and argued over in a meeting.
+A model call has a visible price. It appears on a dashboard and can be budgeted. The less visible costs arrive afterward. A weak first pass can lead to retries, failed tests, human cleanup, delayed merges, and design mistakes that become tomorrow’s technical debt. A cheap call can therefore be an expensive way to finish a task, while a premium call can occasionally be the economical choice.
 
-But the model call is not the whole event. A weak first pass can trigger retries, repair, failed tests, human cleanup, delayed merges, and subtle distortions that become tomorrow’s tech debt. The cheap answer can turn out expensive. The premium answer can turn out cheap. What matters is not the sticker price of cognition. What matters is the total expected cost of completion.
-
-That is the shift recent economic-evaluation papers are trying to force into view. *Economic Evaluation of LLMs* argues that models should be judged in economic terms, not just by benchmark quality or raw token cost, and explicitly prices the consequences of error, latency, and abstention in dollars ([1]). *Cost-of-Pass* makes a related move, asking what it actually costs to obtain a correct result rather than merely a cheap attempt ([2]).
-
-The broad lesson is simple enough to state and still strangely rare in practice: the cheapest token is not always the cheapest decision.
+Recent evaluation research makes this distinction explicit. *Economic Evaluation of LLMs* argues that model comparisons should include the consequences of error, latency, and abstention, not just benchmark scores and token prices ([1]). *Cost-of-Pass* asks what it costs to obtain a correct result rather than what it costs to make one attempt ([2]). The practical lesson is straightforward: the cheapest token does not necessarily produce the cheapest completed task.
 
 ## Tokens are not the whole bill
 
-People hear “economic framing” and assume the point is penny-pinching. It is not. The point is to count the whole loop.
+This is not an argument for penny-pinching. It is an argument for counting the whole loop: retries, repair, verification, and the human attention needed to catch an answer that is polished and plausible but still wrong. It also includes the extra time a branch remains open because the first pass was close enough to keep but not correct enough to ship.
 
-The bill includes retries. It includes repair. It includes verification. It includes the human attention required to notice that the model has produced something polished, plausible, and wrong in a way that is annoying rather than dramatic. It includes the extra time a branch stays open because the first pass was close enough to tempt you, but not correct enough to ship.
-
-One recent paper on agentic software engineering makes this concrete. Studying ChatDev traces across 30 software-development tasks, the authors found that token use was dominated not by the first draft, but by iterative review and verification. Code review consumed the largest share of tokens, which is exactly what you would expect in a world where generation is cheap and consequence is not ([3]).
-
-That matters because it punctures a comforting fantasy. The fantasy is that cost lives in the dramatic moment when the machine writes the code. In practice, much of the cost lives in the tail: rereading, reprompting, testing, patching, reviewing, and cleaning up after almost-right output.
-
-Software work is not a single call. It is a loop.
+One paper on agentic software engineering illustrates the point. In ChatDev traces from 30 development tasks, iterative review and verification—not the first draft—dominated token use. Code review consumed the largest share ([3]). Generation attracts attention because it is visible, but much of the real cost sits in rereading, reprompting, testing, patching, and reviewing almost-right output. Software work is a loop, not a single call.
 
 ## A better map of the work
 
@@ -44,15 +30,15 @@ Software work is not a single call. It is a loop.
 
 To reason about that loop, teams need a better way to describe the work itself.
 
-The usual labels are too mushy. Small task. Big task. Easy. Hard. These categories blur things that should be separated. A task can be tiny in surface area and still cognitively nasty. A task can touch many files and still be conceptually simple.
+Labels such as small, big, easy, and hard collapse distinctions that matter. A tiny change can be difficult to reason about, while a change across many files can be conceptually simple and repetitive.
 
 A useful way to split the problem comes from the white paper behind this article, *AI Tokenomics for Software Engineering: A Practical Economic Model for Iterative Model Routing* ([5]). It decomposes software work into two dimensions: context complexity and output scope.
 
-In plain English, that means two different questions. First, how hard is the task to understand? Second, how much actual change does the task require?
+In plain English, it asks two questions: How hard is the task to understand, and how much needs to change?
 
 That distinction does real work. A three-line fix can be high complexity and low scope if it requires tracing state across a large system. A broad migration can be low complexity and high scope if the reasoning is simple and the changes are repetitive. The whitespace tweak from the opening scene is genuinely low on both. A new feature that touches business logic, persistence, UI states, and tests is high on both.
 
-Once you see work that way, model choice stops looking like an IQ contest. It becomes a classification problem.
+Seen this way, model choice becomes a classification problem rather than an IQ contest.
 
 ## The tiny tweak and the serious feature
 
@@ -60,9 +46,7 @@ Take the tiny tweak first. The label is too close to the input. The desired chan
 
 Now take the serious feature. A new workflow threads through several abstractions, touches API behavior, updates tests, and introduces enough complexity that a plausible-looking solution can be dangerous. Here the economics change. A bad first pass can create rework, confuse reviewers, and leave behind ugly architecture that someone else later has to unwind.
 
-That does not prove “always use the strongest model.” It proves something more interesting: there are different regimes. In some, a mid-tier model plus cheap repair wins. In others, paying more upfront is rational because failure is expensive.
-
-The whole point is to learn which regime you are in.
+This does not imply that the strongest model should always handle serious work. It means different cost regimes exist. In some, a mid-tier model plus an inexpensive repair is the better option. In others, paying more up front is rational because failure is costly. Teams need to learn which regime a task belongs to.
 
 ## A hypothetical ledger
 
@@ -72,7 +56,7 @@ Task A is the UI spacing tweak. A premium model costs more and succeeds more oft
 
 Task B is a feature touching persistence, permissions, and a user-facing workflow. The premium model again costs more. But now failure means more model calls, more human review, retesting, and a higher chance of shipping a bad abstraction. In that setting, the cheaper upfront choice can become the expensive one.
 
-These numbers will vary by team, workflow, and toolchain. That is the point. The answer depends on the interaction between direct model cost, probability of success, and the cost of failure. Teams need experimentation, not slogans.
+The numbers will vary by team, workflow, and toolchain. The answer depends on direct model cost, probability of success, and the consequences of failure, so teams need their own measurements rather than a universal slogan.
 
 ## What today’s habits become tomorrow’s systems
 
@@ -84,7 +68,7 @@ If teams do not understand the economics of these choices now, they will build f
 
 There is already a research lineage for more disciplined routing. *FrugalGPT* showed early that adaptive selection and cascades could cut cost sharply while preserving performance on some tasks ([4]). The white paper behind this article extends that logic into software engineering by treating routing as an iterative economic problem, not a one-shot query problem ([5]).
 
-That is the real shift underway. We are moving from taste-based prompting to policy-based orchestration.
+The shift is from choosing models by feel to routing them by an explicit policy.
 
 ## The operating model
 
@@ -94,13 +78,11 @@ The immediate lesson is not to impose a rigid playbook. It is to become more obs
 
 Thoughtful teams should experiment with model choice by task type. They should notice where weaker models create cheap, acceptable misses and where they create expensive downstream chaos. They should distinguish task difficulty from task size. They should treat verification cost as part of the task, not as an afterthought. They should stop treating the strongest default as neutral.
 
-Defaults are never neutral. They are philosophy wearing sweatpants.
-
-If the default model is always the most expensive, that tells you something. If the only metric anyone watches is token spend, that tells you something too. In both cases, the team is admitting that it does not yet know how to think economically about machine intelligence in software work.
+Defaults encode a policy even when nobody has written it down. Always selecting the most expensive model reveals one assumption; watching only token spend reveals another. In both cases, the team has yet to develop a useful economic model for AI-assisted software work.
 
 That is normal. It should not remain normal for long.
 
-The next generation of software teams will not be separated simply by who has access to the strongest models. Access commoditizes. Pricing shifts. Brand hierarchies wobble. What lasts is operating logic. The teams that matter will be the ones that learn how to route intelligence with discipline, because today’s model defaults are tomorrow’s orchestration layer.
+Access to strong models will not distinguish software teams for long. Pricing will change and today’s brand hierarchy will move. Operating logic is more durable. Teams should learn to route models deliberately now, because their informal defaults will become the basis of tomorrow’s orchestration layer.
 
 ## Read the full technical white paper this is based on
 
