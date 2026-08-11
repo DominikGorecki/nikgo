@@ -11,6 +11,13 @@ layout: default
 ## General
 
 <div class="card-grid">
+  <a href="pages/articles/what_freedom_for__v2.html" class="card-item">
+    <img src="pages/articles/images/01__what_freedom_for.webp" class="card-image" alt="What Freedom Is For banner" />
+    <h3 class="card-title">What Freedom Is For</h3>
+    <p class="card-description">AI may make leisure abundant, but it cannot decide what makes free time worth having. This article argues that the central challenge of an automated future will be developing the agency, habits, and leisure literacy needed to turn spare hours into a life well lived.</p>
+    <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
+  </a>
+
   <a href="pages/articles/ai_after_the_outrage_machine.html" class="card-item">
     <img src="pages/articles/images/01__ai_after_the_outrage_machine.webp" class="card-image" alt="AI After the Outrage Machine banner" />
     <h3 class="card-title">AI After the Outrage Machine</h3>
@@ -95,6 +102,11 @@ layout: default
 <hr>
 
 ## All Articles
+
+### [What Freedom Is For](articles/what_freedom_for__v2.md) (August 2026)
+*By Dominik Gorecki*
+
+AI may make leisure abundant, but it cannot decide what makes free time worth having. This article argues that the central challenge of an automated future will be developing the agency, habits, and leisure literacy needed to turn spare hours into a life well lived.
 
 ### [AI After the Outrage Machine](articles/ai_after_the_outrage_machine.md) (June 2026)
 *By Dominik Gorecki*
