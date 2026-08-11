@@ -1,0 +1,4 @@
+interface:
+  display_name: "Article Image Generate"
+  short_description: "Generate and place 3–4 article images."
+  default_prompt: "Use $article-image-generate with $imagegen to read the supplied article in full, generate three or four context-specific images, save them as ordered article assets, and insert them at meaningful narrative points."
