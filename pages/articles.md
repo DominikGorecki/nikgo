@@ -11,6 +11,13 @@ layout: default
 ## General
 
 <div class="card-grid">
+  <a href="pages/articles/Amdahls_Law__The_Intelligence_Explosion_Will_Branch.html" class="card-item">
+    <img src="pages/articles/images/01__Amdahls_Law__The_Intelligence_Explosion_Will_Branch.webp" class="card-image" alt="Amdahl’s Law: The Intelligence Explosion Will Branch banner" />
+    <h3 class="card-title">Amdahl’s Law: The Intelligence Explosion Will Branch</h3>
+    <p class="card-description">A case against treating recursive self-improvement as a guaranteed path to permanent AI monopoly. This article argues that intelligence gains will expose new bottlenecks and branch into domain-specific loops whose control depends on evaluators, infrastructure, institutions, and power.</p>
+    <div class="card-footer">Read Article <span class="card-arrow">→</span></div>
+  </a>
+
   <a href="pages/articles/what_freedom_for__v2.html" class="card-item">
     <img src="pages/articles/images/01__what_freedom_for.webp" class="card-image" alt="What Freedom Is For banner" />
     <h3 class="card-title">What Freedom Is For</h3>
@@ -102,6 +109,11 @@ layout: default
 <hr>
 
 ## All Articles
+
+### [Amdahl’s Law: The Intelligence Explosion Will Branch](articles/Amdahls_Law__The_Intelligence_Explosion_Will_Branch.md) (August 2026)
+*By Dominik Gorecki*
+
+A case against treating recursive self-improvement as a guaranteed path to permanent AI monopoly. This article argues that intelligence gains will expose new bottlenecks and branch into domain-specific loops whose control depends on evaluators, infrastructure, institutions, and power.
 
 ### [What Freedom Is For](articles/what_freedom_for__v2.md) (August 2026)
 *By Dominik Gorecki*
