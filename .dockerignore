@@ -1,0 +1,7 @@
+.git
+_site
+.sass-cache
+.jekyll-cache
+.cbx
+.cursor
+pages/articles/raw-images

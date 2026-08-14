@@ -1,1 +1,19 @@
 theme: jekyll-theme-cayman
+
+# Keep development/build inputs out of the generated GitHub Pages site.
+# This list includes Jekyll 3.10's standard exclusions because an explicit
+# `exclude` array replaces the defaults rather than extending them.
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - Dockerfile
+  - Makefile
+  - compose.yml
