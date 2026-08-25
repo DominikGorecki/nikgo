@@ -7,7 +7,11 @@ date: 2026-04-30
 date_modified: 2026-07-17
 last_modified_at: 2026-07-17
 author: dominik-gorecki
+content_id: medicines-dead-time
 category: ai-cognition-society
+topics:
+  - health-and-ai
+  - ai-governance
 tags:
   - medical-ai
   - clinical-trials
@@ -20,16 +24,16 @@ image:
   alt: "A patient waiting outside a clinical research laboratory"
 featured: false
 article_type: essay
+primary_question: "How can clinical research and regulatory systems reduce avoidable delay without abandoning safety evidence?"
+evidence_type: "Author analysis of cited medical, regulatory, and reporting sources."
+key_limitation: "The article is not medical advice and does not establish that any treatment is appropriate for an individual patient."
+high_stakes: "Health information only — not medical advice. Clinical choices, trial eligibility, diagnosis, and treatment decisions require a qualified care team."
 related:
-  - ai_public_opinion_cliff
-  - Amdahls_Law__The_Intelligence_Explosion_Will_Branch
+  - amdahls-law-intelligence-explosion
+  - rag-capability-multiplier
 redirect_from: []
 published: true
 ---
-
-![Patient waiting outside a clinical research laboratory](./images/01__medicines_dead_time.webp)
-
-# Medicine’s Dead Time
 
 A patient with newly diagnosed mantle cell lymphoma may not be waiting for a miracle. He may be waiting for the medical system to finish processing evidence it has already begun to understand.
 

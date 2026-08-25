@@ -1,4 +1,84 @@
 ---
 layout: default
 ---
-{{ content }}
+{% assign article_author = page.author_name | default: site.author.name | default: "Dominik Gorecki" %}
+{% assign published_day = page.date | date: "%Y-%m-%d" %}
+{% assign modified_day = page.date_modified | default: page.last_modified_at | date: "%Y-%m-%d" %}
+<article class="content-wrapper article-layout">
+  <header class="article-header">
+    <nav class="article-breadcrumbs" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/articles.html' | relative_url }}">Articles</a></li>
+        <li aria-current="page">{{ page.title }}</li>
+      </ol>
+    </nav>
+
+    {% if page.category %}
+      {% assign topic_hub = site.data.taxonomy.categories[page.category] %}
+      <p class="article-topic">
+        {% if topic_hub %}
+          <a href="{{ topic_hub.path | relative_url }}">{{ topic_hub.label }}</a>
+        {% else %}
+          {{ page.category | replace: '-', ' ' }}
+        {% endif %}
+      </p>
+    {% endif %}
+
+    <h1>{{ page.title }}</h1>
+
+    {% assign article_deck = page.deck | default: page.description %}
+    {% if article_deck %}
+      <p class="article-deck">{{ article_deck }}</p>
+    {% endif %}
+
+    {% if page.scenario %}
+      <aside class="article-boundary article-scenario" aria-label="Scenario boundary">
+        <strong>Scenario boundary:</strong> {{ page.scenario }}
+      </aside>
+    {% endif %}
+
+    {% if page.high_stakes %}
+      <aside class="article-boundary article-high-stakes" aria-label="High-stakes content boundary">
+        <strong>High-stakes boundary:</strong> {{ page.high_stakes }}
+      </aside>
+    {% endif %}
+
+    <p class="article-byline">
+      By <a href="{{ '/about/' | relative_url }}">{{ article_author }}</a>
+    </p>
+
+    {% if page.date %}
+      <p class="article-dates">
+        <time datetime="{{ page.date | date_to_xmlschema }}">Published {{ page.date | date: "%B %-d, %Y" }}</time>
+        {% if modified_day != published_day %}
+          <span aria-hidden="true"> · </span>
+          <time datetime="{{ page.date_modified | default: page.last_modified_at | date_to_xmlschema }}">Updated {{ page.date_modified | default: page.last_modified_at | date: "%B %-d, %Y" }}</time>
+        {% endif %}
+      </p>
+    {% endif %}
+
+    {% if page.reading_time %}
+      <p class="article-reading-time">{{ page.reading_time }} min read</p>
+    {% endif %}
+
+    {% if page.image and page.image.path %}
+      <figure class="article-cover">
+        <img src="{{ page.image.path | relative_url }}" alt="{{ page.image.alt | default: page.title }}"{% if page.image.width %} width="{{ page.image.width }}"{% endif %}{% if page.image.height %} height="{{ page.image.height }}"{% endif %}>
+        {% if page.image.caption or page.image.credit %}
+          <figcaption>
+            {% if page.image.caption %}{{ page.image.caption }}{% endif %}{% if page.image.caption and page.image.credit %} {% endif %}{% if page.image.credit %}Credit: {{ page.image.credit }}{% endif %}
+          </figcaption>
+        {% endif %}
+      </figure>
+    {% endif %}
+  </header>
+
+  <section class="article-content" aria-label="Article content">
+    {{ content }}
+  </section>
+
+  {% include article-provenance.html provenance=page.provenance %}
+  {% include article-author.html author=page.author %}
+  {% include related-articles.html article=page %}
+</article>

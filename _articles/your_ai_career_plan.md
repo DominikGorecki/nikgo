@@ -7,7 +7,12 @@ date: 2026-04-10
 date_modified: 2026-07-17
 last_modified_at: 2026-07-17
 author: dominik-gorecki
+content_id: ai-career-plan
 category: agentic-engineering
+topics:
+  - personal-ai-practice
+  - future-of-work
+  - software-development
 tags:
   - ai-careers
   - software-engineering
@@ -22,17 +27,16 @@ featured: true
 feature_group: general
 feature_order: 7
 article_type: blog-post
+primary_question: "How should an engineer develop durable AI capability beyond an employer's rollout plan?"
+evidence_type: "Author career analysis with cited industry and product context."
+key_limitation: "The article offers a general career framework, not individualized employment or financial advice."
 related:
-  - SWE-own-your-own-ai
-  - Market_for_Portable_Minds
-  - vibe-v-agentic-swe
+  - bring-your-own-ai-leverage
+  - market-for-portable-minds
+  - vibe-coding-trap
 redirect_from: []
 published: true
 ---
-
-![your_ai_career_plan](./images/your_ai_career_plan.webp)
-
-# Your Company’s AI Rollout Is Not Your Career Plan
 
 Two engineers at the same company receive access to the same approved AI assistant. One uses it occasionally in the IDE and considers that enough. The other experiments outside work with several tools on side projects, scripts, local automations, and disposable repositories. She sees how agents plan, drift, fail, recover, and produce convincing nonsense. After six months, the two engineers may have access to the same technology, but they have not developed the same skill.
 

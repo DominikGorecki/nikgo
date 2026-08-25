@@ -7,7 +7,11 @@ date: 2026-01-28
 date_modified: 2026-01-28
 last_modified_at: 2026-01-28
 author: dominik-gorecki
+content_id: domain-specific-rag-beats-search
 category: rag-research
+topics:
+  - retrieval-augmented-generation
+  - ai-evaluation
 tags:
   - rag
   - search-grounding
@@ -22,14 +26,17 @@ featured: true
 feature_group: white-papers
 feature_order: 2
 article_type: research-article
+provenance: small-rag-versus-web-search
+citation_title: "Domain-Specific RAG with Gemini 3 Flash Beats Pro with Web Search Grounding"
+citation_author: "Dominik Gorecki"
+citation_publication_date: 2026-01-28
+citation_canonical_url: /pages/articles/small_RAG_beats_large_large_search.html
 related:
-  - rag_as_a_capability_multiplier
-  - dose_response_curve_for_RAG__wp
+  - rag-capability-multiplier
+  - rag-dose-response-curve
 redirect_from: []
 published: true
 ---
-
-# Domain-Specific RAG with Gemini 3 Flash Beats PRO with Web Search Grounding
 
 **Why a smaller model + an academic corpus can outperform a larger model grounded with search**
 
@@ -227,7 +234,7 @@ Adding search grounding to Gemini 3 Pro improves the baseline and reduces the ga
 
 ---
 
-# References
+## References
 
 * Gorecki, D. (2026). *Retrieval-Augmented Generation as a Capability Multiplier for Research Tasks.* nikGo. ([nikgo][1])
 * Jin, J., Zhu, Y., Zhou, Y., & Dou, Z. (2024). *BIDER: Bridging Knowledge Inconsistency for Efficient Retrieval-Augmented LLMs via Key Supporting Evidence.* Findings of ACL 2024. ([aclanthology.org][4])

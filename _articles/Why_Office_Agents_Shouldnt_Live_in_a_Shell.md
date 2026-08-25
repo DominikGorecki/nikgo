@@ -7,7 +7,11 @@ date: 2026-03-09
 date_modified: 2026-03-11
 last_modified_at: 2026-03-11
 author: dominik-gorecki
+content_id: office-agents-semantic-layers
 category: agentic-engineering
+topics:
+  - ai-agents
+  - organizational-systems
 tags:
   - office-agents
   - semantic-layer
@@ -20,17 +24,16 @@ image:
   alt: "Office knowledge represented through governed semantic objects instead of a raw shell"
 featured: false
 article_type: blog-post
+primary_question: "Why are shell-style agents a poor default interface for sensitive office work?"
+evidence_type: "Author analysis supported by cited platform documentation and security guidance."
+key_limitation: "The article is an architectural argument, not a comparative security evaluation of all agent products."
 related:
-  - OODA_faster
-  - ai_in_the_veins_v2
-  - 90_percent_problem_of_agentic_SWE
+  - companies-that-ooda-faster
+  - 90-percent-problem-agentic-delivery
+  - market-for-portable-minds
 redirect_from: []
 published: true
 ---
-
-![Why Office Agents Shouldn’t Live a the Shell](./images/Why_Office_Agents_Shouldnt_Live_in_a_Shell_01.png)
-
-# Why Office Agents Shouldn’t Live in a Shell
 
 An executive assistant is trying to do what executive assistants do. She is sorting which messages matter, deciding which introductions are worth taking, noticing that a board member’s email should not sit unanswered until Thursday, seeing that two meetings can in fact become one, and preparing the briefing that will keep a harried Tuesday from turning into a small corporate fire. This is office work in its native form. It is made of people, promises, sensitivities, priorities, approvals, and timing.
 

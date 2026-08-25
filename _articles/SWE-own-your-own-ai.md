@@ -7,7 +7,12 @@ date: 2026-03-04
 date_modified: 2026-03-06
 last_modified_at: 2026-03-06
 author: dominik-gorecki
+content_id: bring-your-own-ai-leverage
 category: agentic-engineering
+topics:
+  - future-of-work
+  - personal-ai-practice
+  - software-development
 tags:
   - byoai
   - software-engineering
@@ -20,17 +25,16 @@ image:
   alt: "An engineer carrying a personal AI capability between work environments"
 featured: false
 article_type: blog-post
+primary_question: "What does it mean for an engineer to build and retain a personal AI practice while respecting workplace boundaries?"
+evidence_type: "Author analysis with cited product documentation and legal or policy sources."
+key_limitation: "Employment, intellectual-property, privacy, and security obligations vary by jurisdiction and agreement."
 related:
-  - your_ai_career_plan
-  - Market_for_Portable_Minds
-  - 2028_intelligence_explosion
+  - ai-career-plan
+  - market-for-portable-minds
+  - 2028-intelligence-explosion-byoai
 redirect_from: []
 published: true
 ---
-
-![Bring Your Own AI, Bring Your Own Leverage](./images/SWE-own-your-own-ai_01.png)
-
-# Bring Your Own AI, Bring Your Own Leverage
 
 The next divide in software is not between engineers who use AI and engineers who do not. That distinction is already dying. AI is becoming part of the plumbing. The real divide is between engineers who use it as a convenience and engineers who are quietly building a system around their own judgment.
 

@@ -7,7 +7,12 @@ date: 2026-03-27
 date_modified: 2026-07-17
 last_modified_at: 2026-07-17
 author: dominik-gorecki
+content_id: companies-that-ooda-faster
 category: agentic-engineering
+topics:
+  - ai-agents
+  - organizational-systems
+  - software-development
 tags:
   - ooda-loop
   - agentic-enterprise
@@ -22,17 +27,16 @@ featured: true
 feature_group: general
 feature_order: 8
 article_type: blog-post
+primary_question: "How can organizations make better decisions faster when AI changes the pace of engineering work?"
+evidence_type: "Author analysis using the OODA-loop metaphor and cited management and technology sources."
+key_limitation: "The article does not establish a causal estimate for AI's effect on organizational performance."
 related:
-  - ai_in_the_veins_v2
-  - 90_percent_problem_of_agentic_SWE
-  - Why_Office_Agents_Shouldnt_Live_in_a_Shell
+  - 90-percent-problem-agentic-delivery
+  - office-agents-semantic-layers
+  - market-for-portable-minds
 redirect_from: []
 published: true
 ---
-
-![Companies that OODA faster](./images/OODA_faster_01.webp)
-
-# The Companies That OODA Faster
 
 The standard corporate AI rollout is reassuringly familiar: buy some copilots, run a few pilots, appoint a steering committee, measure the “productivity uplift,” and expand department by department. It is a sensible way to control risk. It may also be far too slow for what is happening.
 

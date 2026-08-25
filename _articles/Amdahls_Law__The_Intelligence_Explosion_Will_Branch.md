@@ -7,7 +7,12 @@ date: 2026-08-14
 date_modified: 2026-08-14
 last_modified_at: 2026-08-14
 author: dominik-gorecki
+content_id: amdahls-law-intelligence-explosion
 category: ai-cognition-society
+topics:
+  - ai-futures
+  - ai-governance
+  - ai-and-society
 tags:
   - intelligence-explosion
   - amdahls-law
@@ -22,17 +27,18 @@ featured: true
 feature_group: general
 feature_order: 1
 article_type: essay
+primary_question: "How might Amdahl's Law shape where an AI-driven intelligence explosion creates or moves bottlenecks?"
+evidence_type: "Author analysis using a systems analogy and cited technology context."
+key_limitation: "The article is a forward-looking argument, not a quantitative forecast of AI development or economic outcomes."
+scenario: "Forward-looking scenario and author analysis; not a forecast."
 related:
-  - 2028_intelligence_explosion
-  - Rokos_Symbiotic_Carrot
-  - Market_for_Portable_Minds
+  - 2028-intelligence-explosion-byoai
+  - rokos-symbiotic-carrot
+  - market-for-portable-minds
+  - medicines-dead-time
 redirect_from: []
 published: true
 ---
-
-![A luminous intelligence core branching into laboratories, factories, power grids, and civic institutions](./images/01__Amdahls_Law__The_Intelligence_Explosion_Will_Branch.webp)
-
-# Amdahl’s Law: The Intelligence Explosion Will Branch
 
 *Why the first AGI may become extraordinarily powerful without becoming the only power that matters*
 

@@ -7,7 +7,12 @@ date: 2026-06-12
 date_modified: 2026-07-17
 last_modified_at: 2026-07-17
 author: dominik-gorecki
+content_id: ai-after-the-outrage-machine
 category: ai-cognition-society
+topics:
+  - attention-and-media
+  - ai-and-society
+  - human-flourishing
 tags:
   - social-media
   - attention
@@ -18,21 +23,19 @@ image:
   width: 800
   height: 450
   alt: "A person standing between an exploding outrage feed and a calm AI interface"
-featured: true
+featured: false
 feature_group: general
 feature_order: 3
 article_type: essay
+primary_question: "How could AI support understanding rather than reproduce the incentives of outrage-driven feeds?"
+evidence_type: "Author analysis supported by cited research, public data, and examples."
+key_limitation: "The article describes a possible design direction, not evidence that current AI systems reliably produce the proposed social outcomes."
 related:
-  - attention_is_fundamental
-  - ai_public_opinion_cliff
-  - what_freedom_for__v2
+  - attention-is-fundamental
+  - what-freedom-is-for
 redirect_from: []
 published: true
 ---
-
-![A person standing between an exploding outrage feed and a calm AI interface](./images/01__ai_after_the_outrage_machine.webp)
-
-# AI After the Outrage Machine
 
 *The next social technology should not capture our attention. It should restore it.*
 

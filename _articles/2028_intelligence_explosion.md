@@ -7,7 +7,12 @@ date: 2026-02-26
 date_modified: 2026-02-26
 last_modified_at: 2026-02-26
 author: dominik-gorecki
+content_id: 2028-intelligence-explosion-byoai
 category: ai-cognition-society
+topics:
+  - ai-futures
+  - future-of-work
+  - ai-and-society
 tags:
   - byoai
   - future-of-work
@@ -20,21 +25,20 @@ image:
   alt: "Diagram of the human-centric production model before centralized AI ownership"
 featured: false
 article_type: essay
+primary_question: "What ownership model could preserve human agency and economic participation as AI capabilities expand?"
+evidence_type: "Speculative macroeconomic scenario and author argument."
+key_limitation: "The narrative does not report observed 2028 events or establish a forecast."
+scenario: "Speculative 2028 macro scenario; not a report of observed events or a forecast."
 related:
-  - Market_for_Portable_Minds
-  - SWE-own-your-own-ai
-  - Amdahls_Law__The_Intelligence_Explosion_Will_Branch
+  - market-for-portable-minds
+  - bring-your-own-ai-leverage
+  - amdahls-law-intelligence-explosion
+  - great-ai-pink-slip-panic
 redirect_from: []
 published: true
 ---
 
-# THE 2028 INTELLIGENCE EXPLOSION
-
-### BYOAI, the end of the “central brain” company, and the return of the human production unit
-
 (Alternative to: [Citrini Research THE 2028 GLOBAL INTELLIGENCE CRISIS, June 2028](https://www.citriniresearch.com/p/2028gic)\)
-
----
 
 ## Preface: The crisis wasn’t “AI.” It was a bad ownership model.
 

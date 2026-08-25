@@ -1,0 +1,39 @@
+{% assign research = site.data.research[include.provenance] %}
+{% if research %}
+  <section class="article-provenance" aria-labelledby="article-provenance-heading">
+    <h2 id="article-provenance-heading">Research provenance</h2>
+    <dl>
+      {% if research.research_question %}<dt>Research question</dt><dd>{{ research.research_question }}</dd>{% endif %}
+      {% if research.corpus %}<dt>Corpus or scope</dt><dd>{{ research.corpus }}</dd>{% endif %}
+      {% if research.sample %}<dt>Sample</dt><dd>{{ research.sample }}</dd>{% endif %}
+      {% if research.collection_period %}<dt>Collection period</dt><dd>{{ research.collection_period }}</dd>{% endif %}
+      {% if research.systems %}<dt>Systems</dt><dd>{{ research.systems }}</dd>{% endif %}
+      {% if research.metrics %}<dt>Metrics</dt><dd>{{ research.metrics }}</dd>{% endif %}
+      {% if research.analysis %}<dt>Analysis</dt><dd>{{ research.analysis }}</dd>{% endif %}
+      {% if research.primary_finding %}<dt>Reported finding</dt><dd>{{ research.primary_finding }}</dd>{% endif %}
+      {% if research.uncertainty %}<dt>Uncertainty</dt><dd>{{ research.uncertainty }}</dd>{% endif %}
+    </dl>
+
+    {% if research.limitations %}
+      <h3>Limitations</h3>
+      <ul>
+        {% for limitation in research.limitations %}<li>{{ limitation }}</li>{% endfor %}
+      </ul>
+    {% endif %}
+
+    {% if research.materials_availability %}<p><strong>Data, code, and materials:</strong> {{ research.materials_availability }}</p>{% endif %}
+    {% if research.conflict_disclosure %}<p><strong>Conflicts and funding:</strong> {{ research.conflict_disclosure }}</p>{% endif %}
+    {% if research.ai_assistance_disclosure %}<p><strong>AI assistance:</strong> {{ research.ai_assistance_disclosure }}</p>{% endif %}
+    {% if research.external_sources %}<p><strong>External sources:</strong> {{ research.external_sources }}</p>{% endif %}
+
+    {% if research.citation %}
+      <h3>How to cite</h3>
+      <p class="article-citation">{{ research.citation }} <a href="{{ page.url | absolute_url }}">{{ page.url | absolute_url }}</a></p>
+    {% endif %}
+  </section>
+{% elsif include.provenance %}
+  <section class="article-provenance" aria-labelledby="article-provenance-heading">
+    <h2 id="article-provenance-heading">Research provenance</h2>
+    {{ include.provenance }}
+  </section>
+{% endif %}

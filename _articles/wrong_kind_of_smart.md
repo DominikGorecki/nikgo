@@ -7,7 +7,12 @@ date: 2026-03-15
 date_modified: 2026-07-17
 last_modified_at: 2026-07-17
 author: dominik-gorecki
+content_id: wrong-kind-of-smart-model-routing
 category: agentic-engineering
+topics:
+  - model-economics
+  - software-development
+  - ai-tokenomics
 tags:
   - model-routing
   - llm-cost
@@ -20,17 +25,17 @@ image:
   alt: "A costly AI model assigned to a trivial interface adjustment"
 featured: false
 article_type: blog-post
+primary_question: "When is a more expensive model the wrong choice for a software task?"
+evidence_type: "Author engineering analysis informed by cited model-economics research and a linked white paper."
+key_limitation: "The routing framework is not a universal benchmark and requires task-specific evaluation."
 related:
-  - 90_percent_problem_of_agentic_SWE
-  - vibe-v-agentic-swe
-  - SWE-own-your-own-ai
+  - 90-percent-problem-agentic-delivery
+  - vibe-coding-trap
+  - bring-your-own-ai-leverage
+  - ai-tokenomics-software-engineering
 redirect_from: []
 published: true
 ---
-
-# The Wrong Kind of Smart and the Most Expensive Model in the Room
-
-![The Wrong Kind of Smart](./images/wrong_kind_of_smart_01.webp)
 
 ## Six pixels of whitespace
 

@@ -7,7 +7,11 @@ date: 2026-01-26
 date_modified: 2026-01-28
 last_modified_at: 2026-01-28
 author: dominik-gorecki
+content_id: rag-capability-multiplier
 category: rag-research
+topics:
+  - retrieval-augmented-generation
+  - ai-evaluation
 tags:
   - rag
   - research
@@ -22,14 +26,19 @@ featured: true
 feature_group: white-papers
 feature_order: 3
 article_type: research-article
+provenance: rag-capability-multiplier
+citation_title: "Retrieval-Augmented Generation as a Capability Multiplier for Research Tasks"
+citation_author: "Dominik Gorecki"
+citation_publication_date: 2026-01-26
+citation_canonical_url: /pages/articles/rag_as_a_capability_multiplier.html
 related:
-  - dose_response_curve_for_RAG__wp
-  - small_RAG_beats_large_large_search
+  - rag-dose-response-curve
+  - domain-specific-rag-beats-search
+  - medicines-dead-time
+  - ai-tokenomics-software-engineering
 redirect_from: []
 published: true
 ---
-
-# Retrieval-Augmented Generation as a Capability Multiplier for Research Tasks
 
 **Controlled evidence: same-model gains, and small-model-with-RAG beating large-model-without-RAG**
 
@@ -231,7 +240,7 @@ These findings match and extend recent literature showing that retrieval groundi
 
 ---
 
-# References 
+## References
 
 * Jin, J., Zhu, Y., Zhou, Y., & Dou, Z. (2024). **BIDER: Bridging Knowledge Inconsistency for Efficient Retrieval-Augmented LLMs via Key Supporting Evidence**. *Findings of the Association for Computational Linguistics: ACL 2024*, 750–761. DOI: 10.18653/v1/2024.findings-acl.42. ([ACL Anthology][3])
 

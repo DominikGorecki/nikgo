@@ -1,0 +1,17 @@
+dominik-gorecki:
+  name: "Dominik Gorecki"
+  url: "/about/"
+  image: "/assets/images/profile_pic.png"
+  image_alt: "Dominik Gorecki"
+  short_bio: "An engineering leader writing about software delivery, AI, research, and cognition."
+  description: "Dominik Gorecki writes original research and essays on engineering, AI, and cognition."
+  knows_about:
+    - "Engineering leadership"
+    - "Software delivery"
+    - "Retrieval-augmented generation"
+    - "Applied AI"
+    - "Research workflows"
+    - "Cognition"
+  same_as:
+    - "https://www.linkedin.com/in/nikgo"
+    - "https://github.com/DominikGorecki"

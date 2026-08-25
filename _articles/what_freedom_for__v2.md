@@ -7,7 +7,12 @@ date: 2026-08-11
 date_modified: 2026-08-11
 last_modified_at: 2026-08-11
 author: dominik-gorecki
+content_id: what-freedom-is-for
 category: ai-cognition-society
+topics:
+  - human-flourishing
+  - future-of-work
+  - ai-and-society
 tags:
   - leisure
   - automation
@@ -22,18 +27,17 @@ featured: true
 feature_group: general
 feature_order: 2
 article_type: essay
+primary_question: "What should freedom from compulsory work be for in an increasingly automated society?"
+evidence_type: "Philosophical and social argument supported by cited research and historical examples."
+key_limitation: "The article argues for a view of leisure and agency; it does not predict a single automated future."
 related:
-  - attention_is_fundamental
-  - ai_after_the_outrage_machine
+  - attention-is-fundamental
+  - ai-after-the-outrage-machine
   - great-ai-pink-slip-panic
 redirect_from:
   - /pages/articles/what_freedom_for.html
 published: true
 ---
-
-![A person choosing between an open human world and a glowing loop of digital attention](./images/01__what_freedom_for.webp)
-
-# What Freedom Is For
 
 *AI may give us more free time than any civilization has known. The harder problem will be learning how to live in it.*
 

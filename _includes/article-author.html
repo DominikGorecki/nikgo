@@ -1,0 +1,13 @@
+{% assign author = site.data.authors[include.author] %}
+{% if author %}
+  {% assign author_url = author.url | default: '/about/' %}
+  <section class="article-author" aria-labelledby="article-author-heading">
+    <h2 id="article-author-heading">About the author</h2>
+    <div class="article-author-bio">
+      {% if author.image %}
+        <img src="{{ author.image | relative_url }}" alt="{{ author.image_alt | default: author.name }}" width="96" height="96" loading="lazy">
+      {% endif %}
+      <p><a href="{% if author_url contains '://' %}{{ author_url }}{% else %}{{ author_url | relative_url }}{% endif %}">{{ author.name }}</a>{% if author.short_bio %} — {{ author.short_bio }}{% endif %} <a href="{{ '/about/' | relative_url }}">Read the author profile.</a></p>
+    </div>
+  </section>
+{% endif %}

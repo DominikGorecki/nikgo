@@ -1,0 +1,21 @@
+{% assign related_ids = include.article.related %}
+{% if related_ids and related_ids.size > 0 %}
+<section class="related-articles" aria-labelledby="related-articles-heading">
+  <h2 id="related-articles-heading">Related reading</h2>
+  <ul>
+    {% for related_id in related_ids %}
+      {% assign related_article = site.articles | where: "content_id", related_id | first %}
+      {% if related_article and related_article.published %}
+        {% assign related_category = site.data.taxonomy.categories[related_article.category] %}
+        <li>
+          <article>
+            <p>{{ related_category.label | default: related_article.category | escape }}</p>
+            <h3><a href="{{ related_article.url | relative_url }}">{{ related_article.title | escape }}</a></h3>
+            <p>{{ related_article.description | escape }}</p>
+          </article>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

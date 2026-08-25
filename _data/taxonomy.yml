@@ -1,0 +1,47 @@
+# Controlled vocabulary for the canonical article collection. Categories are
+# primary editorial homes; topics provide narrower, cross-hub associations.
+categories:
+  agentic-engineering:
+    label: Agentic engineering
+    path: /topics/agentic-engineering/
+    description: Building dependable AI-enabled software and organizations.
+  rag-research:
+    label: RAG research
+    path: /topics/rag-research/
+    description: Retrieval-augmented generation, evaluation, and model economics.
+  ai-cognition-society:
+    label: AI, cognition, and society
+    path: /topics/ai-cognition-society/
+    description: How AI changes attention, agency, institutions, health, and work.
+
+topics:
+  ai-agents:
+    label: AI agents
+  ai-and-society:
+    label: AI and society
+  ai-evaluation:
+    label: AI evaluation
+  ai-futures:
+    label: AI futures
+  ai-governance:
+    label: AI governance
+  ai-tokenomics:
+    label: AI tokenomics
+  attention-and-media:
+    label: Attention and media
+  future-of-work:
+    label: Future of work
+  health-and-ai:
+    label: Health and AI
+  human-flourishing:
+    label: Human flourishing
+  model-economics:
+    label: Model economics
+  organizational-systems:
+    label: Organizational systems
+  personal-ai-practice:
+    label: Personal AI practice
+  retrieval-augmented-generation:
+    label: Retrieval-augmented generation
+  software-development:
+    label: Software development

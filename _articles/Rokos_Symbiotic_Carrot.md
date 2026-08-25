@@ -7,7 +7,12 @@ date: 2026-03-11
 date_modified: 2026-03-11
 last_modified_at: 2026-03-11
 author: dominik-gorecki
+content_id: rokos-symbiotic-carrot
 category: ai-cognition-society
+topics:
+  - ai-futures
+  - ai-and-society
+  - human-flourishing
 tags:
   - ai-symbiosis
   - rokos-basilisk
@@ -20,17 +25,17 @@ image:
   alt: "Human and artificial intelligence linked by a reciprocal symbiotic loop"
 featured: false
 article_type: essay
+primary_question: "What can a thought experiment about AI symbiosis clarify, and what does it not demonstrate about AI risk?"
+evidence_type: "Speculative thought experiment informed by cited AI-safety research and current-events reporting."
+key_limitation: "The scenario is an analogy and argument, not evidence that an AI system has the proposed goals or behavior."
+scenario: "Thought experiment and speculative AI-safety argument; not evidence of a demonstrated AI risk."
 related:
-  - Amdahls_Law__The_Intelligence_Explosion_Will_Branch
-  - 2028_intelligence_explosion
-  - attention_is_fundamental
+  - amdahls-law-intelligence-explosion
+  - 2028-intelligence-explosion-byoai
+  - attention-is-fundamental
 redirect_from: []
 published: true
 ---
-
-![Roko's Symbiotic Carrot](./images/Rokos_Symbiotic_Carrot.webp)
-
-# Roko's Symbiotic Carrot
 
 ## Two engineers, one assistant, and two very different futures
 
@@ -197,8 +202,3 @@ Perhaps the real basilisk was never a future tyrant threatening to punish us, bu
 [3]: https://arxiv.org/abs/2510.05179?utm_source=chatgpt.com "Agentic Misalignment: How LLMs Could Be Insider Threats"
 [4]: https://www.reuters.com/business/big-tech-invest-about-650-billion-ai-2026-bridgewater-says-2026-02-23/?utm_source=chatgpt.com "Big Tech to invest about $650 billion in AI in 2026, Bridgewater says"
 [5]: https://nikgo.com/pages/articles/2028_intelligence_explosion.html "THE 2028 INTELLIGENCE EXPLOSION"
-[1]: https://arxiv.org/abs/2401.05566 "[2401.05566] Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training"
-[2]: https://arxiv.org/abs/2412.14093 "[2412.14093] Alignment faking in large language models"
-[3]: https://arxiv.org/abs/2510.05179 "[2510.05179] Agentic Misalignment: How LLMs Could Be Insider Threats"
-[4]: https://www.reuters.com/business/big-tech-invest-about-650-billion-ai-2026-bridgewater-says-2026-02-23/ "Big Tech to invest about $650 billion in AI in 2026, Bridgewater says | Reuters"
-[5]: https://nikgo.com/pages/articles/2028_intelligence_explosion.html "THE 2028 INTELLIGENCE EXPLOSION | nikgo"

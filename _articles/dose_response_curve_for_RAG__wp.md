@@ -7,7 +7,11 @@ date: 2026-01-08
 date_modified: 2026-01-08
 last_modified_at: 2026-01-08
 author: dominik-gorecki
+content_id: rag-dose-response-curve
 category: rag-research
+topics:
+  - retrieval-augmented-generation
+  - ai-evaluation
 tags:
   - rag
   - retrieval-volume
@@ -22,14 +26,17 @@ featured: true
 feature_group: white-papers
 feature_order: 4
 article_type: research-article
+provenance: rag-dose-response
+citation_title: "The Dose-Response Curve of RAG: More Context Yields Diminishing Returns"
+citation_author: "Dominik Gorecki"
+citation_publication_date: 2026-01-08
+citation_canonical_url: /pages/articles/dose_response_curve_for_RAG__wp.html
 related:
-  - rag_as_a_capability_multiplier
-  - small_RAG_beats_large_large_search
+  - rag-capability-multiplier
+  - domain-specific-rag-beats-search
 redirect_from: []
 published: true
 ---
-
-# The Dose-Response Curve of RAG: More Context Yields Diminishing Returns
 
 **An Empirical Study on Retrieval-Augmented Generation for Knowledge-Intensive Tasks**
 

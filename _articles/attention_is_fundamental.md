@@ -7,7 +7,12 @@ date: 2026-05-21
 date_modified: 2026-07-17
 last_modified_at: 2026-07-17
 author: dominik-gorecki
+content_id: attention-is-fundamental
 category: ai-cognition-society
+topics:
+  - attention-and-media
+  - ai-and-society
+  - human-flourishing
 tags:
   - attention
   - leadership
@@ -22,17 +27,16 @@ featured: true
 feature_group: general
 feature_order: 5
 article_type: essay
+primary_question: "Why treat attention as a central constraint in human reasoning and technology design?"
+evidence_type: "Philosophical and systems argument informed by cited research and historical examples."
+key_limitation: "The essay advances a conceptual framing; it does not establish a single causal scientific model of attention."
 related:
-  - ai_after_the_outrage_machine
-  - what_freedom_for__v2
-  - ai_public_opinion_cliff
+  - ai-after-the-outrage-machine
+  - what-freedom-is-for
+  - rokos-symbiotic-carrot
 redirect_from: []
 published: true
 ---
-
-![Leader lit by a phone as symbolic worlds spill into the room](./images/01__attention_is_fundamental.webp)
-
-# Attention Is Fundamental
 
 A leader wakes before dawn and reaches for the phone. There is a customer escalation, a market wobble, a carefully worded note from the board, a news alert, and an AI demo promising to reorganize the economy before breakfast. Each item presents itself as information, but it is also making a bid for reality.
 

@@ -7,7 +7,12 @@ date: 2026-05-14
 date_modified: 2026-07-17
 last_modified_at: 2026-07-17
 author: dominik-gorecki
+content_id: market-for-portable-minds
 category: agentic-engineering
+topics:
+  - future-of-work
+  - organizational-systems
+  - personal-ai-practice
 tags:
   - portable-context
   - future-of-work
@@ -22,18 +27,17 @@ featured: true
 feature_group: general
 feature_order: 6
 article_type: essay
+primary_question: "How could portable personal AI change the market for knowledge work and individual leverage?"
+evidence_type: "Author economic and technology analysis with cited historical and technical sources."
+key_limitation: "The article develops a conceptual model; it does not predict a measured market outcome."
 related:
-  - 2028_intelligence_explosion
-  - SWE-own-your-own-ai
-  - your_ai_career_plan
+  - 2028-intelligence-explosion-byoai
+  - bring-your-own-ai-leverage
+  - ai-career-plan
 redirect_from: []
 published: true
 ---
 
-
-![A controlled interface between portable worker context and company systems](./images/02__Market_for_Portable_Minds.webp)
-
-# The Market for Portable Minds
 
 ## The Planner’s Temptation
 

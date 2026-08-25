@@ -7,7 +7,11 @@ date: 2026-03-03
 date_modified: 2026-03-03
 last_modified_at: 2026-03-03
 author: dominik-gorecki
+content_id: vibe-coding-trap
 category: agentic-engineering
+topics:
+  - ai-agents
+  - software-development
 tags:
   - vibe-coding
   - agentic-engineering
@@ -20,19 +24,18 @@ image:
   alt: "A developer caught in the scaling trap of vibe coding"
 featured: true
 feature_group: general
-feature_order: 9
+feature_order: 2
 article_type: blog-post
+primary_question: "What separates vibe coding from disciplined agentic software engineering?"
+evidence_type: "Author analysis with examples and cited technical sources."
+key_limitation: "The distinction is a practical framework, not a validated maturity model."
 related:
-  - 90_percent_problem_of_agentic_SWE
-  - wrong_kind_of_smart
-  - your_ai_career_plan
+  - 90-percent-problem-agentic-delivery
+  - wrong-kind-of-smart-model-routing
+  - ai-career-plan
 redirect_from: []
 published: true
 ---
-
-# The Vibe Trap
-
-![Vibe coding trap](./images/vibe_v_agentic-swe_01.png)
 
 ## The Phrase That Named a Mood
 

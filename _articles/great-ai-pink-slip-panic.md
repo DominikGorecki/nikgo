@@ -7,19 +7,31 @@ date: 2026-03-01
 date_modified: 2026-03-01
 last_modified_at: 2026-03-01
 author: dominik-gorecki
+content_id: great-ai-pink-slip-panic
 category: ai-cognition-society
+topics:
+  - ai-and-society
+  - future-of-work
+  - human-flourishing
 tags:
   - automation
   - labor-markets
   - future-of-work
   - ai-economics
-image: null
+image:
+  path: /assets/images/nikgo-social-fallback.png
+  width: 1672
+  height: 941
+  alt: "Abstract network of light representing shifting economic and technological connections"
 featured: false
 article_type: essay
+primary_question: "Does AI-driven labor disruption necessarily produce a broad employment collapse?"
+evidence_type: "Author economic and social commentary with cited examples and public reporting."
+key_limitation: "The article does not provide a causal labor-market forecast or individualized career guidance."
 related:
-  - 2028_intelligence_explosion
-  - Market_for_Portable_Minds
-  - your_ai_career_plan
+  - 2028-intelligence-explosion-byoai
+  - market-for-portable-minds
+  - ai-career-plan
 redirect_from: []
 published: true
 ---

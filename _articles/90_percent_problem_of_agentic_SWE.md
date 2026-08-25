@@ -7,7 +7,12 @@ date: 2026-06-03
 date_modified: 2026-07-17
 last_modified_at: 2026-07-17
 author: dominik-gorecki
+content_id: 90-percent-problem-agentic-delivery
 category: agentic-engineering
+topics:
+  - software-development
+  - ai-agents
+  - organizational-systems
 tags:
   - agentic-engineering
   - software-delivery
@@ -22,17 +27,17 @@ featured: true
 feature_group: general
 feature_order: 4
 article_type: essay
+primary_question: "Why does faster code generation alone not transform software delivery?"
+evidence_type: "Author analysis supported by cited software-engineering research and practice sources."
+key_limitation: "The 90 percent framing is an analytical provocation, not a measured universal ratio."
 related:
-  - vibe-v-agentic-swe
-  - wrong_kind_of_smart
-  - OODA_faster
+  - vibe-coding-trap
+  - wrong-kind-of-smart-model-routing
+  - companies-that-ooda-faster
+  - office-agents-semantic-layers
 redirect_from: []
 published: true
 ---
-
-![Coding slice beside the broader software engineering task](./images/01__90_percent_problem_of_agentic_SWE.webp)
-
-# The 90 Percent Problem of Agentic Software Delivery
 
 *Coding agents look revolutionary in the demo. The real transformation begins when leaders stop measuring generated code and start redesigning the journey from intent to trusted release.*
 
