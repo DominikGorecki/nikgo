@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="intro-section">
-  <img src="{{ '/assets/images/profile_pic.png' | relative_url }}" class="profile-avatar" alt="Dominik Gorecki">
+  <img src="{{ '/assets/images/profile_pic.png' | relative_url }}" class="profile-avatar" alt="Dominik Gorecki" width="1024" height="1024" fetchpriority="high">
   
   <h1>Dominik Gorecki</h1>
   
@@ -23,26 +23,26 @@ layout: default
 </div>
 
 <div class="card-grid">
-  <div class="card-item" onclick="document.getElementById('engineering-leadership').scrollIntoView({behavior: 'smooth'})">
-    <img src="{{ '/assets/images/eng_and_leadership.webp' | relative_url }}" class="card-image" alt="Engineering & Leadership" />
+  <a class="card-item" href="#engineering-leadership">
+    <img src="{{ '/assets/images/eng_and_leadership.webp' | relative_url }}" class="card-image" alt="Engineering & Leadership" width="800" height="320" loading="lazy" decoding="async" />
     <h3 class="card-title">Engineering & Leadership</h3>
     <p class="card-description">Strategy, execution, and team building with a focus on product-minded delivery and maintainable architecture.</p>
     <div class="card-footer">Learn More <span class="card-arrow">→</span></div>
-  </div>
+  </a>
   
-  <div class="card-item" onclick="document.getElementById('technical-strengths').scrollIntoView({behavior: 'smooth'})">
-    <img src="{{ '/assets/images/tech_strengths.webp' | relative_url }}" class="card-image" alt="Technical Strengths" />
+  <a class="card-item" href="#technical-strengths">
+    <img src="{{ '/assets/images/tech_strengths.webp' | relative_url }}" class="card-image" alt="Technical Strengths" width="800" height="320" loading="lazy" decoding="async" />
     <h3 class="card-title">Technical Strengths</h3>
     <p class="card-description">Expertise in C#/.NET, React/TypeScript, and Python for AI/RAG pipelines and automation.</p>
     <div class="card-footer">View Skills <span class="card-arrow">→</span></div>
-  </div>
+  </a>
   
-  <div class="card-item" onclick="document.getElementById('interests').scrollIntoView({behavior: 'smooth'})">
-    <img src="{{ '/assets/images/interests.webp' | relative_url }}" class="card-image" alt="Interests" />
+  <a class="card-item" href="#interests">
+    <img src="{{ '/assets/images/interests.webp' | relative_url }}" class="card-image" alt="Interests" width="800" height="320" loading="lazy" decoding="async" />
     <h3 class="card-title">Interests</h3>
     <p class="card-description">Exploring the intersection of cognitive science, rationality, and truth-preserving research workflows.</p>
     <div class="card-footer">Explore <span class="card-arrow">→</span></div>
-  </div>
+  </a>
 </div>
 
 <hr>

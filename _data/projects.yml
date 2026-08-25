@@ -1,0 +1,40 @@
+projects:
+  - name: VulcLab
+    url: https://vulclab.com
+    description: A research and knowledge assistant for querying trusted libraries of papers, textbooks, notes, internal documents, and curated resources through a normal chat workflow.
+    image: /assets/images/vulc-logo-sm.png
+    image_alt: VulcLab logo
+    relationship: Founder and product lead
+    disclosure: VulcLab is a Dominik Gorecki product. Its retrieval-oriented research workflow is relevant to the site's RAG research coverage.
+    status: Active
+    link_label: Visit VulcLab
+  - name: MyCue
+    url: https://mycue.ai
+    description: A reusable AI prompt and workflow library for building, organizing, versioning, and sharing prompts across major AI tools.
+    image: /assets/images/myCueFacIvon.png
+    image_alt: MyCue icon
+    relationship: Founder and product lead
+    disclosure: MyCue is a Dominik Gorecki product.
+    status: Active
+    link_label: Visit MyCue
+  - name: Fuzzy Faves
+    url: https://chromewebstore.google.com/detail/fuzzy-faves/afdjpalpgemjpaipfihjpnnonneapljc
+    description: A Chrome extension for saving links and finding them quickly with fuzzy matching, notes, and a single searchable place.
+    relationship: Creator
+    disclosure: Independent project by Dominik Gorecki.
+    status: Available in the Chrome Web Store
+    link_label: View in Chrome Web Store
+  - name: Searchable Stream
+    url: https://www.nuget.org/packages/AiKismet.SearchableStream
+    description: A .NET System.IO.Stream wrapper that adds search and read capabilities for binary files such as PDFs and custom formats.
+    relationship: Creator
+    disclosure: Open-source package by Dominik Gorecki.
+    status: Available on NuGet
+    link_label: View NuGet package
+  - name: Slug Generator
+    url: https://www.nuget.org/packages/IoRecipes.SlugGenerator
+    description: A .NET library for generating unique, URL-friendly slugs from strings with a simple, configurable API.
+    relationship: Creator
+    disclosure: Open-source package by Dominik Gorecki.
+    status: Available on NuGet
+    link_label: View NuGet package
