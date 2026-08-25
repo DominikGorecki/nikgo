@@ -1,0 +1,36 @@
+name: SEO quality
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-validate:
+    name: Build and validate
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      JEKYLL_ENV: production
+      PAGES_REPO_NWO: DominikGorecki/nikgo
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+      - name: Build the locked GitHub Pages site
+        run: bundle _2.3.25_ exec jekyll build --trace
+      - name: Validate source and generated site contracts
+        run: ruby scripts/validate_site.rb --source . --site _site --report _site/seo-quality-report.json
+      - name: Upload SEO diagnostics
+        if: ${{ failure() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-quality-report
+          path: _site/seo-quality-report.json
+          if-no-files-found: ignore
