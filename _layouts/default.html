@@ -2,10 +2,7 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="UTF-8">
-    {% seo %}
-    {% if page.collection == 'articles' or page.layout == 'article' %}
-      {% include article-social-image.html %}
-    {% endif %}
+    {% include seo-head.html %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +11,9 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script>
       // Dark mode initialization - as early as possible to avoid flicker
-      if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      let storedTheme = null;
+      try { storedTheme = localStorage.getItem('theme'); } catch (_) {}
+      if (storedTheme === 'dark' || (storedTheme === null && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark');
       } else {
         document.documentElement.classList.remove('dark');
@@ -22,15 +21,15 @@
     </script>
   </head>
   <body class="transition-colors duration-300">
-    
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="sticky-nav">
-      <nav class="nav-container">
+      <nav class="nav-container" aria-label="Primary navigation">
         <a href="/" class="nav-logo">nikGo</a>
         <div class="nav-links">
           <a href="/" class="nav-item">Home</a>
           <a href="/projects.html" class="nav-item">Projects</a>
           <a href="/articles.html" class="nav-item">Articles</a>
-          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
             <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
             <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
           </button>
@@ -44,38 +43,43 @@
 
     <section class="page-header-v2">
       <div class="header-content">
-        <h1 class="hero-title">nikGo</h1>
+        <a class="hero-title" href="{{ '/' | relative_url }}">nikGo</a>
         <p class="hero-subtitle">Engineering, AI, & Cognition</p>
       </div>
       <div class="animated-bg"></div>
     </section>
 
-    <main class="main-content-v2">
-      <article class="content-wrapper">
+    <main id="main-content" class="main-content-v2">
+      {% if page.collection == 'articles' or page.layout == 'article' %}
         {{ content }}
-      </article>
+      {% else %}
+        <div class="content-wrapper">
+          {{ content }}
+        </div>
+      {% endif %}
       
       <button id="back-to-top" class="back-to-top" aria-label="Back to top">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
       </button>
-
-      <footer class="site-footer-v2">
-        <div class="footer-content">
-          <div class="footer-left">
-            {% if site.github.is_project_page %}
-              <p class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</p>
-            {% endif %}
-            <p class="site-footer-credits">© {{ "now" | date: "%Y" }} Dominik Gorecki. Built with Jekyll.</p>
-          </div>
-          <div class="footer-right">
-             <a href="https://github.com/{{ site.github.owner_name | default: 'dardawk' }}" class="social-link">GitHub</a>
-             <a href="https://linkedin.com/in/nikgo" class="social-link">LinkedIn</a>
-          </div>
-        </div>
-      </footer>
     </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="{{ '/assets/js/main.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+    <footer class="site-footer-v2">
+      <div class="footer-content">
+        <div class="footer-left">
+          {% if site.github.is_project_page %}
+            <p class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</p>
+          {% endif %}
+          <p class="site-footer-credits">© {{ "now" | date: "%Y" }} Dominik Gorecki. Built with Jekyll.</p>
+        </div>
+        <div class="footer-right">
+           <a href="{{ '/about/' | relative_url }}" class="social-link">About</a>
+           <a href="{{ '/editorial-policy/' | relative_url }}" class="social-link">Editorial policy</a>
+           <a href="https://github.com/{{ site.github.owner_name | default: 'dardawk' }}" class="social-link">GitHub</a>
+           <a href="https://linkedin.com/in/nikgo" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="{{ '/assets/js/main.js?v=' | append: site.github.build_revision | relative_url }}" defer></script>
   </body>
 </html>

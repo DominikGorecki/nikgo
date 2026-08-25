@@ -1,0 +1,216 @@
+{% comment %}
+  Project-owned metadata and JSON-LD. Keep this include as the only source of
+  canonical, Open Graph, Twitter, robots, and structured-data output.
+{% endcomment %}
+{% assign page_title = page.seo_title | default: page.title | default: site.title %}
+{% assign page_description = page.description | default: site.description %}
+{% assign canonical_origin = site.canonical_url | default: 'https://nikgo.com' %}
+{% if page.canonical_url %}
+  {% assign canonical_url = page.canonical_url %}
+{% else %}
+  {% assign canonical_url = canonical_origin | append: page.url %}
+{% endif %}
+{% assign website_id = 'https://nikgo.com/#website' %}
+{% assign person_id = 'https://nikgo.com/about/#person' %}
+{% assign author = site.data.authors[page.author] %}
+{% assign author_name = author.name | default: site.author.name | default: 'Dominik Gorecki' %}
+{% assign author_path = author.url | default: site.author.url | default: '/about/' %}
+{% if author_path contains '://' %}
+  {% assign author_url = author_path %}
+{% else %}
+  {% assign author_url = canonical_origin | append: author_path %}
+{% endif %}
+{% if page.image and page.image.path %}
+  {% assign image_path = page.image.path %}
+  {% assign image_alt = page.image.alt | default: page_title %}
+  {% assign image_width = page.image.width %}
+  {% assign image_height = page.image.height %}
+{% else %}
+  {% assign image_path = site.social_image.path | default: site.logo %}
+  {% assign image_alt = site.social_image.alt | default: site.title %}
+  {% assign image_width = site.social_image.width %}
+  {% assign image_height = site.social_image.height %}
+{% endif %}
+{% if image_path contains '://' %}
+  {% assign image_url = image_path %}
+{% else %}
+  {% assign image_url = canonical_origin | append: image_path %}
+{% endif %}
+{% assign author_image_path = author.image | default: site.social_image.path | default: site.logo %}
+{% if author_image_path contains '://' %}
+  {% assign author_image_url = author_image_path %}
+{% else %}
+  {% assign author_image_url = canonical_origin | append: author_image_path %}
+{% endif %}
+{% assign robots = page.robots %}
+{% if robots %}
+  {% unless robots contains 'noindex' or robots contains 'max-image-preview' %}
+    {% assign robots = robots | append: ', max-image-preview:large' %}
+  {% endunless %}
+{% else %}
+  {% assign robots = 'max-image-preview:large' %}
+{% endif %}
+{% assign is_article = false %}
+{% if page.collection == 'articles' or page.layout == 'article' %}
+  {% assign is_article = true %}
+{% endif %}
+{% assign is_home = false %}
+{% if page.url == '/' %}
+  {% assign is_home = true %}
+{% endif %}
+{% assign is_about = false %}
+{% if page.url == '/about/' %}
+  {% assign is_about = true %}
+{% endif %}
+{% assign is_collection = false %}
+{% if page.url == '/articles.html' or page.url == '/projects.html' or page.url contains '/topics/' %}
+  {% assign is_collection = true %}
+{% endif %}
+{% assign og_type = 'website' %}
+{% if is_article %}
+  {% assign og_type = 'article' %}
+{% endif %}
+<title>{{ page_title | escape }}</title>
+<meta name="description" content="{{ page_description | escape }}">
+<link rel="canonical" href="{{ canonical_url | escape }}">
+<meta name="robots" content="{{ robots | escape }}">
+<meta property="og:locale" content="{{ site.locale | default: site.lang | escape }}">
+<meta property="og:type" content="{{ og_type }}">
+<meta property="og:title" content="{{ page_title | escape }}">
+<meta property="og:description" content="{{ page_description | escape }}">
+<meta property="og:url" content="{{ canonical_url | escape }}">
+<meta property="og:site_name" content="{{ site.title | escape }}">
+<meta property="og:image" content="{{ image_url | escape }}">
+<meta property="og:image:alt" content="{{ image_alt | escape }}">
+{% if image_width %}<meta property="og:image:width" content="{{ image_width }}">{% endif %}
+{% if image_height %}<meta property="og:image:height" content="{{ image_height }}">{% endif %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page_title | escape }}">
+<meta name="twitter:description" content="{{ page_description | escape }}">
+<meta name="twitter:image" content="{{ image_url | escape }}">
+<meta name="twitter:image:alt" content="{{ image_alt | escape }}">
+{% if is_article %}
+  {% assign published_date = page.date | date_to_xmlschema %}
+  {% assign modified_source = page.date_modified | default: page.last_modified_at | default: page.date %}
+  {% assign modified_date = modified_source | date_to_xmlschema %}
+  {% assign schema_type = page.seo.type | default: 'BlogPosting' %}
+  {% if page.article_type == 'research-article' and page.seo.type == nil %}
+    {% assign schema_type = 'Article' %}
+  {% endif %}
+  <meta property="article:published_time" content="{{ published_date }}">
+  <meta property="article:modified_time" content="{{ modified_date }}">
+  <meta property="article:author" content="{{ author_url | escape }}">
+  {% if page.category %}<meta property="article:section" content="{{ page.category | escape }}">{% endif %}
+  {% for tag in page.tags %}<meta property="article:tag" content="{{ tag | escape }}">{% endfor %}
+{% endif %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": {{ website_id | jsonify }},
+      "url": {{ canonical_origin | jsonify }},
+      "name": {{ site.title | jsonify }},
+      "description": {{ site.description | jsonify }},
+      "inLanguage": {{ site.lang | jsonify }},
+      "creator": { "@id": {{ person_id | jsonify }} },
+      "publisher": { "@id": {{ person_id | jsonify }} }
+    }
+    {% if is_article %}
+      ,{
+        "@type": {{ schema_type | jsonify }},
+        "@id": {{ canonical_url | append: '#article' | jsonify }},
+        "url": {{ canonical_url | jsonify }},
+        "mainEntityOfPage": { "@id": {{ canonical_url | jsonify }} },
+        "headline": {{ page_title | jsonify }},
+        "description": {{ page_description | jsonify }},
+        "datePublished": {{ published_date | jsonify }},
+        "dateModified": {{ modified_date | jsonify }},
+        "image": {
+          "@type": "ImageObject",
+          "url": {{ image_url | jsonify }}{% if image_width %},
+          "width": {{ image_width | jsonify }}{% endif %}{% if image_height %},
+          "height": {{ image_height | jsonify }}{% endif %}
+        },
+        "author": { "@id": {{ person_id | jsonify }}, "name": {{ author_name | jsonify }} },
+        "isPartOf": { "@id": {{ website_id | jsonify }} },
+        "keywords": {{ page.tags | jsonify }},
+        "inLanguage": {{ site.lang | jsonify }}
+      }
+      ,{
+        "@type": "BreadcrumbList",
+        "@id": {{ canonical_url | append: '#breadcrumb' | jsonify }},
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": {{ canonical_origin | append: '/' | jsonify }} },
+          { "@type": "ListItem", "position": 2, "name": "Articles", "item": {{ canonical_origin | append: '/articles.html' | jsonify }} },
+          { "@type": "ListItem", "position": 3, "name": {{ page_title | jsonify }}, "item": {{ canonical_url | jsonify }} }
+        ]
+      }
+    {% elsif is_about %}
+      ,{
+        "@type": "ProfilePage",
+        "@id": {{ canonical_url | jsonify }},
+        "url": {{ canonical_url | jsonify }},
+        "name": {{ page_title | jsonify }},
+        "mainEntity": { "@id": {{ person_id | jsonify }} },
+        "isPartOf": { "@id": {{ website_id | jsonify }} }
+      }
+      ,{
+        "@type": "Person",
+        "@id": {{ person_id | jsonify }},
+        "name": {{ author_name | jsonify }},
+        "url": {{ author_url | jsonify }},
+        "image": { "@type": "ImageObject", "url": {{ author_image_url | jsonify }} },
+        "description": {{ author.description | default: site.description | jsonify }},
+        "knowsAbout": {{ author.knows_about | jsonify }},
+        "sameAs": {{ author.same_as | jsonify }}
+      }
+    {% elsif is_collection %}
+      ,{
+        "@type": "CollectionPage",
+        "@id": {{ canonical_url | append: '#collection' | jsonify }},
+        "url": {{ canonical_url | jsonify }},
+        "name": {{ page_title | jsonify }},
+        "description": {{ page_description | jsonify }},
+        "isPartOf": { "@id": {{ website_id | jsonify }} },
+        "mainEntity": {
+          "@type": "ItemList",
+          "itemListElement": [
+            {% assign item_position = 0 %}
+            {% if page.collection_page == 'projects' %}
+              {% for project in site.data.projects.projects %}
+                {% assign item_position = item_position | plus: 1 %}
+                {% unless item_position == 1 %},{% endunless %}
+                { "@type": "ListItem", "position": {{ item_position }}, "name": {{ project.name | jsonify }}, "url": {{ project.url | jsonify }} }
+              {% endfor %}
+            {% else %}
+              {% assign collection_articles = site.articles | where: 'published', true | sort: 'date' | reverse %}
+              {% for item in collection_articles %}
+                {% assign include_item = true %}
+                {% if page.topic and item.category != page.topic %}{% assign include_item = false %}{% endif %}
+                {% if include_item %}
+                  {% assign item_position = item_position | plus: 1 %}
+                  {% unless item_position == 1 %},{% endunless %}
+                  { "@type": "ListItem", "position": {{ item_position }}, "name": {{ item.title | jsonify }}, "url": {{ canonical_origin | append: item.url | jsonify }} }
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          ]
+        }
+      }
+    {% elsif is_home %}
+    {% else %}
+      ,{
+        "@type": "WebPage",
+        "@id": {{ canonical_url | jsonify }},
+        "url": {{ canonical_url | jsonify }},
+        "name": {{ page_title | jsonify }},
+        "description": {{ page_description | jsonify }},
+        "isPartOf": { "@id": {{ website_id | jsonify }} },
+        "inLanguage": {{ site.lang | jsonify }}
+      }
+    {% endif %}
+  ]
+}
+</script>

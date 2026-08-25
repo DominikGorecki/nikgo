@@ -1,15 +1,45 @@
 theme: jekyll-theme-cayman
+
+title: "nikGo"
+tagline: "Engineering, AI, and Cognition"
+description: "Original research and essays by engineering leader Dominik Gorecki on agentic software delivery, RAG systems, AI strategy, and cognition."
 url: "https://nikgo.com"
+canonical_url: "https://nikgo.com"
 baseurl: ""
+lang: "en-US"
+locale: "en_US"
+
+author:
+  name: "Dominik Gorecki"
+  url: "https://nikgo.com/about/"
+
+logo: "/assets/images/profile_pic.png"
+social_image:
+  path: "/assets/images/nikgo-social-fallback.png"
+  width: 1672
+  height: 941
+  alt: "Abstract network of light representing engineering, AI, and cognition"
+
+social:
+  name: "Dominik Gorecki"
+  links:
+    - "https://www.linkedin.com/in/nikgo"
+    - "https://github.com/DominikGorecki"
 
 plugins:
   - jekyll-redirect-from
+  - jekyll-sitemap
 
 collections:
   articles:
     output: true
 
 defaults:
+  # The AI Tokenomics paper is an intentional standalone, indexable research PDF.
+  - scope:
+      path: "pages/articles/SWE_LLM_Tokenomecs_V2.pdf"
+    values:
+      sitemap: true
   - scope:
       path: ""
       type: articles
@@ -34,6 +64,9 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - _archive/
+  - scripts/
+  - templates/
+  - tests/
   - README.md
   - SEO-GEO-IMPROVEMENT-SPEC.md
   - Dockerfile
