@@ -4,3 +4,9 @@ _site
 .cbx/
 .cursor/
 pages/articles/raw-images/
+*.af
+*.af~lock~*
+*:Zone.Identifier
+!_archive/build-contaminants/**/*.af
+!_archive/build-contaminants/**/*.af~lock~*
+!_archive/build-contaminants/**/*:Zone.Identifier

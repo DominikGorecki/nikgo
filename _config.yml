@@ -1,4 +1,23 @@
 theme: jekyll-theme-cayman
+url: "https://nikgo.com"
+baseurl: ""
+
+plugins:
+  - jekyll-redirect-from
+
+collections:
+  articles:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: articles
+    values:
+      layout: article
+      author: dominik-gorecki
+      sitemap: true
+      published: true
 
 # Keep development/build inputs out of the generated GitHub Pages site.
 # This list includes Jekyll 3.10's standard exclusions because an explicit
@@ -14,6 +33,9 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - _archive/
+  - README.md
+  - SEO-GEO-IMPROVEMENT-SPEC.md
   - Dockerfile
   - Makefile
   - compose.yml

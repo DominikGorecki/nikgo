@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     {% seo %}
-    {% if page.path contains 'pages/articles/' %}
+    {% if page.collection == 'articles' or page.layout == 'article' %}
       {% include article-social-image.html %}
     {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
