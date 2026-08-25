@@ -650,7 +650,7 @@ ul.project-grid {
 // Footer
 .site-footer-v2 {
   margin-top: 6rem;
-  padding: 4rem 0;
+  padding: 4rem 1.5rem;
   border-top: 1px solid var(--border-color);
   color: var(--text-muted);
 
@@ -660,6 +660,8 @@ ul.project-grid {
 }
 
 .footer-content {
+  max-width: 68rem;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
