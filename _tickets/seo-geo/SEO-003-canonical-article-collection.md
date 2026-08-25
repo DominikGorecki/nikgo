@@ -2,7 +2,7 @@
 
 - **Priority:** P0
 - **Effort:** XL
-- **Status:** Blocked on approved disposition inventory
+- **Status:** Implemented and verified on 2026-08-14
 - **Dependencies:** SEO-001, SEO-002
 - **Blocks:** SEO-004 through SEO-013
 - **Spec coverage:** P0-3, P0-4, P0-5, P0-8, part of P0-9
@@ -113,18 +113,18 @@ redirect_from: []
 
 ## Acceptance criteria
 
-- [ ] Every approved published article exists in `_articles/` with explicit front matter.
-- [ ] Every published article retains its exact pre-migration `.html` URL and returns generated HTML.
-- [ ] Every published article has a unique title, description, date, author, category, image, and permalink.
-- [ ] `date_modified` and `last_modified_at` are equal for each article.
-- [ ] No `pages/articles/*.md` source file remains publicly copied.
-- [ ] No raw article `.md` exists anywhere in `_site`.
-- [ ] Approved alternate HTML URLs produce the expected static redirect document or a true 404 according to the disposition sheet.
-- [ ] `/b/test.html` is no longer generated.
-- [ ] No `.af`, lock, or `Zone.Identifier` file exists in `_site`.
-- [ ] All article images and figures resolve.
-- [ ] No current canonical article HTML URL changes.
-- [ ] The GitHub Pages-compatible build succeeds without custom plugins.
+- [x] Every approved published article exists in `_articles/` with explicit front matter.
+- [x] Every published article retains its exact pre-migration `.html` URL and returns generated HTML.
+- [x] Every published article has a unique title, description, date, author, category, explicit image state, and permalink.
+- [x] `date_modified` and `last_modified_at` are equal for each article.
+- [x] No `pages/articles/*.md` source file remains publicly copied.
+- [x] No raw article `.md` exists anywhere in `_site`.
+- [x] Approved alternate HTML URLs produce the expected static redirect document or a true 404 according to the disposition sheet.
+- [x] `/b/test.html` is no longer generated.
+- [x] No `.af`, lock, or `Zone.Identifier` file exists in `_site`.
+- [x] All article images and figures resolve.
+- [x] No current canonical article HTML URL changes.
+- [x] The GitHub Pages-compatible build succeeds without custom plugins.
 
 ## Verification
 
@@ -149,3 +149,46 @@ Expected: the contaminant search returns no results. Compare a saved pre-migrati
 ## Rollback
 
 Revert the collection configuration and file moves together. Do not leave duplicate source in both `pages/articles/` and `_articles/` in a deployed commit.
+
+## Implementation record — 2026-08-14
+
+### Collection and URL migration
+
+- Added the `articles` output collection, collection defaults, and the GitHub Pages-supported `jekyll-redirect-from` plugin to `_config.yml`.
+- Added a minimal `_layouts/article.html` wrapper over the existing default layout. The article presentation remains unchanged; SEO-005 owns the semantic redesign.
+- Moved the 19 SEO-002 `publish` documents into `_articles/` and added explicit approved front matter.
+- Preserved all 19 canonical paths listed in [SEO-003-canonical-url-baseline.txt](SEO-003-canonical-url-baseline.txt). Every listed file exists in `_site`, and every generated canonical tag uses the same `https://nikgo.com` URL.
+- Added `url: "https://nikgo.com"` and an empty `baseurl` so the supported redirect plugin emits the production custom-domain destination instead of a repository-derived GitHub URL.
+- Updated the article index's Markdown links to explicit canonical HTML paths and applied the approved author/date corrections.
+- Updated article detection in the default layout from a source-path substring check to the `articles` collection/article layout.
+
+### Private dispositions
+
+- Relocated five approved archive candidates, the source of the approved redirect, and two `publish-after-edit` candidates under `_archive/articles/`.
+- Added the single approved static redirect from `/pages/articles/what_freedom_for.html` to `/pages/articles/what_freedom_for__v2.html`.
+- Verified the redirect document contains the custom-domain canonical, JavaScript destination, meta refresh, and `noindex` directive.
+- Verified the five archive candidates and two `publish-after-edit` candidates generate neither HTML nor raw Markdown output.
+
+### Build-contaminant cleanup
+
+- Relocated the default Jekyll test post and its companion include under `_archive/test-content/`.
+- Relocated `.af`, lock, and `Zone.Identifier` files under `_archive/build-contaminants/`, preserving them in version control but excluding them from Jekyll output.
+- Added recurrence guards to `.gitignore`, with narrow exceptions for the intentional private archive.
+- Excluded `_archive/`, `README.md`, and `SEO-GEO-IMPROVEMENT-SPEC.md` explicitly so the generated site contains no Markdown source files.
+
+### Metadata and content integrity
+
+- All 19 public documents have unique titles and descriptions, an approved date/modified date, author key, category, tags, related candidates, explicit permalink, feature state, article type, and image state.
+- Eighteen articles map to an existing representative image with verified dimensions and alt text. `great-ai-pink-slip-panic.md` retains the SEO-002-approved explicit `image: null` state; SEO-013 owns creation of its representative image.
+- `date_modified` and `last_modified_at` match for all 19 documents.
+- A source-body comparison found no prose changes. `Rokos_Symbiotic_Carrot.md` gained only a final newline.
+- All local images, figures, scripts, and article-index targets referenced by generated article HTML resolve to generated files.
+
+### Build verification
+
+`make site-build` completed successfully with `github-pages` 232 and Jekyll 3.10.0. The expected unauthenticated local GitHub Metadata warning remains. Verification confirmed:
+
+- 19 canonical article documents and one approved static redirect document are generated.
+- Every URL in the saved canonical baseline exists and has the expected canonical tag.
+- No `.md`, `.af`, lock, `Zone.Identifier`, or `/b/test.html` file exists in `_site`.
+- No custom plugin directory or unsupported dependency was added.

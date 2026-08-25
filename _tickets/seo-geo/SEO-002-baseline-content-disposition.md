@@ -2,7 +2,7 @@
 
 - **Priority:** P0
 - **Effort:** M
-- **Status:** Requires site-owner/editor input
+- **Status:** Implemented and owner-approved on 2026-08-14
 - **Dependencies:** None
 - **Blocks:** SEO-003 and any content ticket
 - **Spec coverage:** P0-4, publication dates, measurement baseline
@@ -132,15 +132,15 @@ For the foundational implementation:
 
 ## Acceptance criteria
 
-- [ ] Search/Bing baselines are exported or the absence of account access is explicitly recorded.
-- [ ] All 27 Markdown files have one approved disposition.
-- [ ] Every published page has complete approved metadata.
-- [ ] Every redirect has exactly one target and a reason.
-- [ ] No meaningfully distinct page is redirected only because its title/topic is similar.
-- [ ] Publication and modification dates are author-approved.
-- [ ] The URL-preservation policy is approved.
-- [ ] The `Domink` typo is included in the correction list.
-- [ ] Private exports and verification tokens are not committed.
+- [x] Search/Bing baselines are exported or the absence of account access is explicitly recorded.
+- [x] All 27 Markdown files have one approved disposition.
+- [x] Every published page has complete approved metadata.
+- [x] Every redirect has exactly one target and a reason.
+- [x] No meaningfully distinct page is redirected only because its title/topic is similar.
+- [x] Publication and modification dates are author-approved.
+- [x] The URL-preservation policy is approved.
+- [x] The `Domink` typo is included in the correction list.
+- [x] Private exports and verification tokens are not committed.
 
 ## Verification
 
@@ -164,3 +164,18 @@ The count of disposition rows must equal the count of article Markdown files.
 ## Rollback
 
 This is a decision/data ticket. If a decision changes before SEO-003 merges, update the approved inventory. After migration, disposition changes require a new redirect/canonical review.
+
+## Implementation record — 2026-08-14
+
+The repository-side implementation is recorded in [SEO-002-baseline-and-disposition.md](SEO-002-baseline-and-disposition.md). It includes:
+
+- An explicit record that this workspace has no authenticated Google Search Console, Bing Webmaster Tools, or private analytics access.
+- A fresh public HTTP baseline for all 27 HTML and raw Markdown article URLs, the sitemap, Cloudflare-served robots response, and the default Jekyll test page.
+- Exactly 27 proposed disposition rows, plus a separate removal decision for the default test post.
+- A content-based comparison of the `__no_ref`, “What Freedom Is For,” and “AI in the Veins” variants.
+- Complete proposed identity, description, URL, date, author, category, type, image, feature, tag, and related-content metadata for all 21 publish/publish-after-edit candidates.
+- One proposed redirect with one target: `what_freedom_for.html` to `what_freedom_for__v2.html`, after unique-value review.
+- A correction list containing the `Domink` typo and three date conflicts.
+- An explicit approval gate. No article, permalink, dependency, Pages setting, or production file was changed by this ticket.
+
+The site owner approved the dispositions, metadata, publication and modification dates, redirect/archive decisions, and URL policy on 2026-08-14. All SEO-002 acceptance criteria are complete, and SEO-003 may use the linked record as its authoritative editorial input.
