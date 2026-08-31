@@ -25,24 +25,31 @@ DEFAULT_MAX_WIDTH = 800
 DEFAULT_QUALITY = 88
 MIN_IMAGES = 3
 MAX_IMAGES = 4
+ARTICLE_SOURCE_DIR = "_articles"
+PUBLISHED_ARTICLE_DIR = Path("pages/articles")
+EDITORIAL_IMAGE_DIR = "images"
 
 
 @dataclass(frozen=True)
 class PlannedImage:
     index: int
+    role: str
     source: Path
     output: Path
     alt: str
-    markdown: str
+    site_path: str
+    markdown: str | None
 
 
 @dataclass(frozen=True)
 class ProcessedImage:
     index: int
+    role: str
     source: str
     output: str
     alt: str
-    markdown: str
+    site_path: str
+    markdown: str | None
     original_size: tuple[int, int]
     output_size: tuple[int, int]
 
@@ -54,11 +61,56 @@ def normalize_alt_text(value: str) -> str:
     return text.replace("[", r"\[").replace("]", r"\]")
 
 
+def is_collection_article(article: Path) -> bool:
+    return article.parent.name == ARTICLE_SOURCE_DIR
+
+
+def repository_root(article: Path) -> Path:
+    if not is_collection_article(article):
+        raise ValueError(
+            f"Expected a Markdown source directly under {ARTICLE_SOURCE_DIR}/: {article}"
+        )
+    return article.parent.parent
+
+
+def published_article_dir(article: Path) -> Path:
+    return repository_root(article) / PUBLISHED_ARTICLE_DIR
+
+
+def default_output_dir(article: Path) -> Path:
+    if is_collection_article(article):
+        return published_article_dir(article) / EDITORIAL_IMAGE_DIR
+    return article.parent / EDITORIAL_IMAGE_DIR
+
+
+def published_relative_path(article: Path, output: Path) -> Path | None:
+    if not is_collection_article(article):
+        return None
+    try:
+        return output.relative_to(published_article_dir(article))
+    except ValueError as exc:
+        raise ValueError(
+            "Assets for _articles sources must be written under pages/articles "
+            f"so Jekyll publishes them beside the article: {output}"
+        ) from exc
+
+
 def markdown_path(article: Path, output: Path) -> str:
+    published_relative = published_relative_path(article, output)
+    if published_relative is not None:
+        return f"./{published_relative.as_posix()}"
     relative = Path(os.path.relpath(output, start=article.parent)).as_posix()
     if not relative.startswith("."):
         relative = f"./{relative}"
     return relative
+
+
+def site_path(article: Path, output: Path) -> str:
+    if is_collection_article(article):
+        relative = published_relative_path(article, output)
+        assert relative is not None
+        return f"/{(PUBLISHED_ARTICLE_DIR / relative).as_posix()}"
+    return markdown_path(article, output)
 
 
 def resized_dimensions(size: tuple[int, int], max_width: int) -> tuple[int, int]:
@@ -94,13 +146,20 @@ def build_plan(
     for index, (source, raw_alt) in enumerate(zip(inputs, alts, strict=True), start=1):
         alt = normalize_alt_text(raw_alt)
         output = output_dir / f"{index:02d}__{article.stem}.webp"
+        role = "hero" if index == 1 else "inline"
         plan.append(
             PlannedImage(
                 index=index,
+                role=role,
                 source=source,
                 output=output,
                 alt=alt,
-                markdown=f"![{alt}]({markdown_path(article, output)})",
+                site_path=site_path(article, output),
+                markdown=(
+                    None
+                    if role == "hero"
+                    else f"![{alt}]({markdown_path(article, output)})"
+                ),
             )
         )
     return plan
@@ -117,6 +176,9 @@ def preflight(
         raise FileNotFoundError(f"Article file does not exist: {article}")
     if article.suffix.lower() not in {".md", ".markdown"}:
         raise ValueError(f"Article must be a Markdown file: {article}")
+    if is_collection_article(article):
+        for item in plan:
+            published_relative_path(article, item.output)
     if max_width < 1:
         raise ValueError("--max-width must be greater than 0")
     if not 1 <= quality <= 100:
@@ -168,7 +230,7 @@ def process_images(
     overwrite: bool = False,
     dry_run: bool = False,
 ) -> list[PlannedImage] | list[ProcessedImage]:
-    output_dir = output_dir or article.parent / "images"
+    output_dir = output_dir or default_output_dir(article)
     plan = build_plan(article, inputs, alts, output_dir)
     preflight(article, plan, max_width, quality, overwrite)
     if dry_run:
@@ -193,9 +255,11 @@ def process_images(
             processed.append(
                 ProcessedImage(
                     index=item.index,
+                    role=item.role,
                     source=str(item.source),
                     output=str(item.output),
                     alt=item.alt,
+                    site_path=item.site_path,
                     markdown=item.markdown,
                     original_size=original_size,
                     output_size=output_size,
@@ -218,7 +282,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description=(
             "Normalize three or four explicitly ordered generated images into "
-            "metadata-free article WebP assets and print Markdown snippets as JSON."
+            "metadata-free article WebP assets. For _articles sources, write to "
+            "pages/articles/images and print hero metadata plus inline Markdown as JSON."
         )
     )
     parser.add_argument("--article", help="Path to the target article Markdown file.")
@@ -236,7 +301,10 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--output-dir",
-        help="Asset directory. Defaults to <article-folder>/images.",
+        help=(
+            "Asset directory. For _articles sources, defaults to "
+            "pages/articles/images and must remain under pages/articles."
+        ),
     )
     parser.add_argument(
         "--max-width",
@@ -277,19 +345,42 @@ def run_tests() -> int:
             self.assertTrue(args.run_tests)
 
         def test_plan_preserves_input_order_and_builds_markdown(self) -> None:
-            root = Path("/project/pages/articles")
-            article = root / "sample_article.md"
+            root = Path("/project")
+            article = root / "_articles" / "sample_article.md"
             inputs = [Path("hero.png"), Path("middle.png"), Path("ending.png")]
             alts = ["Hero scene", "Middle [contrast]", "Ending scene"]
 
-            plan = build_plan(article, inputs, alts, root / "images")
+            plan = build_plan(
+                article,
+                inputs,
+                alts,
+                root / "pages" / "articles" / "images",
+            )
 
             self.assertEqual([item.source for item in plan], inputs)
             self.assertEqual(plan[0].output.name, "01__sample_article.webp")
+            self.assertEqual(plan[0].role, "hero")
+            self.assertIsNone(plan[0].markdown)
+            self.assertEqual(
+                plan[0].site_path,
+                "/pages/articles/images/01__sample_article.webp",
+            )
             self.assertEqual(
                 plan[1].markdown,
                 r"![Middle \[contrast\]](./images/02__sample_article.webp)",
             )
+
+        def test_collection_output_must_be_published_beside_articles(self) -> None:
+            root = Path("/project")
+            article = root / "_articles" / "sample_article.md"
+
+            with self.assertRaisesRegex(ValueError, "under pages/articles"):
+                build_plan(
+                    article,
+                    [Path("one.png"), Path("two.png"), Path("three.png")],
+                    ["One", "Two", "Three"],
+                    root / "_articles" / "images",
+                )
 
         def test_requires_three_or_four_images_and_matching_alts(self) -> None:
             with self.assertRaisesRegex(ValueError, "Expected 3 or 4"):
@@ -303,7 +394,9 @@ def run_tests() -> int:
         def test_processing_resizes_strips_metadata_and_refuses_collision(self) -> None:
             with tempfile.TemporaryDirectory() as temp_dir_name:
                 root = Path(temp_dir_name)
-                article = root / "article.md"
+                article_dir = root / "_articles"
+                article_dir.mkdir()
+                article = article_dir / "article.md"
                 article.write_text("# Article\n", encoding="utf-8")
                 inputs: list[Path] = []
                 for index, color in enumerate(("red", "green", "blue"), start=1):
@@ -321,8 +414,20 @@ def run_tests() -> int:
                 )
 
                 self.assertEqual(len(results), 3)
-                first_output = root / "images" / "01__article.webp"
+                first_output = (
+                    root / "pages" / "articles" / "images" / "01__article.webp"
+                )
                 self.assertTrue(first_output.exists())
+                self.assertEqual(results[0].role, "hero")
+                self.assertEqual(
+                    results[0].site_path,
+                    "/pages/articles/images/01__article.webp",
+                )
+                self.assertIsNone(results[0].markdown)
+                self.assertEqual(
+                    results[1].markdown,
+                    "![Green scene](./images/02__article.webp)",
+                )
                 with Image.open(first_output) as generated:
                     self.assertEqual(generated.size, (800, 450))
                     self.assertFalse(generated.getexif())
