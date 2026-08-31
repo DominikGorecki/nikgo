@@ -23,7 +23,9 @@ image:
   width: 800
   height: 450
   alt: "A torrent of code narrowing through successive gates into a small stream of realized value"
-featured: false
+featured: true
+feature_group: general
+feature_order: 1
 article_type: essay
 primary_question: "Why does a large increase in AI-assisted coding produce much smaller gains in releases, usage, and economic value?"
 evidence_type: "Author economic analysis supported by cited software-engineering, product, and market research."

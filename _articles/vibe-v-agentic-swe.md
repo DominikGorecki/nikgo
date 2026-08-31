@@ -24,7 +24,7 @@ image:
   alt: "A developer caught in the scaling trap of vibe coding"
 featured: true
 feature_group: general
-feature_order: 2
+feature_order: 3
 article_type: blog-post
 primary_question: "What separates vibe coding from disciplined agentic software engineering?"
 evidence_type: "Author analysis with examples and cited technical sources."

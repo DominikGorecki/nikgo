@@ -25,7 +25,7 @@ image:
   alt: "A luminous intelligence core branching into laboratories, factories, power grids, and civic institutions"
 featured: true
 feature_group: general
-feature_order: 1
+feature_order: 2
 article_type: essay
 primary_question: "How might Amdahl's Law shape where an AI-driven intelligence explosion creates or moves bottlenecks?"
 evidence_type: "Author analysis using a systems analogy and cited technology context."

@@ -24,7 +24,7 @@ image:
   alt: "Results comparing Gemini 3 Flash with domain RAG against Gemini 3 Pro with web search"
 featured: true
 feature_group: white-papers
-feature_order: 2
+feature_order: 3
 article_type: research-article
 provenance: small-rag-versus-web-search
 citation_title: "Domain-Specific RAG with Gemini 3 Flash Beats Pro with Web Search Grounding"

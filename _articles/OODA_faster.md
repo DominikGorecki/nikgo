@@ -25,7 +25,7 @@ image:
   alt: "Companies competing by completing the OODA loop faster"
 featured: true
 feature_group: general
-feature_order: 8
+feature_order: 9
 article_type: blog-post
 primary_question: "How can organizations make better decisions faster when AI changes the pace of engineering work?"
 evidence_type: "Author analysis using the OODA-loop metaphor and cited management and technology sources."

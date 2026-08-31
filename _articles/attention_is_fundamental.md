@@ -25,7 +25,7 @@ image:
   alt: "A leader lit by a phone while symbolic worlds spill into the room"
 featured: true
 feature_group: general
-feature_order: 5
+feature_order: 6
 article_type: essay
 primary_question: "Why treat attention as a central constraint in human reasoning and technology design?"
 evidence_type: "Philosophical and systems argument informed by cited research and historical examples."

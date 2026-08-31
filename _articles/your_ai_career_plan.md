@@ -25,7 +25,7 @@ image:
   alt: "An engineer developing a personal AI practice beyond a company rollout"
 featured: true
 feature_group: general
-feature_order: 7
+feature_order: 8
 article_type: blog-post
 primary_question: "How should an engineer develop durable AI capability beyond an employer's rollout plan?"
 evidence_type: "Author career analysis with cited industry and product context."

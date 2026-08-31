@@ -24,7 +24,7 @@ image:
   alt: "Experiment results comparing Gemini 3 Flash with and without RAG"
 featured: true
 feature_group: white-papers
-feature_order: 3
+feature_order: 4
 article_type: research-article
 provenance: rag-capability-multiplier
 citation_title: "Retrieval-Augmented Generation as a Capability Multiplier for Research Tasks"

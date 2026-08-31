@@ -24,7 +24,7 @@ image:
   alt: "Evaluation scores comparing balanced RAG with a no-RAG baseline"
 featured: true
 feature_group: white-papers
-feature_order: 4
+feature_order: 5
 article_type: research-article
 provenance: rag-dose-response
 citation_title: "The Dose-Response Curve of RAG: More Context Yields Diminishing Returns"

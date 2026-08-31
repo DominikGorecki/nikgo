@@ -25,7 +25,7 @@ image:
   alt: "Coding shown as one slice of the broader software delivery task"
 featured: true
 feature_group: general
-feature_order: 4
+feature_order: 5
 article_type: essay
 primary_question: "Why does faster code generation alone not transform software delivery?"
 evidence_type: "Author analysis supported by cited software-engineering research and practice sources."

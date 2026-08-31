@@ -25,7 +25,7 @@ image:
   alt: "A controlled interface between portable worker context and company systems"
 featured: true
 feature_group: general
-feature_order: 6
+feature_order: 7
 article_type: essay
 primary_question: "How could portable personal AI change the market for knowledge work and individual leverage?"
 evidence_type: "Author economic and technology analysis with cited historical and technical sources."

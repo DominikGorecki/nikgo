@@ -25,7 +25,7 @@ image:
   alt: "A person choosing between an open human world and a glowing loop of digital attention"
 featured: true
 feature_group: general
-feature_order: 2
+feature_order: 3
 article_type: essay
 primary_question: "What should freedom from compulsory work be for in an increasingly automated society?"
 evidence_type: "Philosophical and social argument supported by cited research and historical examples."
