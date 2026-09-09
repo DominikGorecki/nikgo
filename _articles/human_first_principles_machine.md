@@ -79,7 +79,7 @@ Not a button labelled **MAKE GOOD TELEVISION**. A medium through which he could 
 
 Speed was part of the attraction. So was the possibility of getting closer to what he imagined. Perhaps some stories could become more personal precisely because they required less money, less permission, and fewer logistical miracles to exist.
 
-There are already examples of this kind of authorship. Eliza McNitt’s 2025 short film *Ancestra*, inspired by the circumstances of her own birth, combined live action with AI-generated sequences. Google DeepMind’s production account describes her writing the script and developing the imagery with artists and technologists. It also reports collaboration with more than 200 traditional filmmaking and production experts. This is a technology supplier’s account, not an independent verdict on artistic quality. Even with that caveat, it shows how little the label “AI-made” tells us about the work ([Kory Mathewson][1]). ([blog.google][1])
+There are already examples of this kind of authorship. Eliza McNitt’s 2025 short film *Ancestra*, inspired by the circumstances of her own birth, combined live action with AI-generated sequences. Google DeepMind’s production account describes her writing the script and developing the imagery with artists and technologists. It also reports collaboration with more than 200 traditional filmmaking and production experts. This is a technology supplier’s account, not an independent verdict on artistic quality. Even with that caveat, it shows how little the label “AI-made” tells us about the work ([Kory Mathewson][1]).
 
 “AI-made” might describe a filmmaker using new tools to pursue an intensely personal project. It might also describe a system automatically producing disposable entertainment while everyone involved checks the engagement statistics.
 
@@ -103,13 +103,13 @@ Art need not work exactly like a love letter for the distinction to matter. I mi
 
 Researchers have, obligingly, conducted controlled experiments on something resembling the disagreement my wife and I were having for free.
 
-In a 2023 study, Lucas Bellaiche and colleagues showed participants AI-generated artworks, randomly labelling them as either human-created or AI-created. The human-labelled works received more favourable evaluations, even though the actual images were generated in both cases. Perceived origin changed how people experienced the work ([Lucas Bellaiche et al.][2]). ([Springer][2])
+In a 2023 study, Lucas Bellaiche and colleagues showed participants AI-generated artworks, randomly labelling them as either human-created or AI-created. The human-labelled works received more favourable evaluations, even though the actual images were generated in both cases. Perceived origin changed how people experienced the work ([Lucas Bellaiche et al.][2]).
 
 It would be easy to call this bias and consider the matter closed. The pictures are the same! The consumer has failed the pixel examination!
 
 But that conclusion assumes the visible object is the only legitimate object of appreciation. My love-letter example gives me reason to doubt that assumption.
 
-That leaves my own initial suspicion to examine: would machine-generated work necessarily feel empty? In a 2024 experiment, non-expert poetry readers struggled to distinguish selected AI-generated poems from human-written ones and rated the generated poems more favourably on several dimensions. This was a study of particular poems and readers, not a declaration that literature had been completed. But it makes the claim that nobody could genuinely enjoy generated art difficult to defend ([Brian Porter and Edouard Machery][3]). ([Nature][3])
+That leaves my own initial suspicion to examine: would machine-generated work necessarily feel empty? In a 2024 experiment, non-expert poetry readers struggled to distinguish selected AI-generated poems from human-written ones and rated the generated poems more favourably on several dimensions. This was a study of particular poems and readers, not a declaration that literature had been completed. But it makes the claim that nobody could genuinely enjoy generated art difficult to defend ([Brian Porter and Edouard Machery][3]).
 
 Pleasure and human connection are related, but they are not identical.
 
@@ -131,15 +131,15 @@ So many opinions!
 
 But what if the masterpiece was not sitting there complete? What if some of it came into existence through those people?
 
-Even the phrase “Guy Ritchie’s show” compresses a collective enterprise into a convenient name. On the first season of *The Gentlemen*, he was creator, co-writer, executive producer, and director of the first two episodes—not the sole creator of everything we see ([Ariana Romero][4]). ([Netflix][4])
+Even the phrase “Guy Ritchie’s show” compresses a collective enterprise into a convenient name. On the first season of *The Gentlemen*, he was creator, co-writer, executive producer, and director of the first two episodes—not the sole creator of everything we see ([Ariana Romero][4]).
 
-Theo James and Daniel Ings described extensive improvisation and collaborative development on the series. They were doing more than faithfully executing a settled script ([Patrick Gomez][5]). ([EW.com][5])
+Theo James and Daniel Ings described extensive improvisation and collaborative development on the series. They were doing more than faithfully executing a settled script ([Patrick Gomez][5]).
 
 This was awkward for my argument. The people I had mentally classified as production complications were apparently helping produce the thing I liked.
 
 An actor’s interpretation might improve the character. An editor might discover a rhythm the director had not anticipated. A disagreement might rescue a scene from its creator’s favourite bad idea.
 
-The sociologist Howard Becker’s *Art Worlds* offers a useful corrective to the solitary-genius picture: art emerges through cooperative networks and shared conventions, not simply from an individual whose inspiration somehow survives contact with everyone else ([Howard S. Becker][6]). ([University of California Press][6])
+The sociologist Howard Becker’s *Art Worlds* offers a useful corrective to the solitary-genius picture: art emerges through cooperative networks and shared conventions, not simply from an individual whose inspiration somehow survives contact with everyone else ([Howard S. Becker][6]).
 
 Perhaps being a great director partly means knowing how to create with people whose contributions cannot be specified in advance.
 
@@ -159,15 +159,15 @@ A useful machine should help us tell the difference.
 
 The camera seemed to offer a way through.
 
-Painted likenesses once served some of the practical purposes photographs would later serve. The Victoria and Albert Museum notes that portrait miniatures were popular as portable images of loved ones until the rise of photography in the nineteenth century ([Victoria and Albert Museum][7]). ([Victoria and Albert Museum][7])
+Painted likenesses once served some of the practical purposes photographs would later serve. The Victoria and Albert Museum notes that portrait miniatures were popular as portable images of loved ones until the rise of photography in the nineteenth century ([Victoria and Albert Museum][7]).
 
 A likeness to carry with you. A face to remember.
 
 But a portrait can do more than establish the arrangement of somebody’s nose. It can interpret, commemorate, flatter, challenge, or communicate how one person sees another.
 
-In 2018, the Smithsonian’s National Portrait Gallery unveiled painted portraits of Barack and Michelle Obama by Kehinde Wiley and Amy Sherald. The institution had not resorted to painting because nobody could locate a photograph of the Obamas ([Smithsonian National Portrait Gallery][8]). ([National Portrait Gallery][8])
+In 2018, the Smithsonian’s National Portrait Gallery unveiled painted portraits of Barack and Michelle Obama by Kehinde Wiley and Amy Sherald. The institution had not resorted to painting because nobody could locate a photograph of the Obamas ([Smithsonian National Portrait Gallery][8]).
 
-The paintings were doing something else. Photography, too, became more than an efficient substitute for painting. As the Metropolitan Museum’s account of Daguerre explains, artistic expression and scientific use were intertwined in photography from its beginnings ([Malcolm Daniel][9]). ([The Metropolitan Museum of Art][9])
+The paintings were doing something else. Photography, too, became more than an efficient substitute for painting. As the Metropolitan Museum’s account of Daguerre explains, artistic expression and scientific use were intertwined in photography from its beginnings ([Malcolm Daniel][9]).
 
 The new medium did not simply take over the old job. It helped create new jobs for images.
 
@@ -193,7 +193,7 @@ But generative AI can also propose what to say.
 
 It can supply a premise, a character, an exchange of dialogue, an alternative ending. The supposedly protected creative core is not protected merely because we have placed it higher on the organizational chart.
 
-In an experiment involving short stories, Anil Doshi and Oliver Hauser found that access to AI-generated ideas improved evaluations of individual stories, especially for writers with lower baseline creativity. Yet the AI-assisted stories also became more similar to one another: in this experiment, better individual results came with less collective variety ([Anil Doshi and Oliver Hauser][10]). ([PubMed][10])
+In an experiment involving short stories, Anil Doshi and Oliver Hauser found that access to AI-generated ideas improved evaluations of individual stories, especially for writers with lower baseline creativity. Yet the AI-assisted stories also became more similar to one another: in this experiment, better individual results came with less collective variety ([Anil Doshi and Oliver Hauser][10]).
 
 That is not a prophecy about every future film. It is a warning against assuming that giving everyone more expressive power automatically produces a more varied culture.
 
@@ -229,7 +229,7 @@ Likewise, cooking dinner can mean producing food, caring for someone, practising
 
 There is no contradiction. The purpose has changed.
 
-Psychologists Michael Inzlicht, Amitai Shenhav, and Christopher Olivola describe an “effort paradox”: people often avoid effort, yet it can also contribute to an activity’s value. Sometimes people choose an activity precisely because it demands effort. Difficulty is not invariably a defect awaiting removal ([Michael Inzlicht et al.][11]). ([PubMed Central (PMC)][11])
+Psychologists Michael Inzlicht, Amitai Shenhav, and Christopher Olivola describe an “effort paradox”: people often avoid effort, yet it can also contribute to an activity’s value. Sometimes people choose an activity precisely because it demands effort. Difficulty is not invariably a defect awaiting removal ([Michael Inzlicht et al.][11]).
 
 This does not mean drudgery is character-building by definition. A malfunctioning printer is not a spiritual practice.
 
@@ -237,7 +237,7 @@ It means that eliminating effort and improving an experience are different objec
 
 ![Two people preparing vegetables together in a sunlit kitchen while a food processor sits nearby](./images/03__human_first_principles_machine.webp)
 
-Richard Ryan and Edward Deci’s self-determination theory identifies autonomy, competence, and relatedness as basic psychological needs: acting willingly, developing and exercising capability, and connecting with others. In my thought experiment, a production process might meet several of these needs. Control over the finished film would be only part of what it offered ([Richard Ryan and Edward Deci][12]). ([PubMed][12])
+Richard Ryan and Edward Deci’s self-determination theory identifies autonomy, competence, and relatedness as basic psychological needs: acting willingly, developing and exercising capability, and connecting with others. In my thought experiment, a production process might meet several of these needs. Control over the finished film would be only part of what it offered ([Richard Ryan and Edward Deci][12]).
 
 AI could increase a filmmaker’s autonomy while changing the role of craft or collaboration. It could help someone acquire a skill or make it easier to avoid acquiring it. These are possibilities to examine, not inevitable effects.
 
@@ -253,7 +253,7 @@ Once someone else no longer has to participate, do I still value their participa
 
 And whose freedom am I increasing?
 
-In *The Turing Trap*, Erik Brynjolfsson argues that using AI to extend people’s capabilities and using it to substitute for them can distribute opportunity and power differently. Which path we favour depends partly on how we design and deploy the technology and what the incentives reward ([Erik Brynjolfsson][13]). ([American Academy of Arts and Sciences][13])
+In *The Turing Trap*, Erik Brynjolfsson argues that using AI to extend people’s capabilities and using it to substitute for them can distribute opportunity and power differently. Which path we favour depends partly on how we design and deploy the technology and what the incentives reward ([Erik Brynjolfsson][13]).
 
 The attractive future, to me, is not one in which every activity has been optimized until nobody needs to participate.
 
@@ -275,7 +275,7 @@ The more exciting possibilities might not involve extending familiar shows indef
 
 I find that prospect thrilling. I do not want to defend every existing production constraint merely because something beautiful once emerged within it.
 
-Nor do I want to confuse the survival of a practice with the security of its practitioners. Acemoglu and Restrepo’s research on automation distinguishes the displacement of existing human tasks from the creation of new ones. Productivity gains alone do not settle what happens to demand for people’s work ([Daron Acemoglu and Pascual Restrepo][14]). ([American Economic Association][14])
+Nor do I want to confuse the survival of a practice with the security of its practitioners. Acemoglu and Restrepo’s research on automation distinguishes the displacement of existing human tasks from the creation of new ones. Productivity gains alone do not settle what happens to demand for people’s work ([Daron Acemoglu and Pascual Restrepo][14]).
 
 A future in which human craft becomes a freely chosen pleasure would be very different from one in which it survives only as an underfunded hobby. “People will still make things” is not an adequate answer to every economic question.
 
