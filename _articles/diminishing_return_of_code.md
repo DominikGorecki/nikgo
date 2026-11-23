@@ -4,8 +4,8 @@ title: "The Diminishing Returns of Code"
 description: "AI coding tools can create far more code without producing proportional gains in releases, customer usage, revenue, or economic value."
 permalink: /pages/articles/diminishing_return_of_code.html
 date: 2026-08-28
-date_modified: 2026-08-28
-last_modified_at: 2026-08-28
+date_modified: 2026-11-23
+last_modified_at: 2026-11-23
 author: dominik-gorecki
 content_id: diminishing-returns-of-code
 category: agentic-engineering
@@ -38,15 +38,17 @@ redirect_from: []
 published: true
 ---
 
-*Why 180% more coding becomes 30% more releases—and, so far, no detectable increase in usage.*
+*Why 240% more commits becomes 30% more releases, while early usage lags the flood of new apps.*
 
-In 2026, three researchers examined the public histories of more than 100,000 GitHub developers to see what changed as the developers adopted progressively more capable AI coding tools.
+**Update, November 23, 2026:** The August essay used the May working paper’s estimates. The authors’ September revision uses a larger sample and widens the gap between commits and releases. The figures and description of marketplace usage below reflect that revision.
 
-The first number looked magnificent. Once autocomplete, synchronous agents, and autonomous agents were combined, coding activity measured through commits increased by roughly **180%**.
+In their September 2026 revision, three researchers matched GitHub activity with AI tool usage data for more than 500,000 developers to see what changed as they adopted progressively more capable tools.
+
+The first numbers looked magnificent. The estimated cumulative gain in weekly commits rose from roughly **30%** with autocomplete to **180%** through interactive agents and **240%** through autonomous agents.
 
 Then the researchers followed that productivity miracle up the corporate staircase.
 
-The same developers worked on about **50% more projects**, but shipped only **30% more releases**. Across four major software marketplaces, the supply of new applications increased while early aggregate usage remained flat or declined. For synchronous coding agents alone, the collapse was even more theatrical: a greater-than-sevenfold increase in lines of code became a 65% increase in pull requests and a 20% increase in releases ([Mert Demirer, Leon Musolff, and Liyuan Yang][1]).
+The estimates fell to about **80% more projects touched** and only **30% more releases**. For synchronous coding agents alone, the collapse was even more theatrical: more than ten times as many lines changed became about 86% more pull requests and 20% more releases. In a separate look at software marketplaces, early signs of usage did not keep pace with new app releases ([Mert Demirer, Leon Musolff, and Liyuan Yang][1]).
 
 None of this means AI coding tools do nothing. A 30% increase in releases would be extraordinary for almost any workplace technology. The steam engine did not arrive with a pull-request dashboard.
 
@@ -54,7 +56,7 @@ It does show something more interesting:
 
 > **The economic value of additional code diminishes as it moves through the business.**
 
-The machine wrote much more code. More software made it out the door, but nowhere near proportionally. The market barely noticed.
+The machine wrote much more code. More software made it out the door, but nowhere near proportionally. Audience attention proved harder to expand.
 
 AI had not failed. It had encountered the rest of the system.
 
@@ -286,7 +288,7 @@ Every stage gets a veto.
 
 Then the company must subtract the carrying cost of the code it added: maintenance, incidents, infrastructure, support, security, and the friction imposed on future changes.
 
-This is why a 180% increase at the bottom of the chain can become 30% near the middle and disappear into statistical silence at the top.
+The study’s 240% gain in weekly commits shrank to 30% more releases. What those releases were worth to a business is a separate question.
 
 The arithmetic is less calculus than plumbing. Value leaks.
 
@@ -310,7 +312,7 @@ There are more artifacts, more experiments, and more obscure needs served.
 
 There is also more sludge.
 
-The same pattern appears in the software-marketplace data. New applications increased, including a near doubling of monthly new iOS apps between early 2025 and April 2026. But early engagement with each monthly cohort was flat or declining across the marketplaces studied, and a larger share of new applications failed to reach even a modest audience ([Mert Demirer, Leon Musolff, and Liyuan Yang][1]).
+A similar pattern appears in the software-marketplace data. Monthly iOS releases rose from roughly 33,000–45,000 in 2023 through early 2025 to about 108,000 in April 2026. In the first three months after release, ratings for new iOS apps were roughly stable across the 2024–25 cohorts. Downloads of new Android apps rose modestly relative to releases, while downloads of new Chrome extensions continued an earlier decline. The SourceForge data tracked new projects, not usage. These are indicators of early attention; none kept pace with the growth in new releases ([Mert Demirer, Leon Musolff, and Liyuan Yang][1]).
 
 When the cost of creation falls, production expands. Customer attention does not automatically expand with it.
 
@@ -428,7 +430,7 @@ The winners will not be the companies that produce the most software. They will 
 
 ## References
 
-* [Mert Demirer, Leon Musolff, and Liyuan Yang. “Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools.” NBER Working Paper 35275.][1]
+* [Mert Demirer, Leon Musolff, and Liyuan Yang. “Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools.” NBER Working Paper 35275, May 2026, revised September 2026.][1]
 * [OpenStax. “14.1 The Theory of Labor Markets.” *Principles of Economics 3e*.][2]
 * [R. H. Coase. “The Nature of the Firm.” *Economica*.][3]
 * [Kevin Zheyuan Cui, Mert Demirer, Sonia Jaffe, Leon Musolff, Sida Peng, and Tobias Salz. “The Effects of Generative AI on High-Skilled Work: Evidence from Three Field Experiments with Software Developers.” *Management Science*.][4]
